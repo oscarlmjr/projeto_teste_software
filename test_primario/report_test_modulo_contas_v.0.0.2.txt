@@ -3,16 +3,16 @@ Report:
 --------------------------------------------
 testes diretos: 16 == OK
 testes híbridos: 6 == OK
-teste de stress de variáveis == None
 --------------------------------------------
-
-Log (6):
+Log (10):
 test_modulo_conta:
 lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
-lista_pessoa.json: [[], []] / [[p], [p]] 
-test_modulo_contas_hibrido.json: [[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
-test_modulo_contas_direto.json: [[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
-teste = _1_2_1_2_3_3
+lista_pessoa.json: No such file / [[], []] / [[n], [p]] / No such file
+test_modulo_contas_direto.json: 
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+test_modulo_contas_hibrido.json: 
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+teste = _1_2_1_2_1_2_3_3_3_3
 --------------------------------------------
 
 Listar:     Cadastrar:      Descadastrar:
@@ -20,14 +20,17 @@ OK           OK               OK
 
 --------------------------------------------
 --------------------------------------------
+Log (6):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
+lista_pessoa.json: [[n], [p]] / No such file 
+test_modulo_contas_hibrido.json: [[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+test_modulo_contas_direto.json: [[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+teste = _1_2_1_2_3_3
+--------------------------------------------
 
-Log (5):
-test_modulo_conta.json
-lista_conta.json: No such file / [[], []] / [[n], [p]] >>>  No such file
-lista_pessoa.json: No such file / [[], []] / [[p], [p]] >>>  No such file
-test_modulo_conta_hibrido.json =  [[[(True, True)], [(True)]], [[()], [()]]] == None
-test_modulo_conta.json = [[(1, -1), (2, -2), (1, -1)], [(), (), ()], [(None, -9), (None, -9)]] == None
-teste == None
+Listar:     Cadastrar:      Descadastrar:
+OK           OK               OK
 
 --------------------------------------------
 --------------------------------------------

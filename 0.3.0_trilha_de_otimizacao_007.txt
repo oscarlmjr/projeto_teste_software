@@ -1,14 +1,12 @@
 teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+0.3.0_trilha_de_otimizacao_007
 --------------------------------------------
 04/10/2024
 --------------------------------------------
-trilha_de_otimizacao: ./
 1       |1.0_1.1_1.2_
-|       |1.3_ >>> line 26 - 27
-|       |    # self_matriz = self.self_matriz
-|       |    # __import__(self.modulo_agencia_numero).Agencia(self.valor_agencia).menu_self(self.self_matriz)
-|       |    >>> __import__(self.modulo_agencia_numero).Agencia(self.valor_agencia).menu_self(self)
-2       |2.0_ >>> line 54 - 55
+|       |1.3_
+2       |2.0_ >>> line 47 - 48
+|       |    # ...
 |       |    >>> if __name__ == '__main__':
 |       |    >>>    Agencia('0001').menu_self(None)
 |       |2.1_2.2_

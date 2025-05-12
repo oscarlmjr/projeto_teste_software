@@ -1,0 +1,29 @@
+--------------------------------------------
+./
+--------------------------------------------
+
+Matriz.menu_self: teste += '_1.1' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_interna:
+|  Bool:  
+|  (1): modulo_agencia_0001.Agencia.menu_self()
+
+test_fdh_modulo_agencia_matriz_004.json:
+[(True), ] /
+
+./ modulo_agencia_matriz.Matriz.menu_self >>> modulo_agencia_0001.Agencia.menu_self/
+./ \
+--------------------------------------------
+.../ modulo_matriz.modulo_lista_matriz.Lista.acesso_filial >>> modulo_agencia_matriz.Matriz.menu_opcao()
+--------------------------------------------
+Matriz.menu_opcao: teste += '_1.2' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+
+test_fdh_modulo_agencia_matriz_004.json:
+[(True)]
+
+.../ modulo_agencia_matriz.Matriz.menu_opcao >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+--------------------------------------------

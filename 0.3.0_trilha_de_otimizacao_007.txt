@@ -9,15 +9,7 @@ teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
 |       |    # ...
 |       |    >>> if __name__ == '__main__':
 |       |    >>>    Agencia('0001').menu_self(None)
-|       |2.1_2.2_
-|       |2.3_ >>> line 38
-|       |    # self_agencia = self.self_agencia
-|       |    >>> line 41 - 42
-|       |    # lista_self = {'self_matriz': self_matriz, 'self_agencia': self_agencia}
-|       |    >>> lista_self = {'self_matriz': self_matriz, 'self_agencia': self}
-|       |    >>> line 44 - 45
-|       |    # lista_self = {'self_agencia': self_agencia}
-|       |    >>> lista_self = {'self_agencia': self}
+|       |2.1_2.2_2.3_
 3       |3.0_3.1.0_3.1.1_3.1.2_
 |       |3.1.3_ >>> line 62 - 64
 |       |    # self_contas = self.self_contas 

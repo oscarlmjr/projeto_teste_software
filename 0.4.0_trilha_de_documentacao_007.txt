@@ -14,12 +14,12 @@ teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
 |	|       A função menu_self, em todos os módulos, transporta o self da classe de cada módulo e o
 |	|       adiciona a uma váriavel lista_self. """
 |	|1.3_
-2	|2.0_   >>> line 1 - 3 """
+2	|2.0_   >>> line 42 - 43 """
+|	|       O modulo_agencia_0001 será acessado por funcionários da agência Matriz e da agência 0001. """
+|	|2.1_   >>> line 2 - 4 """
 |	|       Os módulos das agências são gerados pelos usuários da agência matriz, com permissão, apartir
 |	|       do modulo_lista_matriz, classe Lista, função cadastrar_agencia."""
-|	|2.1_2.2_
-|	|2.3_   >>> line 27 - 28 """
-|	|       O modulo_agencia_0001 será acessado por funcionários da agência Matriz e da agência 0001. """
+|	|2.2_2.3_
 3	|3.0_
 |	|3.1.0_ >>> line 1 - 3 """
 |	|       Esse módulo inicia os tipos de conta disponíveis na agência: conta corrente
@@ -29,10 +29,11 @@ teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
 |	|4.1.0_ >>> line 1 - 3 """
 |	|       Esse módulo inicia os tipos de cadastro de pessoa disponíveis na agência:
 |	|       pessoa física (RG) e pessoa jurídica (CNPJ)"""
-|	|4.1.1_4.1.2_
-|	|4.1.3_ >>> line 31 - 33 """
+|	|4.1.1_
+|	|4.1.2_ >>> line 31 - 33 """
 |	|       Fim da adição dos selfs à lista_self.
 |	|       Direcionamento para o menu autenticação."""
+|	|4.1.3_
 5	|5.0_5.1.0_
 |	|5.1.1_ >>> line 6 - 9 """
 |	|       Menu de autenticação.

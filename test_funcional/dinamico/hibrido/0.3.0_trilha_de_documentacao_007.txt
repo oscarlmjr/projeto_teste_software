@@ -1,0 +1,269 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+04/10/2024
+--------------------------------------------
+trilha_de_documentacao: ./
+1	|1.0_   >>> line 1 - 6 """
+|	|       Esse módulo inicia o sistema.
+|	|       Apenas usuários da agência Matriz e usuários com permissão de administrador estão 
+|	|       autorizados ao acesso.
+|	|       Todas as classes e funções do sistema estão numeradas afim de identificação no processo 
+|	|       de teste, de acordo com a execução do sistema e opções dos menus. """
+|	|1.1_
+|	|1.2_   >>> line 20 - 22 """
+|	|       A função menu_self, em todos os módulos, transporta o self da classe de cada módulo e o
+|	|       adiciona a uma váriavel lista_self. """
+|	|1.3_
+2	|2.0_   >>> line 1 - 3 """
+|	|       Os módulos das agências são gerados pelos usuários da agência matriz, com permissão, apartir
+|	|       do modulo_lista_matriz, classe Lista, função cadastrar_agencia."""
+|	|2.1_2.2_
+|	|2.3_   >>> line 27 - 28 """
+|	|       O modulo_agencia_0001 será acessado por funcionários da agência Matriz e da agência 0001. """
+3	|3.0_
+|	|3.1.0_ >>> line 1 - 3 """
+|	|       Esse módulo inicia os tipos de conta disponíveis na agência: conta corrente
+|	|       (pessoa física ou jurídica) e conta poupança (pessoa física)"""
+|	|3.1.1_3.1.2_3.1.3_
+4	|4.0_
+|	|4.1.0_ >>> line 1 - 3 """
+|	|       Esse módulo inicia os tipos de cadastro de pessoa disponíveis na agência:
+|	|       pessoa física (RG) e pessoa jurídica (CNPJ)"""
+|	|4.1.1_4.1.2_
+|	|4.1.3_ >>> line 31 - 33 """
+|	|       Fim da adição dos selfs à lista_self.
+|	|       Direcionamento para o menu autenticação."""
+5	|5.0_5.1.0_
+|	|5.1.1_ >>> line 6 - 9 """
+|	|       Menu de autenticação.
+|	|       Caso não haja nenhum usuário cadastrado, o primeiro usuário será cadastrado
+|	|       sem processo de autenticação e com privilégio de administrador."""
+|	|5.1.2_
+6	|5.1.6_
+7	|1.0_1.1_1.2_1.3_
+8	|2.0_2.1_2.2_2.3_
+9	|3.0_3.1.0_3.1.1_3.1.2_3.1.3_
+10	|4.0_4.1.0_4.1.1_4.1.2_4.1.3_
+11	|5.0_5.1.0_5.1.1_5.1.2_
+12	|5.1.6_
+13	|1.0_1.1_1.2_1.3_
+14	|2.0_2.1_2.2_2.3_
+15	|3.0_3.1.0_3.1.1_3.1.2_3.1.3_
+16	|4.0_4.1.0_4.1.1_4.1.2_4.1.3_
+17	|5.0_5.1.0_5.1.1_5.1.2_
+18	|5.0_5.2.0_
+|	|5.2.1_ >>> line 6 - 14  """
+|	|       A função lista_autenticacao possui 2 formas de autenticação:
+|	|       primeiro acesso (não possui nenhum usuário cadastrado): será cadastrado na
+|	|       lista_acesso_0001.json. Os usuários da agência matriz possuem permissão de administrador
+|	|       e serão direcionados para o modulo_agencia_matriz, classe Matriz, função menu_agencia.
+|	|       Segundo acesso em diante: todos passarão por processo de autenticação de matrícula e senha,
+|	|       usuários da agência matriz serão direcionados para o menu da agência matriz, citado acima.
+|	|       usuários de outras agências serão direcionados para o modulo_menu_agencia, classe Menu, 
+|	|       função menu_opcao com permissão de usuário de suas respectivas agências"""
+|	|5.2.2_ >>> line 21  - 29 """
+|	|       self.usuario_autenticado é o usuário da agência matriz ou com perfil de 
+|	|       administrador que já foi autenticado e através do menu da agência matriz,
+|	|       solicita acesso ao menu de uma agência filial, definida na variável 
+|	|       valor_agencia_filial. O acesso será concedido aos usuários cadastrados
+|	|       nas listas de acesso de cada agência.
+|	|       Erro de autenticação será solicitada nova tentativa de autenticação.
+|	|       Erro de agência não cadastrada, será direcionado para a função lista_usuario.
+|	|       Na primeira autenticação a self.lista_acesso_json não existe, gerando erro e entrando no 
+|	|       except."""
+|	|5.2.3_ >>> line 91 - 94 """
+|	|       Na primeira autenticação será criada a lista_acesso_0001 definida na variável
+|	|       self.lista_acesso no modulo_agencia_0001, classe Agencia, função __init__.
+|	|       A lista_acesso_0001 depois de gerada não permite ficar sem pelo menos um usuário."""
+|	|       >>> line 132 - 134 """
+|	|       Na primeira autenticação: cadastro_usuario is False and self.opcao == == 'cadastrar',
+|	|       self.lista_acesso cadastrará o primeiro usuário que terá perfil de administrador."""
+|	|       >>> line 143 """
+|	|       # self_matriz = lista_self.get('self_matriz')
+|	|       >>> line 145 -146 """
+|	|       Na primeira autenticação: self_matriz is not None and len(self.lista_acesso) == 1"""       
+19	|6.1.0_6.1.1_
+|	|6.1.2_ >>> line 9 - 13 """
+|	|       Usuários com permissão de administrador podem acessar o menu da agência 0001 (Agência (1));
+|	|       acessar as contas bancárias das pessoas físicas e jurídicas cadastradas (Contas (2));
+|	|       acessar qualquer agência filial (Filial(3)); cadastrar novas agências (Cadastrar agência (4)) e
+|	|       sair do sistema (Sair(5))."""
+20	|...
+|...	|1.0_1.1_1.2_1.4_
+|...    |2.0_2.1_2.2_2.4_
+21	|5.1.3_ >>> line 42 - 47 """
+|	|       O menu_opcao possui dois menus: um para administradores e usuários da agência Matriz
+|	|       e o outro menu para usuários das agências. Podendo cadastrar usuários (Cadastrar Usuário (1));
+|	|       e descadastrar usuários (Descadastrar Usuário (2)); acessar as contas bancárias das pessoas físicas 
+|	|       e jurídicas cadastradas (Contas (3)); usuários com permissão de administrador podem acessar o 
+|	|       menu da agência Matriz (Matriz (4)); e sair do sistema (Sair(4 ou 5))."""
+22	|...
+23	|5.1.4_	
+24	|5.1.3_
+25	|5.1.4_
+26	|5.1.3_	
+27	|5.1.4_
+28	|5.2.3_
+29	|5.1.3_
+30	|5.1.4_
+31	|5.2.3_
+32	|5.1.3_
+33	|5.1.4_
+34	|5.2.3_
+35	|5.1.3_
+36	|5.1.5_
+37	|5.1.3_
+38	|5.1.5_
+39	|5.2.3_
+40	|...
+41	|1.0_1.1_1.2_1.3_
+42	|2.2_2.3_
+43	|3.1.2_3.1.3_
+44	|4.1.2_4.1.3_
+45	|5.1.2_
+46	|5.2.2_
+47	|5.1.2_
+48	|5.2.2_
+49	|5.1.2_
+50	|5.2.2_
+51	|6.1.2_
+52	|5.1.3_
+53	|5.1.5_
+54	|5.2.3_
+55	|5.1.3_
+56	|5.1.5_
+57	|5.2.3_
+58	|5.1.3_
+59	|5.1.5_
+60	|5.2.3_
+61	|1.2_1.3_
+62	|2.2_2.3_
+63	|3.1.2_3.1.3_
+64	|4.1.2_4.1.3_
+65	|5.1.2_
+66	|5.0_5.2.0_5.2.1_5.2.2_5.2.3_
+67	|6.0_6.1.0_6.1.1_6.1.2_
+|...	|1.0_1.1_1.2_1.4_ *otimizado
+|...	|2.0_2.1_2.2_2.4_ *otimizado
+|...	|3.0_3.1.0_3.1.1_3.1.2_3.1.4_ *otimizado
+68	|5.1.3_
+69	|3.0_3.2.0_
+|	|3.2.1_ >>> line 5 - 14 """
+|	|       O menu_opcao possui dois menus: um para administradores e usuários da agência Matriz
+|	|       e o outro menu para usuários das agências. Podendo listar uma conta do cliente apartir do
+|	|       seu RG ou CNPJ, ou do número da conta corrente ou poupança (Listar (1));
+|	|       cadastrar contas pessoa física ou jurídica (Cadastrar (2)); retornar todas as contas de cada cliente
+|	|       apartir do seu RG ou CNPJ (Retornar ocorrências (3)); transferir a conta, ou as contas de um cliente
+|	|       para outra agência (Transferir (4)); descadastrar uma conta (Descadastrar (5)); acessar o menu Pessoa
+|	|       onde as informações pessoais dos clientes estão cadastradas e podem ser manipuladas (Pessoa (6));
+|	|       retornar para o menu da agência (Agência (7)); usuários com permissão de administrador podem acessar o 
+|	|       menu da agência Matriz (Matriz (8)); e sair do sistema (Sair(8 ou 9))."""
+|	|3.2.2_
+70	|...
+71	|...
+72	|3.2.3_
+73	|3.2.4_
+74	|3.2.2_
+75	|3.2.3_
+76	|3.2.4_
+77	|3.2.5_
+78	|3.0_3.3.0_
+79	|3.3.1_3.3.2_
+80	|4.0_4.3.0_4.3.1_
+|       |4.3.2_
+81	|3.2.2_
+|	|...
+82	|3.2.3_
+83	|3.2.4_
+84	|3.2.5_
+85	|3.3.2_
+86	|4.3.2_
+87	|3.2.2_
+|	|...
+88	|3.2.3_
+89	|3.2.4_
+90	|3.2.5_
+91	|3.3.2_
+92	|4.3.2_
+93	|3.2.2_
+|	|...
+94	|3.2.3_
+95	|3.2.4_
+96	|<<< 3.2.3_
+97	|3.2.4_
+98	|<<< 3.2.3_
+99	|3.2.5_
+100	|3.0_3.3.0_3.3.1_3.3.2_
+101	|4.0_4.3.0_4.3.1_4.3.2_
+|	|...
+102	|4.0_4.2.0_4.2.1_4.2.3_
+103	|4.2.2_
+|	|...
+|	|...
+|	|...
+104	|4.2.3_
+105	|4.2.2_
+|	|...
+106	|4.2.3_
+107	|4.3.2_
+|...	|4.1.2_
+|...	|4.1.4_
+108	|4.2.2_
+|	|...
+109	|4.2.3_
+110	|4.2.2_	
+|	|...
+111	|4.2.3_
+112	|4.3.2_
+113	|4.2.2_
+|	|...
+114	|4.2.3_	
+115	|4.2.2_
+|	|...
+116	|4.2.3_
+|	|...
+117	|4.2.3_
+|	|...
+|	|...
+118	|4.2.2_
+|	|...
+119	|4.2.3_
+|	|...
+|	|...
+120	|4.3.2_
+121	|4.3.3_ >>> line 138 """
+|	|       int forçado (?)
+|	|...
+|	|...
+122	|3.3.3_
+|...	|3.1.2_
+|...	|3.1.4_
+123	|3.2.2_
+124	|3.2.3_
+125	|3.2.4_
+|	|...
+126	|<<< 3.2.3_
+127	|3.2.5_	
+128	|3.0_3.3.0_3.3.1_3.3.2_
+|	|...
+|	|...
+129	|8.0_8.1.0_8.1.1_8.1.2_
+130	|3.2.2_
+|	|...
+131	|3.2.3_
+132	|3.2.4_
+|	|...
+133	|<<< 3.2.3_
+134	|3.2.5_
+135	|3.0_3.3.0_3.3.1_3.3.2_
+136	|4.0_4.3.0_4.3.1_4.3.2_
+137	|4.0_4.2.0_4.2.1_4.2.3_
+|	|...
+138	|4.3.2_
+139	|4.3.3_
+|	|...
+140	|3.3.3_
+141	|3.2.2_
+|---------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------------------------------------------------------------|

@@ -1,0 +1,21 @@
+Report:
+
+--------------------------------------------
+testes diretos: 12 == OK
+testes híbridos: 0 == None
+teste de stress de variáveis == None
+--------------------------------------------
+
+Log (3):
+test_modulo_pessoa.json
+lista_pessoa.json: No such file / [[], []] / [[n], [p]] / [[], []] / No such file
+test_modulo_pessoa.json: [[(0,), (0,)], [(0,), (0,)], [(0,), (0,)]] == 0
+teste = 4
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+0           0               0
+
+--------------------------------------------
+--------------------------------------------

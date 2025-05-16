@@ -3,7 +3,9 @@ trilha_de_documentacao_008
 --------------------------------------------
 04/10/2024
 --------------------------------------------
-sstep:	|execution_track:		     |docstring				        			|
+step:	|execution_track:		     |docstring				        			|
+|---------------------------------------------------------------------------------------------------------------|
+|5.1.2_                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 1	|1.0_ >>> line 1 - 6                 |"""                                                           	|
 |	|                                    |Esse módulo inicia o sistema.                               	|
@@ -24,13 +26,11 @@ sstep:	|execution_track:		     |docstring				        			|
 |	|                                    |Os módulos das agências são gerados pelos usuários da agência matr|
 |	|                                    |iz, com permissão, apartir do modulo_lista_matriz, classe Lista, f|
 |	|                                    |unção cadastrar_agencia."""                         		|
-|	|2.2_2.3_                            |                         	                                	|
 3	|3.0_                                |                         	                                	|
 |	|3.1.0_>>> line 1 - 3                |"""                                               		|
 |	|                                    |Esse módulo inicia os tipos de conta disponíveis na agência: conta|
 |	|                                    |corrente (pessoa física ou jurídica) e conta poupança (pessoa físi|
 |	|                                    |ca)"""                         	                               	|
-|	|3.1.1_3.1.2_3.1.3_                  |                         	                                	|
 4	|4.0_                         	     |                         	                                	|
 |	|4.1.0_ >>> line 1 - 3               |"""                                                      		|
 |	|                                    |Esse módulo inicia os tipos de cadastro de pessoa disponíveis na a|
@@ -46,26 +46,9 @@ sstep:	|execution_track:		     |docstring				        			|
 |	|                                    |Caso não haja nenhum usuário cadastrado, o primeiro usuário será  | 
 |	|                                    |cadastrado sem processo de autenticação e com privilégio de admini|
 |	|                                    |strador."""                                                       |
-|	|5.1.2_                              |                                                                  |
-6	|5.1.3_                              |                                                                  |
-7	|5.1.6_                              |                                                                  |
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
-8	|1.0_1.1_1.2_1.3_		     |                                                                  |
-9	|2.0_2.1_2.2_2.3_		     |                                                                  |
-10	|3.0_3.1.0_3.1.1_3.1.2_3.1.3_	     |                                                                  |
-11	|4.0_4.1.0_4.1.1_4.1.2_4.1.3_	     |                                                                  |
-12	|5.0_5.1.0_5.1.1_5.1.2_ 	     |                  		                                |
-13	|5.1.3_				     |                                                          	|
-14	|5.1.6_				     |                                                          	|
-|---------------------------------------------------------------------------------------------------------------|
-|---------------------------------------------------------------------------------------------------------------|
-15	|1.0_1.1_1.2_1.3_		     |                                                          	|
-16	|2.0_2.1_2.2_2.3_		     |                                                          	|
-17	|3.0_3.1.0_3.1.1_3.1.2_3.1.3_	     |                                                          	|
-18	|4.0_4.1.0_4.1.1_4.1.2_4.1.3_	     |                                                          	|
-19	|5.0_5.1.0_5.1.1_5.1.2_ 	     |                                                          	|
-20	|5.0_5.2.0_                          |                                                          	|
+18	|5.0_5.2.0_                          |                                                          	|
 |	|5.2.1_ >>> line 6 - 14              |"""                                                       	|
 |	|                                    |A função lista_autenticacao possui 2 formas de autenticação:      |
 |	|                                    |primeiro acesso (não possui nenhum usuário cadastrado): será cadas|
@@ -103,7 +86,7 @@ sstep:	|execution_track:		     |docstring				        			|
 |	|                                    |>>> line 145 -146 """                                             |
 |	|                                    |Na primeira autenticação: self_matriz is not None and len(self.lis|
 |	|                                    |ta_acesso) == 1"""                                                |
-21	|6.0_6.1.0_6.1.1_                    |                                                                  |
+19	|6.0_6.1.0_6.1.1_                    |                                                                  |
 |	|6.1.2_ >>> line 9 - 13              | """                                                              |
 |	|                                    |Usuários com permissão de administrador podem acessar o menu da ag|
 |	|                                    |ência 0001 (Agência (1)); acessar as contas bancárias das pessoas | 
@@ -111,9 +94,10 @@ sstep:	|execution_track:		     |docstring				        			|
 |	|                                    |ncia filial (Filial(3)); cadastrar novas agências (Cadastrar agênc| 
 |	|                                    |ia                                                                |
 |	|                                    |(4)) e sair do sistema (Sair(5))."""                     	        |
-22	|1.0_1.1_1.2_1.4_            	     |                                                                  |
-23	|2.0_2.1_2.2_2.4_           	     |				                                        |
-24	|5.1.3_ >>> line 42 - 47             |"""			                                        |
+|---------------------------------------------------------------------------------------------------------------|
+|6.1.2_                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------|
+10	|5.1.3_ >>> line 42 - 47             |"""			                                        |
 |	|                                    |O menu_opcao possui dois menus: um para administradores e usuários|
 |	|                                    |da agência Matriz e o outro menu para usuários das agências. Pode |
 |	|                                    |ndo cadastrar usuários (Cadastrar Usuário (1)); e descadastrar us |
@@ -121,6 +105,12 @@ sstep:	|execution_track:		     |docstring				        			|
 |	|                                    |pessoas físicas  e jurídicas cadastradas (Contas (3)); usuários co| 
 |	|                                    |m permissão de administrador podem acessar o  menu da agência Matr| 
 |	|                                    |iz (Matriz (4)); e sair do sistema (Sair(4 ou 5))."""             |
+|---------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------------------------------------------------------------|
+
+
+
+
 25	|5.1.4_				     |                       	        				|
 26	|1.0_1.1_1.2_1.3_                    |								        |
 27	|2.0_2.1_2.2_2.3_                    |								        |

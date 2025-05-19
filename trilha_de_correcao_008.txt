@@ -11,8 +11,8 @@ step:	|execution_track:		     |code				        			|
 |       |6.1.2_ >>> line 33 - 34             |								        |
 |---------------------------------------------------------------------------------------------------------------|
 |	|>>> step: 1 32 - 36                 |>>> self_contas = lista_self.get('self_contas', )               	|
-|	|                                    |#    from modulo_contas.modulo_contas import Contas          	|
-|	|                                    |#    Contas(agencia).menu_opcao(agencia, lista_self)        	|
+|	|                                    |# from modulo_contas.modulo_contas import Contas          	|
+|	|                                    |# Contas(agencia).menu_opcao(agencia, lista_self)        	        |
 |	|                                    |>>> from modulo_contas.modulo_menu_contas import Menu     	|
 |	|                                    |>>> Menu.menu_opcao(self_contas, agencia, lista_self)         	|
 |---------------------------------------------------------------------------------------------------------------|
@@ -31,26 +31,34 @@ step:	|execution_track:		     |code				        			|
 |---------------------------------------------------------------------------------------------------------------|
 |3.2.2_                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
-2	|3.0_3.2.0_3.2.1_3.2.2_              |                                      		        	|
-|	|... >>> line 229                    |                                      		        	|
+3	|3.2.3_ >>> line 229                 |                                      		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 2 3.2.3_ 229 - 230        |>>> from modulo_contas.modulo_menu_contas import Menu   	        |
+|	|>>> step: 3 229 - 230               |>>> from modulo_contas.modulo_menu_contas import Menu   	        |
 |	|                                    |# Menu.teste_valor_dado(self, agencia, lista_self)       	        |
 |---------------------------------------------------------------------------------------------------------------|
-11	|3.2.3_ >>> line 256                 |                                      		        	|
-14	|3.0_3.2.0_3.2.1_3.2.2_              |                                   		        	|
+14	|3.2.3_ >>> line 256                 |                                      		        	|
+17	|3.0_3.2.0_3.2.1_3.2.2_              |                                   		        	|
 |	|3.2.2_ >>> line 56 - 57             |                                   		        	|
+19	|4.0_4.1.0_4.1.1_4.1.2_              |                                   		        	|
+|	|4.1.4_ >>> line 33 - 37             |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 11 3.1.2_ 19              |>>>  self.dado_valor = None                                       |
-|	|>>> step: 11 254                    |# if self.valor_dado_variavel == '0' or self.dado_valor == '0':   |
+|	|>>> step: 14 3.1.2_ 19              |>>>  self.dado_valor = None                                       |
+|	|>>> step: 14 254                    |# if self.valor_dado_variavel == '0' or self.dado_valor == '0':   |
 |	|                                    |>>> if self.valor_dado_variavel == '0' or self.dado_valor == '0'\n|
 |	|                                    |>>>  or self.valor_conta_variavel == '0':                         |
-|	|>>> step: 12 4.2.2_ 33 - 36         |# agencia['valor_agencia'] = self.valor_agencia                   |
-|	|                                    |>>> self_contas = lista_self.get('self_contas', )                 |
-|	|                                    |# from modulo_contas.modulo_contas import Contas            	|
-|	|                                    |# Contas(agencia).menu_opcao(agencia, lista_self)            	|
-|	|                                    |>>> from modulo_contas.modulo_menu_contas import Menu            	|
-|	|                                    |>>> Menu.menu_opcao(self_contas, agencia, lista_self)            	|
+|	|>>> step: 17 55 - 60                |# agencia['valor_agencia'] = self.valor_agencia                   |
+|	|                                    |>>> self_pessoa = lista_self.get('self_pessoa',)                  |
+|	|                                    |# from modulo_pessoa.modulo_pessoa import Pessoa            	|
+|	|                                    |# Pessoa(self.__dict__).menu_opcao(agencia, self.__dict__, lista\n|
+|	|                                    |# _self)	                                                        |
+|	|                                    |>>> from modulo_pessoa.modulo_menu_pessoa import Menu            	|
+|	|                                    |>>> Menu.menu_opcao(self_pessoa, agencia, self, lista_self)   	|
+|	|>>> step: 19 32 - 37                |# agencia['valor_agencia'] = self.valor_agencia                   |
+|	|                                    |>>> self_contas = lista_self.get('self_contas', )               	|
+|	|                                    |# from modulo_contas.modulo_contas import Contas          	|
+|	|                                    |# Contas(agencia).menu_opcao(agencia, lista_self)        	        |
+|	|                                    |>>> from modulo_contas.modulo_menu_contas import Menu     	|
+|	|                                    |>>> Menu.menu_opcao(self_contas, agencia, lista_self)         	|
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
 

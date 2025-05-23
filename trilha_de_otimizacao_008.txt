@@ -90,17 +90,17 @@ step:	|execution_track:		     |code				        			|
 |---------------------------------------------------------------------------------------------------------------|
 |3.2.3_                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
-7	|3.2.4_ >>> line 247 - 251           |                                   		        	|
-8	|3.2.3_ >>> line 114 - 117           |                                   		        	|
+6	|3.2.4_ >>> line 247 - 251           |                                   		        	|
+7	|3.2.3_ >>> line 114 - 117           |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 7                      255|>>> if self.valor_dado_variavel == '':  		        	|
+|	|>>> step: 6                      255|>>> if self.valor_dado_variavel == '':  		        	|
 |	|                                 256|>>> print('\nDigite_ uma opção válida.\n')	        	|
 |	|                                 257|>>> continue                       		        	|
 |	|                                 258|>>>                                      		        	|
 |	|                                 259|>>> elif self.valor_dado_variavel == '0': 	        	|
 |	|                                 260|>>> from modulo_contas.modulo_menu_contas import Menu        	|
 |	|                                 261|>>> Menu.menu_opcao(self, agencia, lista_self)            	|
-|	|>>> step: 8                      118|# if self.valor_dado_variavel == '0':  		        	|
+|	|>>> step: 7                      118|# if self.valor_dado_variavel == '0':  		        	|
 |	|                                 119|#     ...	                                                 	|
 |	|                                 120|# else:                               		        	|
 |	|                                 121|#     self.valor_conta_variavel = input(f'\n{self.nome_conta}:\n')|

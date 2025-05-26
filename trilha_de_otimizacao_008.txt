@@ -13,7 +13,7 @@ step:	|execution_track:		     |code				        			|
 |---------------------------------------------------------------------------------------------------------------|
 |       |>>> step: 2 line                  47|>>> if __name__ == '__main__'   				        |
 |       | 		                   48|>>>    Agencia('0001').menu_self(None)				|   
-|       | >>> step: 5 line                 30|>>> if self.valor_matricula_acesso == '' or self.valor_senha \n   | 
+|       |>>> step: 5 line                  30|>>> if self.valor_matricula_acesso == '' or self.valor_senha \n   | 
 |       |			           31|>>> _acesso == '':                      			        | 
 |       |			           32|>>>    print('Digite sua matrícula e senha.\n')    	        | 
 |       |			           33|>>>    from modulo_agencia.modulo_menu_agencia import Menu	| 
@@ -28,7 +28,7 @@ step:	|execution_track:		     |code				        			|
 19      |6.0_6.1.0_6.1.1_                    |	classe_nome = agencia['classe_nome']				| 
 |       |6.1.2_ >>> line 28 - 29             |								        |
 |---------------------------------------------------------------------------------------------------------------| 
-|       | >>> step: 19                     26|# from modulo_agencia_matriz import Matriz	        	|
+|       |>>> step: 19                      26|# from modulo_agencia_matriz import Matriz	        	|
 |	|                                  27|# Matriz(self.valor_agencia).menu_agencia(lista_self)		|
 |	|                                  28|>>> self_agencia = lista_self.get('self_agencia', )    	        |
 |	|                                  29|>>> from modulo_agencia.modulo_menu_agencia import Menu	        |
@@ -38,7 +38,7 @@ step:	|execution_track:		     |code				        			|
 |6.1.2_                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 2	|1.0_1.1_1.2_	                     |								        | 
-|       |1.4_>>> line 28 - 30                |								        | 
+|       |1.4_ >>> line 28 - 30               |								        | 
 3       |2.0_2.1_2.2_                        |								        | 
 |       |2.4_ >>> line 38 - 41               |								        | 
 4       |5.0_5.1.0_                          |								        |
@@ -142,12 +142,17 @@ step:	|execution_track:		     |code				        			|
 |3.2.5_                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
-|6.2.2_                                                                                                         |
+|3.2.3.2_                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------|
 7	|3.3.2_ >>> line 169                 |                                   		        	|
 9	|4.2.3_ >>> line 80                  |                                   		        	|
-20	|4.2.3_  >>> line 92                 |                                   		        	|
-21	|4.3.2_  >>> line 116                |                                   		        	|
+20	|4.2.3_ >>> line 92                  |                                   		        	|
+21	|4.3.2_ >>> line 116                 |                                   		        	|
+22	|4.3.2_ >>> line 80                  |                                   		        	|
+|	|...    >>> line 176                 |                                   		        	|
+|	|4.3.3_ >>> line 174                 |                                   		        	|
+23	|3.0_3.3.0_3.3.1_                    |                                   		        	|
+|	|3.3.3_ >>> line 206                 |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
 |	|>>> step: 7                      169|# self.opcao_pessoa = self.opcao_conta  		        	|
 |	|>>> step: 9                       80| pending                              		        	|
@@ -155,6 +160,10 @@ step:	|execution_track:		     |code				        			|
 |	|                                    |#     self.valor_dado_variavel = input(f'\nDigite o {self.dado_v\n|
 |	|                                    |# ariavel}:\n')                          		        	|
 |	|>>> step: 21                     116|>>> contas.update(conta_cadastrada=conta_cadastrada)        	|
+|	|>>> step: 22                      80|# agencia.update(valor_agencia=self.valor_agencia)        	|
+|	|>>> ...                          176|# agencia.update(valor_agencia=self.valor_agencia)        	|
+|	|>>> step: 22                     174|>>> agencia.update(conta_cadastrada=conta_cadastrada)           	|
+|	|>>> step: 23                     206|# self.valor_agencia = agencia['valor_agencia']           	|
 |	|                                    |                                      		        	|
 |	|                                    |                                      		        	|
 |	|                                    |                                      		        	|

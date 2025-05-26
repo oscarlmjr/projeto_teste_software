@@ -9,7 +9,7 @@
 # Comenta linha: Ctrl + Alt + z
 # Remove comentários: Ctrl + Alt + a
 # Enter no commit: Ctrl + Enter
-Inseri cursores nas seleções: Ctrl + d
+# Inseri cursores nas seleções: Ctrl + d
 
 1 - enumerar arquivos externos 1.0, 2.0, ...
 2 - enumerar diretórios 3.0, 4.0, ...

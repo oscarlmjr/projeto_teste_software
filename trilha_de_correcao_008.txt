@@ -153,7 +153,11 @@ step:	|execution_track:		     |code				        			|
 |	|>>> step: 8                      263|# from modulo_contas.modulo_contas import Contas           	|
 |	|                                 264|# Contas(agencia).menu_opcao(agencia, lista_self)            	| 
 |	|                                 265|>>> from modulo_contas.modulo_menu_contas import Menu           	|
-|	|                                 266|>>> Menu.menu_opcao(self, agencia, lista_self)            	| 
+|	|                                 266|>>> Menu.menu_opcao(self, agencia, lista_self)            	|
+|---------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------------------------------------------------------------|
+|2.2.7_3.2.1.2_                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------| 
 |	|                                    |                                                           	|
 |	|                                    |                                                           	|
 |	|                                    |                                                           	|

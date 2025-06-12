@@ -8,29 +8,26 @@ step:	|execution_track:		     |code				        			|
 |001_1.0_2.2.1.1_                                                                                               |
 |---------------------------------------------------------------------------------------------------------------|
 2       |2.1.0_ >>> line 47		     |  								|
-5	|2.2.0_2.2.1.0_2.2.1.1_		     |  								|
-|       |... >>> line 30                     |      								|
+5	|2.2.1.1_ >>> line 34                |      								|
 |---------------------------------------------------------------------------------------------------------------|
 |       |>>> step: 2 line                  47|>>> if __name__ == '__main__'   				        |
-|       | 		                   48|>>>    Agencia('0001').menu_self(None)				|   
-|       |>>> step: 5 line                  30|>>> if self.valor_matricula_acesso == '' or self.valor_senha \    | 
-|       |			           31|>>> _acesso == '':                      			        | 
-|       |			           32|>>>    print('Digite sua matrícula e senha.\n')    	        | 
-|       |			           33|>>>    from modulo_agencia.modulo_menu_agencia import Menu	| 
-|       |			           34|>>>    Menu.menu_autenticacao(self, lista_self, valor_ \          | 
-|       |			           35|>>>    agencia_filial)					        |   
+|       | 		                   49|>>>    Agencia('0001').menu_self(None)				|   
+|       |>>> step: 5 line                  34|>>> if self.valor_matricula_acesso == '' or self.valor_senha_ace \| 
+|       |			             |>>> sso == '':                      			        | 
+|       |			           35|>>>    print('Digite sua matrícula e senha.\n')    	        | 
+|       |			           36|>>>    from modulo_agencia.modulo_menu_agencia import Menu	| 
+|       |			           37|>>>    Menu.menu_autenticacao(self, lista_self, valor_agencia_fi \| 
+|       |			             |>>>    lial)						        |   
 |---------------------------------------------------------------------------------------------------------------|
-11	|2.2.0_2.2.1.0_2.2.1.1_              |								        |     
-|       |... >>> line 43                     |                                                          	|
+11	|2.2.1.1_ >>> line 47                |                                                          	|
 |---------------------------------------------------------------------------------------------------------------|
-|	| >>> step: 11 line                43|# self.lista_acesso_json = f'lista_acesso_0001.json'   	        |
+|	| >>> step: 11 line                47|# self.lista_acesso_json = f'lista_acesso_0001.json'   	        |
 |---------------------------------------------------------------------------------------------------------------|
-19	|1.2.0_1.2.1.0_                      |	classe_nome = agencia['classe_nome']				| 
-|       |1.2.1.1_ >>> line 28 - 29           |								        |
+19	|1.2.1.1_ >>> line 26 - 30           |								        |
 |---------------------------------------------------------------------------------------------------------------| 
-|       |>>> step: 19                      26|# from modulo_agencia_matriz import Matriz	        	|
-|	|                                  27|# Matriz(self.valor_agencia).menu_agencia(lista_self)		|
-|	|                                  28|>>> self_agencia = lista_self.get('self_agencia', )    	        |
+|	|>>> step: 19                      26|>>> self_agencia = lista_self.get('self_agencia', )    	        |
+|       |                   		   27|# from modulo_agencia_matriz import Matriz	        	|
+|	|                                  28|# Matriz(self.valor_agencia).menu_agencia(lista_self)		|
 |	|                                  29|>>> from modulo_agencia.modulo_menu_agencia import Menu	        |
 |	|                                  30|>>> Menu.menu_opcao(self, lista_self)		                | 
 |---------------------------------------------------------------------------------------------------------------|
@@ -41,69 +38,68 @@ step:	|execution_track:		     |code				        			|
 |       |1.4_ >>> line 28 - 30               |								        | 
 3       |2.0_2.1_2.2_                        |								        | 
 |       |2.4_ >>> line 38 - 41               |								        | 
-4	|2.2.1.2_  >>> line 61               |								        |
+4	|2.2.1.2_  >>> line 68               |								        |
 |---------------------------------------------------------------------------------------------------------------|
 |       |>>> step: 2                       28|# def menu_agencia(self, lista_self):			        |
-|	|                                  29|#     __import__(self.modulo_agencia_numero).Agencia(self. \      |
-|	|                                  30|#     valor_agencia).menu_opcao(lista_self)		        |
-|       |>>> step: 3                       38|# def menu_opcao(self, lista_self):    			        |
-|	|                                  39|#        from modulo_agencia.modulo_menu_agencia import Menu	|
-|	|                                  40|#        Menu.menu_opcao(self, lista_self)     		        |
-|	|>>> step: 4                       62|# if opcao != '1' and opcao != '2' and opcao != '3' and opcao \   |
-|	|                                  63|# != '4' and opcao != '5':		                        |
-|	|                                  64|#          print('Digite uma opção válida.')           	        |
+|	|                                  29|#     __import__(self.modulo_agencia_numero).Agencia(self. valor \|
+|	|                                    |#     _agencia).menu_opcao(lista_self)			        |
+|       |>>> step: 3                       41|# def menu_opcao(self, lista_self):   # 2.4_		        |
+|	|                                  42|#     from modulo_agencia.modulo_menu_agencia import Menu		|
+|	|                                  43|#     Menu.menu_opcao(self, lista_self)     		        |
+|	|>>> step: 4                       68|# if opcao != '1' and opcao != '2' and opcao != '3' and opcao != \|
+|	|                                    |#     '4' and opcao != '5':	     	                        |
+|	|                                  69|#     print('Digite uma opção válida.')           	        |
+|	|                                  70|#     continue  				         	        |
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
 |003_2.1.0_2.2.1.2_                                                                                             |
 |---------------------------------------------------------------------------------------------------------------|
-2	|2.2.1.3_ >>> line 112               |                                   		        	|
-8	|2.2.1.2_ >>> line 84 - 86           |                                   		        	|
+2	|2.2.1.3_ >>> line 119               |                                   		        	|
+8	|2.2.1.2_ >>> line 89	             |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 2                      112|>>> if self.valor_matricula == '' or self.valor_senha == '':	|
-|	|                                 113|>>>        print('Digite uma matrícula e senha.\n')	        |
-|	|                                 114|>>> from modulo_agencia.modulo_menu_agencia import Menu	        |
-|	|                                 115|>>> Menu.cadastrar_usuario(self, lista_self)		        |
-|	|>>> step: 8                       83|>>> self_contas = lista_self.get('self_contas', )        	        |
-|	|                                  84|# from modulo_contas.modulo_contas import Contas        	        |
-|	|                                  85|# Contas(self.__dict__).menu_opcao(self.__dict__, lista_self)	|
-|	|                                  86|>>> from modulo_contas.modulo_menu_contas import Menu    	        |
-|	|                                  87|>>> Menu.menu_opcao(self_contas, self.__dict__, lista_self)    	|
+|	|>>> step: 2                      119|>>> if self.valor_matricula == '' or self.valor_senha == '':	|
+|	|                                 120|>>>    print('Digite uma matrícula e senha.\n')	 	        |
+|	|                                 121|>>> from modulo_agencia.modulo_menu_agencia import Menu	        |
+|	|                                 122|>>> Menu.cadastrar_usuario(self, lista_self)		        |
+|	|>>> step: 8                       89|>>> self_contas = lista_self.get('self_contas', )        	        |
+|	|                                  90|# from modulo_contas.modulo_contas import Contas        	        |
+|	|                                  91|# Contas(self.__dict__).menu_opcao(self.__dict__, lista_self)	|
+|	|                                  92|>>> from modulo_contas.modulo_menu_contas import Menu    	        |
+|	|                                  93|>>> Menu.menu_opcao(self_contas, self.__dict__, lista_self)    	|
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
 |004_2.2.0_3.2.1.1_                                                                                             |
 |---------------------------------------------------------------------------------------------------------------|
-13	|3.2.0_3.2.1.0_                      |                                   		        	|
-|	|3.2.1.1_ >>> line 56 - 57           |                                   		        	|
+13	|3.2.1.1_ >>> line 56 - 57           |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 13                      55|>>> self_contas = lista_self.get('self_contas',)                  |
-|	|                                  56|# from modulo_pessoa.modulo_pessoa import Pessoa                  |
-|	|                                  57|# Pessoa(self.__dict__).menu_opcao(agencia, self.__dict__, lista \|
-|	|                                  58|# _self)	                                                        |
-|	|                                  59|>>> from modulo_pessoa.modulo_menu_pessoa import Menu	        |
-|	|                                  60|>>> Menu.menu_opcao(self, agencia, self_contas, lista_self)       |
-|	|>>> step: 13 4.1.4_               43|# def menu_opcao(self, agencia, contas, lista_self):              |
+|	|>>> step: 13                      60|>>> self_pessoa = lista_self.get('self_pessoa',)                  |
+|	|                                  61|# from modulo_pessoa.modulo_pessoa import Pessoa                  |
+|	|                                    |# Pessoa(self.__dict__).menu_opcao(agencia, self.__dict__, lista \|
+|	|                                  62|# _self)	                                                        |
+|	|                                  63|>>> from modulo_pessoa.modulo_menu_pessoa import Menu	        |
+|	|                                  64|>>> Menu.menu_opcao(self_pessoa, agencia, self, lista_self)       |
+|	|>>> 4.1.4_ 		           43|# def menu_opcao(self, agencia, contas, lista_self):   # 4.1.4_   |
 |	|                                  44|#     from modulo_pessoa.modulo_menu_pessoa import Menu           |
 |	|                                  45|#     Menu.menu_opcao(self, agencia, contas, lista_self)  	|
 |---------------------------------------------------------------------------------------------------------------|
-6	|3.2.1.3_ >>> line 247 - 251           |                                   		        	|
-7	|3.2.1.2_ >>> line 114 - 117           |                                   		        	|
+6	|3.2.1.3_ >>> line 247 - 295         |                                   		        	|
+7	|3.2.1.2_ >>> line 115		     |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 6                      255|>>> if self.valor_dado_variavel == '':  		        	|
-|	|                                 256|>>> print('\nDigite_ uma opção válida.\n')	        	|
-|	|                                 257|>>> continue                       		        	|
-|	|                                 258|>>>                                      		        	|
-|	|                                 259|>>> elif self.valor_dado_variavel == '0': 	        	|
-|	|                                 260|>>> from modulo_contas.modulo_menu_contas import Menu        	|
-|	|                                 261|>>> Menu.menu_opcao(self, agencia, lista_self)            	|
-|	|>>> step: 7                      118|# if self.valor_conta_variavel == '0':  		        	|
-|	|                                 119|#     ...	                                                 	|
-|	|                                 120|# else:                               		        	|
-|	|                                 121|#     self.valor_conta_variavel = input(f'\n{self.nome_conta}:\n')|
-|	|                                 122|>>> self.valor_conta_variavel = input(f'\n{self.nome_conta}:\n')  |
+|	|>>> step: 6                      295|>>> if self.valor_dado_variavel == '':  		        	|
+|	|                                 296|>>> print('\nDigite_ uma opção válida.\n')	        	|
+|	|                                 297|>>> continue                       		        	|
+|	|                                 299|>>> elif self.valor_dado_variavel == '0': 	        	|
+|	|                                 300|>>> from modulo_contas.modulo_menu_contas import Menu        	|
+|	|                                 301|>>> Menu.menu_opcao(self, agencia, lista_self)            	|
+|	|>>> step: 7                      115|# if self.valor_conta_variavel == '0':  		        	|
+|	|                                 116|#     ...	                                                 	|
+|	|                                 117|# else:                               		        	|
+|	|                                 118|#     self.valor_conta_variavel = input(f'\n{self.nome_conta}:\n')|
+|	|                                 125|>>> self.valor_conta_variavel = input(f'\n{self.nome_conta}:\n')  |
 |---------------------------------------------------------------------------------------------------------------|
 15	|3.2.1.2_ >>> line 112               |                                   		        	|
 |---------------------------------------------------------------------------------------------------------------|
-|	|>>> step: 34 4.3.1.1_             7 |# self.conta_cadastrada = contas['conta_cadastrada']       	|
+|	|>>> step: 15 4.3.1.1_             7 |# self.conta_cadastrada = contas['conta_cadastrada']       	|
 |	|                                  8 |>>> conta_cadastrada = contas['conta_cadastrada']	                |
 |	|                                  11|# if self.conta_cadastrada is False:                              |
 |	|                                  12|>>> if conta_cadastrada is False:                                 |
@@ -131,7 +127,7 @@ step:	|execution_track:		     |code				        			|
 |	|                                 172|>>> agencia.update(conta_variavel=conta_variavel)   	        |
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
-|005_2.3.0_1.3.1.1_                                                                                              |
+|005_2.3.0_1.3.1.1_                                                                                             |
 |---------------------------------------------------------------------------------------------------------------|
 1	|1.2.0_1.2.1.0_                      |                                   		        	|
 |	|1.2.1.1_ >>> line 44                |                                   		        	|
@@ -327,6 +323,22 @@ step:	|execution_track:		     |code				        			|
 |	|                                 218|# self.lista_conta_json = f'lista_conta_{self.valor_agencia}.json'|
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 |020_2.2.5_3.2.1.2_                                                                                             |
 |---------------------------------------------------------------------------------------------------------------|
 	|>>> line                            |                                                           	|

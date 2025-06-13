@@ -307,7 +307,7 @@ step:	|execution_track:		     |code				        			|
 |	|3.2.1.1_ >>> line 26                |                                                           	|
 |---------------------------------------------------------------------------------------------------------------|
 |	|>>> step: 79                      20|>>> self.valor_agencia = agencia['valor_agencia']                 |
-|	|>>> ... 3.3.1.1_                  8|>>> valor_agencia = agencia['valor_agencia']                       |
+|	|>>> ... 3.3.1.1_                   8|>>> valor_agencia = agencia['valor_agencia']                      |
 |	|                                  32|# if self.valor_agencia == agencia_transferir:                    |
 |	|                                  33|>>> if valor_agencia == agencia_transferir:                       |
 |	|>>> ... 3.3.1.2_                 209|>>> valor_agencia = agencia['valor_agencia']                      |
@@ -323,20 +323,6 @@ step:	|execution_track:		     |code				        			|
 |	|                                 218|# self.lista_conta_json = f'lista_conta_{self.valor_agencia}.json'|
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 |020_2.2.5_3.2.1.2_                                                                                             |

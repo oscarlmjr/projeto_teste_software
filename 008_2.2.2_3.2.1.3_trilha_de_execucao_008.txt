@@ -62,9 +62,9 @@ step:	|execution_track:			|input:				|output:			|
 16	|3.2.1.3_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '5085', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0,\n  | 
-|'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm',\n |
-|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
+|{'Senha': '595', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, 'D\n| 
+|ébito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm','Ti\n|
+|po Pessoa': 'Pessoa Física'}                                                                                   |
 |---------------------------------------------------------------------------------------------------------------|
 17	|3.2.1.1_ 		                								|
 |	|...					|(2)                    	|				|
@@ -86,9 +86,9 @@ step:	|execution_track:			|input:				|output:			|
 22	|3.3.1.2_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '6413', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0,\n  | 
-|'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pe\n|
-|ssoa': 'Pessoa Jurídica'}                                                                                      |
+|{'Senha': '6413', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n| 
+|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pes\n|
+|soa': 'Pessoa Jurídica'}                                                                                       |
 |---------------------------------------------------------------------------------------------------------------|
 23	|3.2.1.1_               										|
 |	|...					|(2)                    	|				|
@@ -119,6 +119,7 @@ step:	|execution_track:			|input:				|output:			|
 |	|...					|(2)                    	|				|
 31	|3.2.1.7_                 										|
 |	|...					|(1)                    	|				|
+|	|...					|(1)                    	|				|
 |	|					|(1234)                    	|				|
 |	|...					|(1)                    	|...				|
 32	|4.3.1.1_       	        									|
@@ -130,9 +131,9 @@ step:	|execution_track:			|input:				|output:			|
 34	|3.3.1.2_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '7611', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0,\n  | 
-|'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm',\n |
-|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
+|{'Senha': '9070', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n| 
+|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', '\n|
+|Tipo Pessoa': 'Pessoa Física'}                                                                                 |
 |---------------------------------------------------------------------------------------------------------------|
 35	|3.2.1.1_               										|
 |	|...					|(2)                    	|				|
@@ -146,9 +147,9 @@ step:	|execution_track:			|input:				|output:			|
 39	|3.3.1.2_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '7945', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0,\n  | 
-|'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pe\n|
-|ssoa': 'Pessoa Jurídica'}                                                                                      |
+|{'Senha': '315', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, 'D\n| 
+|ébito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pess\n|
+|oa': 'Pessoa Jurídica'}                                                                                        |
 |---------------------------------------------------------------------------------------------------------------|
 40	|3.2.1.1_               										|
 |	|...					|(2)                    	|				|
@@ -161,9 +162,9 @@ step:	|execution_track:			|input:				|output:			|
 44	|3.3.1.2_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '6123', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n| 
+|{'Senha': '1181', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n| 
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '2345', 'Nome': 'Gabriel', 'Sexo': 'm',\n|
-| 'Tipo Pessoa': 'Pessoa Física'}                                                                               |
+|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
 |---------------------------------------------------------------------------------------------------------------|
 |deleted: lista._pessoa_0001.json                                                                               |
 |deleted: lista_contas_0001.json                                                                                |
@@ -172,6 +173,7 @@ step:	|execution_track:			|input:				|output:			|
 45	|3.2.1.1_               										|
 |	|...					|(2)                    	|				|
 46	|3.2.1.7_                 										|
+|	|...					|(1)                    	|				|
 |	|...					|(1)                    	|				|
 |	|...					|(1234)                    	|				|
 |	|...					|(1)                    	|...				|
@@ -189,9 +191,9 @@ step:	|execution_track:			|input:				|output:			|
 50	|3.2.1.3_                      										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '2998', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0,\n  | 
-|'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm',\n |
-|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
+|{'Senha': '3898', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n| 
+|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001'], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm','T\n|
+|ipo Pessoa': 'Pessoa Física'}                                                                                  |
 |---------------------------------------------------------------------------------------------------------------|
 51	|3.2.1.1_ 		                								|
 |	|...					|(2)                    	|				|

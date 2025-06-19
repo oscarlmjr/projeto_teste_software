@@ -1,7 +1,7 @@
-teste_v.0.0.8_projeto_sistema_bancario_v.0.0.5	
-017_2.2.4_3.2.1.2_interface_de_execucao_008
+teste_v.0.0.8_projeto_sistema_bancario_v.0.0.6	
+011_2.2.4_3.2.1.2_interface_de_execucao_008
 ----------------------------------------------	
-05/06/2025	
+19/06/2025	
 ----------------------------------------------	
 step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
@@ -10,16 +10,15 @@ step:	|execution_track:			|input:				|output:			|
 |'Boa Vista Bank'                                                             					|
 |'Agência 0001'                     	                                        				|
 |'Contas'                                                                                                       |
+|'Menu (0)'                              									|
 |'Listar (1) / Cadastrar (2) / Retornar ocorrências (3) / Transferir (4) / Descadastrar (5)			|
 |Pessoa (6) / Agência (7) / Matriz (8) / Sair (9):'                     					|
-|opcao                                                                       					|
 |---------------------------------------------------------------------------------------------------------------|
 |	|...					|(4)                    	|				|
 |---------------------------------------------------------------------------------------------------------------|
 2	|3.2.1.2_                 										|
 |modulo_contas.modulo_menu_contas.menu_opcao: 									|
-|'Menu (0)'                              									|
-|'Transferir'                                 									|
+|'transferir'                                 									|
 |---------------------------------------------------------------------------------------------------------------|
 3	|3.2.1.3_                 										|
 |modulo_contas.modulo_menu_contas.teste_dado_variavel:								|

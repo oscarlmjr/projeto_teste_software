@@ -65,7 +65,7 @@ step:	|execution_track:			|input:				|output:			|
 |{'1234': {'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                         |
 |---------------------------------------------------------------------------------------------------------------|
 |'lista_conta_0002:'                         									|
-|{'11111': {'Senha': '3898', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sa\n| 
+|{'11111': {'Senha': '3898', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sa\n|
 |ldo': 0, 'Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': ['0001', '0002'], 'RG': '1234', 'Nome': 'Osca\n|
 |r', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                                              |
 |---------------------------------------------------------------------------------------------------------------|

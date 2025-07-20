@@ -26,9 +26,6 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |'Digite uma opção válida.'	                                						|
 |---------------------------------------------------------------------------------------------------------------|
-|	|...					|(0)                    	|				|
-|	|3.2.1.1_                										|
-|	|...					|(4)                    	|				|
 |	|3.2.1.5_                 										|
 |	|...					|(-11111)                    	|				|
 |---------------------------------------------------------------------------------------------------------------|
@@ -78,16 +75,17 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|3.3.0_3.3.1.0_3.3.1.1_    										|
 |modulo_contas.modulo_lista_contas.listar_acao:         							|
-|v = {'Senha': '4679', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': \n|
-|90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Históric\n|
-|o': [['0001', , '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}         |
+|v =  {'Senha': '5672', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 9|
+|0, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Débito':|
+| 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': '|
+|m', 'Tipo Pessoa': 'Pessoa Física'}                                                                            |
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11111': {'Senha': '4679', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sa\n|
-|ldo': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Hi\n|
-|stórico': [['0001', '11111', '0002', '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'P\n|
-|essoa Física'}}                                                                                                |
+|{'11111': {'Senha': '5672', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
+|ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11111'], ['0002', '11111']], 'RG': '1234', 'N|
+|ome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                                   |
 |---------------------------------------------------------------------------------------------------------------|
 |	|3.3.1.3_                  										|
 |modulo_contas.modulo_lista_contas.transferir_conta:         							|
@@ -101,10 +99,10 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11111': {'Senha': '4679', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sa\n|
-|ldo': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Hi\n|
-|stórico': [['0001', '11111', '0002', '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'P\n|
-|essoa Física'}}                                                                                                |
+|{'11111': {'Senha': '5672', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
+|ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11111'], ['0002', '11111']], 'RG': '1234', 'N|
+|ome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                                   |
 |---------------------------------------------------------------------------------------------------------------|
 |	|4.3.0_4.3.1.0_4.3.1.1_    										|
 |modulo_pessoa.modulo_lista_pessoa.listar_variavel:         							|
@@ -134,23 +132,26 @@ step:	|execution_track:			|input:				|output:			|
 |	|3.2.1.3_                 										|
 |'Cadastrar'                                 									|
 |	|3.3.1.1_    			                							|
-|v = {'Senha': '2123', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': \n|
-|100, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 100}]}], 'Histó\n|
-|rico': [['0001', '11112']], 'RG': '2345', 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}    \n|
+|v = {'Senha': '9530', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 10|
+|0, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 100, 'Crédito': 100, 'Débit|
+|o': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11112']], 'RG': '2345', 'Nome': 'Gabriel', 'Sex|
+|o': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                                       |
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '2123', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
-|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345', '\n|
-|Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                 |
+|{'11112': {'Senha': '9530', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Sald|
+|o': 100, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 100, 'Crédito': 100, |
+|'Débito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345'|
+|, 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                             |
 |---------------------------------------------------------------------------------------------------------------|
 |	|3.3.1.3_                  										|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '2123', 'Conta Poupança': '11112', 'Agência': '0002', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
-|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345', '\n|
-|Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                 |
+|{'11112': {'Senha': '9530', 'Conta Poupança': '11112', 'Agência': '0002', 'Tipo Conta': 'Conta Poupança', 'Sald|
+|o': 100, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 100, 'Crédito': 100, |
+|'Débito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345'|
+|, 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                             |
 |---------------------------------------------------------------------------------------------------------------|
 |	|4.3.1.1_                  										|
 |'Pessoa'                                 									|
@@ -170,32 +171,33 @@ step:	|execution_track:			|input:				|output:			|
 |	|1.3.1.1_                   										|
 |	|3.2.1.3_                 										|
 |	|3.3.1.1_    			                							|
-|v_ = {'Senha': '9414', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo':\n|
-| 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Históri\n|
-|co': [['0001', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}                |
+|v = {'Senha': '4482', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 90|
+|, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Débito': |
+|0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo|
+| Pessoa': 'Pessoa Jurídica'}                                                                                   |
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'21111': {'Senha': '9414', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sa\n|
-|ldo': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Hi\n|
-|stórico':  [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa\n|
-| Jurídica'}}                                                                                                   |
+|{'21111': {'Senha': '4482', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
+|ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345',|
+| 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}}                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 |	|3.3.1.3_                  										|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'21111': {'Senha': '9414', 'Conta Corrente': '21111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sa\n|
-|ldo': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': [{'Depósito': 100}, {'Saldo': 90}]}], 'Hi\n|
-|stórico':  [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa\n|
-| Jurídica'}}                                                                                                   |
+|{'21111': {'Senha': '4482', 'Conta Corrente': '21111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
+|ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345',|
+| 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}}                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 |	|4.3.1.1_                  										|
 |	|4.3.1.2_                 										|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_pessoa_0002.json 	|
 |---------------------------------------------------------------------------------------------------------------|
-|{'2345': {'RG': '2345', 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                       |
+|{'12345': {'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}}                              |
 |---------------------------------------------------------------------------------------------------------------|
 |	|3.2.1.1_                										|
 |	|...					|(4)                    	|				|

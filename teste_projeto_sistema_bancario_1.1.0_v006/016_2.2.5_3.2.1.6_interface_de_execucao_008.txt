@@ -26,10 +26,6 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |'Digite uma opção válida.'	                                						|
 |---------------------------------------------------------------------------------------------------------------|
-|	|...					|(0)                    	|				|
-|---------------------------------------------------------------------------------------------------------------|
-|	|3.2.1.1_                										|
-|	|...					|(5)                    	|				|
 |	|3.2.1.6_                 										|
 |	|...					|(1)                    	|				|
 |	|...					|(-11111)                    	|				|
@@ -61,13 +57,13 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '5771', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
+|{'Senha': '0309', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11121'], [None]], 'RG': '3456', 'Nome': 'Ful\n|
 |ana', 'Sexo': 'f', 'Tipo Pessoa': 'Pessoa Física'}                                                             |
 |---------------------------------------------------------------------------------------------------------------|
 |'_Conta Corrente 11121 está sendo inativada.'                         						|
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|
-|{'Senha': '5771', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n| 
+|{'Senha': '0309', 'Conta Corrente': '11121', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11121'], [None]], 'RG': '3456', 'Nome': 'Ful\n|
 |ana', 'Sexo': 'f', 'Tipo Pessoa': 'Pessoa Física'}                                                             |
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|
@@ -80,13 +76,13 @@ step:	|execution_track:			|input:				|output:			|
 |	|3.3.1.1_                   										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '9176', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
+|{'Senha': '9103', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11122'], [None]], 'RG': '2345', 'Nome': 'Gab\n|
 |riel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                            |
 |---------------------------------------------------------------------------------------------------------------|
 |'_Conta Poupança 11122 está sendo inativada.'                     						|
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|
-|{'Senha': '9176', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
+|{'Senha': '9103', 'Conta Poupança': '11122', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11122'], [None]], 'RG': '2345', 'Nome': 'Gab\n|
 |riel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                            |
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|
@@ -98,13 +94,13 @@ step:	|execution_track:			|input:				|output:			|
 |	|3.3.1.1_                   										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '8574', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
+|{'Senha': '6859', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '21112'], [None]], 'CNPJ': '12345', 'Nome': '\n|
 |BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}                                                                    |
 |---------------------------------------------------------------------------------------------------------------|
 |'_Conta Corrente 21112 está sendo inativada.'                     						|
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|
-|{'Senha': '8574', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
+|{'Senha': '6859', 'Conta Corrente': '21112', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
 |Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '21112'], [None]], 'CNPJ': '12345', 'Nome': '\n|
 |BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}                                                                    |
 |'INATIVA ##### INATIVA ##### INATIVA'                                						|

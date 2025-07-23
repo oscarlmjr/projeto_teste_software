@@ -10,7 +10,7 @@ step:	|execution_track:			|input:				|output:			|
 |'Boa Vista Bank'												|
 |'Agência 0001'													|
 |'Menu (0)'													|
-|'Cadastrar Usuário (1) / Descadastrar Usuário (2) / Contas (3) / Matriz (4) / Sair (5):'			|
+|'Cadastrar Usuário (1) / Descadastrar Usuário (2) / Contas (3) / Sair (4):'            			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|...      				|(1)         			|				|
 |---------------------------------------------------------------------------------------------------------------|

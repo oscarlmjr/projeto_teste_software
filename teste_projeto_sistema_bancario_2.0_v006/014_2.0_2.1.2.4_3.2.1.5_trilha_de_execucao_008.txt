@@ -1,5 +1,5 @@
-teste_v.0.0.8_projeto_sistema_bancario_v.0.0.6	
-015_2.2.4_3.2.1.2_trilha_de_execucao_008
+teste_2.0_v.0.0.8_projeto_sistema_bancario_v.0.0.6	
+014_2.0_2.1.2.4_3.2.1.5_trilha_de_execucao_008
 ----------------------------------------------	
 19/06/2025
 ----------------------------------------------	
@@ -7,13 +7,6 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 1	|3.2.0_3.2.1.0_3.2.1.1_ 										|
 |	|					|(4)                    	|				|
-|	|3.2.1.5_                 										|
-|	|					|(>>>)                    	|				|
-|	|...					|(-11111)                    	|				|
-|	|...					|(>>>)                    	|				|
-|	|...					|(0)                    	|				|
-|	|3.2.1.1_                										|
-|	|...					|(4)                    	|				|
 |	|3.2.1.5_                 										|
 |	|...					|(-11111)                    	|				|
 |	|...					|(-0001)                    	|				|
@@ -35,7 +28,7 @@ step:	|execution_track:			|input:				|output:			|
 10	|3.3.0_3.3.1.0_3.3.1.1_    										|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11111': {'Senha': '5672', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|{'11111': {'Senha': '9964', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
 |o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
 |ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11111'], ['0002', '11111']], 'RG': '1234', 'N|
 |ome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                                   |
@@ -47,7 +40,7 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11111': {'Senha': '5672', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|{'11111': {'Senha': '9964', 'Conta Corrente': '11111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
 |o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
 |ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11111'], ['0002', '11111']], 'RG': '1234', 'N|
 |ome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                                   |
@@ -72,7 +65,7 @@ step:	|execution_track:			|input:				|output:			|
 18	|3.3.1.1_    			                							|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11112': {'Senha': '9530', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Sald|
+|{'11112': {'Senha': '9215', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Sald|
 |o': 100, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 100, 'Crédito': 100, |
 |'Débito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345'|
 |, 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                             |
@@ -81,7 +74,7 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'11112': {'Senha': '9530', 'Conta Poupança': '11112', 'Agência': '0002', 'Tipo Conta': 'Conta Poupança', 'Sald|
+|{'11112': {'Senha': '9215', 'Conta Poupança': '11112', 'Agência': '0002', 'Tipo Conta': 'Conta Poupança', 'Sald|
 |o': 100, 'Débito': 0, 'Crédito': 100, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 100, 'Crédito': 100, |
 |'Débito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '11112'], ['0002', '11112']], 'RG': '2345'|
 |, 'Nome': 'Gabriel', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}}                                             |
@@ -102,7 +95,7 @@ step:	|execution_track:			|input:				|output:			|
 26	|3.3.1.1_    			                							|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'21111': {'Senha': '4482', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|{'21111': {'Senha': '0720', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Sald|
 |o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
 |ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345',|
 | 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}}                                                         |
@@ -111,7 +104,7 @@ step:	|execution_track:			|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0002.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'21111': {'Senha': '4482', 'Conta Corrente': '21111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
+|{'21111': {'Senha': '0720', 'Conta Corrente': '21111', 'Agência': '0002', 'Tipo Conta': 'Conta Corrente', 'Sald|
 |o': 90, 'Débito': 0, 'Crédito': 90, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 90, 'Crédito': 90, 'Déb|
 |ito': 0, 'Saque': 10, 'Depósito': 100}}], 'Histórico': [['0001', '21111'], ['0002', '21111']], 'CNPJ': '12345',|
 | 'Nome': 'BV Code', 'Tipo Pessoa': 'Pessoa Jurídica'}}                                                         |

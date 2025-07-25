@@ -1,11 +1,11 @@
-teste_2.1.0_v.0.0.8_projeto_sistema_bancario_v.0.0.6
-011_2.1.0_2.1.2.1.3_5.3.1.4_interface_de_execucao_008
+teste_2.4.0_v.0.0.8_projeto_sistema_bancario_v.0.0.6	
+010_2.4.0_2.1.2.1.2_5.2.1.3_interface_de_execucao_008
 ----------------------------------------------	
-08/07/2025
+07/07/2025
 ----------------------------------------------	
 step:	|execution_track:                	|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
-|	|5.2.0_5.2.1.0_5.2.1.2_     										|
+1	|5.2.0_5.2.1.0_5.2.1.2_     										|
 |modulo_cliente.modulo_menu_cliente.menu_opcao: 								|
 |'Boa Vista Bank'                                                             					|
 |'Contas'                                                                                                       |
@@ -14,28 +14,31 @@ step:	|execution_track:                	|input:				|output:			|
 |'Menu (0)'                                                                                                     |
 |'Saldo (1) / Extrato (2) / Saque (3) / Depósito (4) / Transferir (5) / Contas (6) / Sair (7):' 		|
 |---------------------------------------------------------------------------------------------------------------|
-|	|...					|(3)                    	|				|
+|	|...					|(2)                    	|				|
 |---------------------------------------------------------------------------------------------------------------|
-|'Saque'                                                                                                        |
-|'Digite o valor:'                                                                                              |
+|'Extrato'                                                                                                      |
+|'Digite o mês desejado:'                                                                                       |
+|'(01) Jan (02) Fev (03) Mar (04) Abr (05) Mai (06) Jun                                                         |
+|'(07) Jul (08) Ago (09) Set (10) Out (11) Nov (12) Dez'                                                        |
 |---------------------------------------------------------------------------------------------------------------|
-|	|					|(10)                    	|				|
+|	|					|(7)                    	|				|
 |---------------------------------------------------------------------------------------------------------------|
-|	|5.3.1.4_                   										|
-|modulo_cliente.modulo_lista_cliente.saque_opcao: 								|
+|	|5.3.0_5.3.1.0_5.3.1.3_     										|
+|modulo_cliente.modulo_lista_cliente.extrato_opcao: 								|
 |---------------------------------------------------------------------------------------------------------------|
 3	|5.3.1.6_                   										|
 |modulo_cliente.modulo_lista_cliente.movimentacao_extrato: 							|
 |---------------------------------------------------------------------------------------------------------------|
-|'Saldo: R$ -10,00'                                                                                             |
-|'{'mês': '7', 'Saldo': -10, 'Crédito': 0, 'Débito': -10, 'Saque': 10, 'Depósito': 0}'                          |
+|'Não há movimentação nesse mês.'                                                                               |
+|'Saldo: R$ 0,00'                                                                                               |
+|'{'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, 'Saque': 0, 'Depósito': 0}'                               |
 |---------------------------------------------------------------------------------------------------------------|
 |	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '9964', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': -10, '|
-|Débito': -10, 'Crédito': 0, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': -10, 'Crédito': 0, 'Débito': -1|
-|0, 'Saque': 10, 'Depósito': 0}}], 'Histórico': [['0001', '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm',|
-| 'Tipo Pessoa': 'Pessoa Física'}                                                                               |
+|{'Senha': '9964', 'Conta Corrente': '11111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
+|Débito': 0, 'Crédito': 0, 'Extrato': [{'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, 'Saque': 0, 'Depósito|
+|': 0}], 'Histórico': [['0001', '11111']], 'RG': '1234', 'Nome': 'Oscar', 'Sexo': 'm', 'Tipo Pessoa': 'Pessoa Fí|
+|sica'}                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------|
 |	|5.2.1.2_                   										|
 |	|...					|(6)                    	|				|
@@ -43,7 +46,7 @@ step:	|execution_track:                	|input:				|output:			|
 |	|3.2.0_3.2.1.0_3.2.1.1_ 	     									|
 |modulo_contas.modulo_menu_contas.menu_opcao:                                         				|
 |'Boa Vista Bank'                                                             					|
-|'Agência 0001'                     	                                        				|
+|'Agência 0002'                     	                                        				|
 |'Contas'                                                                                                       |
 |'Menu (0)'                                                                                                     |
 |'Cliente (1) / Cadastrar (2) / Retornar ocorrências (3) / Transferir (4) / Descadastrar (5)			|
@@ -64,18 +67,24 @@ step:	|execution_track:                	|input:				|output:			|
 |---------------------------------------------------------------------------------------------------------------|
 |'listar_ Conta 11112 possui cadastro.'                                                                         |
 |{'Senha': '9215', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
-|Débito': 0, 'Crédito': 0, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, '\n|
-|Saque': 0, 'Depósito': 0}}], 'Histórico': [['0001', '11112']], 'RG': '2345', 'Nome': 'Gabriel', 'Sexo': 'm', \n|
-|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
+|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '11112']], 'RG': '2345', 'Nome': 'Gabriel', '\n|
+|Sexo': 'm', 'Tipo Pessoa': 'Pessoa Física'}                                                                    |
 |---------------------------------------------------------------------------------------------------------------|
 |	|5.2.1.2_                 										|
 |'Conta Poupança 11112'               	                                        				|
-|	|...					|(3)                    	|				|
-|	|...					|(10)                    	|				|
-|	|5.3.1.4_                   										|
-|	|5.3.1.6_                   										|
+|	|...					|(2)                    	|				|
+|	|...					|(7)                    	|				|
+|	|5.3.1.3_                    										|
+10	|5.3.1.6_                   										|
+|'Não há movimentação nesse mês.'                                                                               |
+|'Saldo: R$ 0,00'                                                                                               |
+|'{'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, 'Saque': 0, 'Depósito': 0}'                               |
+|	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|'Saldo insuficiente na conta.'                                                                                 |
+|{'Senha': '9215', 'Conta Poupança': '11112', 'Agência': '0001', 'Tipo Conta': 'Conta Poupança', 'Saldo': 0, '\n|
+|Débito': 0, 'Crédito': 0, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, '\n|
+|Saque': 0, 'Depósito': 0}}], 'Histórico': [['0001', '11112']], 'RG': '2345', 'Nome': 'Gabriel', 'Sexo': 'm', \n|
+|'Tipo Pessoa': 'Pessoa Física'}                                                                                |
 |---------------------------------------------------------------------------------------------------------------|
 |	|5.2.1.2_                   										|
 |	|...					|(6)                    	|				|
@@ -85,24 +94,26 @@ step:	|execution_track:                	|input:				|output:			|
 |	|...					|(21111)                    	|				|
 |	|3.3.1.1_                 										|
 |'listar_ Conta 21111 possui cadastro.'                                                                         |
+|{'Senha': '0720', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, '\n|
+|Débito': 0, 'Crédito': 0, 'Extrato': [], 'Histórico': [['0001', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code'\n|
+|, 'Tipo Pessoa': 'Pessoa Jurídica'}                                                                            |
+|	|5.2.1.2_                 										|
+|'Conta Corrente 21111'               	                                        				|
+|	|...					|(2)                    	|				|
+|	|...					|(7)                    	|				|
+|	|5.3.1.3_                    										|
+16	|5.3.1.6_                   										|
+|'Não há movimentação nesse mês.'                                                                               |
+|'Saldo: R$ 0,00'                                                                                               |
+|'{'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, 'Saque': 0, 'Depósito': 0}'                               |
+|	|					|                           	|lista_contas_0001.json         |
+|---------------------------------------------------------------------------------------------------------------|
 |{'Senha': '0720', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': 0, 'Dé|
 |bito': 0, 'Crédito': 0, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': 0, 'Crédito': 0, 'Débito': 0, 'Saqu|
 |e': 0, 'Depósito': 0}}], 'Histórico': [['0001', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo Pessoa': '|
 |Pessoa Jurídica'}                                                                                              |
-|	|5.2.1.2_               										|
-|	|...					|(3)                    	|				|
-|	|...					|(10)                    	|				|
-|	|5.3.1.4_                   										|
-17	|5.3.1.6_                   										|
-|'Saldo: R$ -10,00'                                                                                             |
-|'{'mês': '7', 'Saldo': -10, 'Crédito': 0, 'Débito': -10, 'Saque': 10, 'Depósito': 0}'                          |
-|	|					|                           	|lista_contas_0001.json         |
 |---------------------------------------------------------------------------------------------------------------|
-|{'Senha': '0720', 'Conta Corrente': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 'Saldo': -10, '|
-|Débito': -10, 'Crédito': 0, 'Extrato': [{'mês': '7', '7': {'mês': '7', 'Saldo': -10, 'Crédito': 0, 'Débito': -1|
-|0, 'Saque': 10, 'Depósito': 0}}], 'Histórico': [['0001', '21111']], 'CNPJ': '12345', 'Nome': 'BV Code', 'Tipo P|
-|essoa': 'Pessoa Jurídica'}                                                                                     |
-|---------------------------------------------------------------------------------------------------------------|
+|	|5.2.1.2_                   										|
 |	|...					|(6)                    	|				|
 |---------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------|

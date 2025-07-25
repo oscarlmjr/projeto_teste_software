@@ -8,7 +8,7 @@ step:	|execution_track:			|input:				|output:			|
 1	|4.2.0_4.2.1.0_4.2.1.1_ 										|
 |modulo_pessoa.modulo_menu_pessoa.menu_opcao: 									|
 |'Boa Vista Bank'                                                             					|
-|'Agência 0001'                     	                                        				|
+|'Agência 0002'                     	                                        				|
 |'Pessoa'                                                                                                       |
 |'Menu (0)'                              									|
 |'Listar (1) / Cadastrar (2) / Contas (3) / Agência (4) / Matriz (5) / Sair (6):'        			|
@@ -32,7 +32,7 @@ step:	|execution_track:			|input:				|output:			|
 |	|2.2.1.2_ 	                									|
 |modulo_agencia.modulo_menu_agencia.menu_opcao:              							|
 |'Boa Vista Bank'                                                             					|
-|'Agência 0001'                     	                                        				|
+|'Agência 0002'                     	                                        				|
 |'Cadastrar Usuário (1) / Descadastrar Usuário (2) / Contas (3) / Matriz (4) / Sair (5):'      			|
 |---------------------------------------------------------------------------------------------------------------|
 |	|             				|(3)         			|				|
@@ -40,7 +40,7 @@ step:	|execution_track:			|input:				|output:			|
 7	|3.2.1.1_ 	                									|
 |modulo_agencia.modulo_menu_agencia.menu_opcao:              							|
 |'Boa Vista Bank'                                                             					|
-|'Agência 0001'                     	                                        				|
+|'Agência 0002'                     	                                        				|
 |'Contas'                           	                                        				|
 |'Menu (0)'                           	                                        				|
 |'Cliente (1) / Cadastrar (2) / Retornar ocorrências (3) / Transferir (4) / Inativar (5) 			|

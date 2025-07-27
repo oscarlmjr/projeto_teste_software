@@ -1,4 +1,4 @@
-teste_v.0.0.8_projeto_sistema_bancario_v.0.0.6
+teste_1.1.0_v.0.0.8_projeto_sistema_bancario_v.0.0.6
 trilha_de_otimizacao_008
 --------------------------------------------
 13/06/2025

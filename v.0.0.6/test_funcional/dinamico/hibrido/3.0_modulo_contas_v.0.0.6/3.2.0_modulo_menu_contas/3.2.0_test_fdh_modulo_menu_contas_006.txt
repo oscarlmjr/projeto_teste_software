@@ -1,0 +1,144 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+3.0_modulo_contas_v.0.0.6 >>> 3.2.0_modulo_menu_contas
+--------------------------------------------
+.../ modulo_contas.Contas.menu_opcao >>> Menu.menu_opcao
+
+######################################
+
+
+        .../ \\\\\\\\\\
+        .../ \\\\\\\\\\
+        .../ \\\\\\\\\\
+        .../ \\\\
+--------------------------------------------
+
+Menu.menu_opcao: teste += _3.2.1
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool: 
+|  (1): Listar (1)
+|  (2): Cadastrar (2)
+|  (3): Retornar ocorrências (3)
+|  (4): Transferir (4)
+|  (5): Descadastrar (5)
+|  (6): Pessoa (6)
+|  (7): Agência (7)
+|  (8): Matriz (8)
+|  (9): Sair (9)
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool: 
+|  (1): Conta Poupança <<< Conta Corrente
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_contas.modulo_menu_contas.Menu.menu_acao()
+|  (2): modulo_pessoa.modulo_pessoa.Pessoa().menu_opcao()
+|  (3): modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+|  (4): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (5): modulo_contas.modulo_menu_contas.Menu.saida()
+
+test_fdh_modulo_menu_contas_004.json:
+[(True), (True), (True)]
+
+######################################
+
+
+\\\\
+[(True), (True)]
+\
+
+.../ Menu.menu_opcao >>>  Menu.menu_acao
+
+######################################
+
+
+.../ Menu.menu_opcao >>> Menu.menu_acao
+.../ \\\\\\\\\\
+.../ \\\\\\\\\\
+.../ \\\\\\\\
+.../ Menu.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_opcao
+.../ Menu.menu_opcao >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+.../ Menu.menu_opcao >>> Menu.saida
+.../ Menu.menu_opcao >>>  modulo_pessoa.modulo_pessoa.Pessoa().menu_opcao()
+.../ \
+--------------------------------------------
+.../ Menu.menu_opcao >>> Menu.menu_acao
+.../ \\\\\\\\\\
+.../ \\\\\\\\\\
+.../ \\\\\\\\
+--------------------------------------------
+
+Menu.menu_acao: teste += _3.2.2
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool: 
+|  Listar (1)
+|  Conta Poupança <<< Conta Corrente  
+|  (1): RG <<< CNPJ <<< RG
+|  Cadastrar (2)
+|  Conta Poupança <<< Conta Corrente
+|  (2): RG <<< CNPJ <<< RG
+|  Descadastrar (5)
+|  Conta Poupança <<< Conta Corrente
+|  (5): RG <<< CNPJ <<< RG
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Listar (1)
+|  Conta Poupança <<< Conta Corrente  
+|  (-1) Fail: RG <<< CNPJ <<< RG
+|  (1) Ok: RG <<< CNPJ <<< RG
+|  Cadastrar (2)
+|  Conta Poupança <<< Conta Corrente 
+|  (-2) Fail: CNPJ <<< RG
+|  (2) Ok: CNPJ <<< RG
+|  Retornar ocorrências (3)
+|  (-3) Fail: CNPJ <<< RG
+|  (3) Ok: CNPJ <<< RG
+|  Transferir (4)
+|  (-4) Fail: CNPJ <<< RG
+|  (4) Ok: CNPJ <<< RG
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Listar (1)
+|  Conta Poupança <<< Conta Corrente  
+|  (-1) Fail: Conta
+|  (1) Ok: Conta
+|  Descadastrar (5)
+|  Conta Poupança <<< Conta Corrente
+|  (-5): Fail: Conta
+|  (5) Ok: Conta
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Listar (1)
+|  Cadastrar (2)
+|  Retornar ocorrências (3)
+|  Transferir (4)
+|  Descadastrar (5)
+|  Bool:  
+|  (1, 2, 3, 4, 5): modulo_lista_contas.Lista.listar_acao()
+
+test_fdh_modulo_menu_contas_004.json:
+[(True), (-1, 1), (True)]
+[(True), (-2, 2), (True)]
+[(-3, 3), (True)]
+[(-4, 4), (True)]
+[(True), (-5, 5), (True)]
+
+.../ modulo_menu_contas.Menu.menu_acao >>> modulo_lista_contas.Lista.listar_acao
+.../ \\\\\\\\\\
+.../ \\\\\\\\\\\
+.../ \\\\\\\\
+--------------------------------------------
+.../ Menu.menu_opcao >>> Menu.saida
+--------------------------------------------
+Menu.saida: teste += '_2.3.5'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exit()
+
+.../ Menu.saida >>> system exit
+--------------------------------------------
+--------------------------------------------

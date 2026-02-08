@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+f'\nSe descadastrar sua matrícula a seção será encerrada.
+Continuar Sim (1) Não (2):'
+'1'
+
+f'Matrícula 11112 foi descadastrado.'
+
+variable_return:
+[(11112)]
+os.remove(self.lista_acesso_json)
+lista_acesso_0001 = not found
+modulo_agencia_matriz.Matriz.menu_self()
+--------------------------------------------
+f'\nUsuário__ Matrícula 11112 cadastrado e autenticado com sucesso.\n'
+
+variable_return:
+lista_acesso_0001 = [(11112, 1205)]
+modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+--------------------------------------------
+--------------------------------------------
+
+############################################
+
+
+
+
+
+
+
+f'Usuário_ Matrícula 11112 autenticado com sucesso.'
+lista_acesso_0001 = [[(11112, 1205)], []]
+
+f'Senha 1204_ está errada'
+lista_acesso_0001 = [[()], [(11112, 1204)]]
+
+f'Matrícula 11111__ está errada'
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+
+f'Usuário Matrícula 11112 autenticado com sucesso.'
+[(-1, 1), (-2, 2), (True)]
+lista_acesso_0001 = [(11112, 1205), []]
+
+'\nSenha errada.'
+[(-1, 1), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11112, 1204)]]
+
+'\nMatrícula errada.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11111, 1204)]]
+********************************************
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+lista_acesso_0001 tested: not return...
+--------------------------------------------
+
+
+
+
+Descadastrar Usuário (2)
+
+f'Matrícula 11111 foi descadastrado.'
+[(-1, 1), (True)]
+lista_acesso_0001 = [[(11112, 1205), ()], [11111]]
+
+'Se descadastrar sua matrícula a seção será encerrada.'
+Não (2)
+[(-1, 1), (True)]
+lista_acesso_0001 = [(11112, 1205), (11111, 1204)]
+
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+
+f'Usuário Matrícula 11111 cadastrado com sucesso.'
+print(self.lista_acesso[-1])
+lista_acesso_0001 = [(11112, 1205), (11111, 1204)]
+********************************************
+'Se descadastrar sua matrícula a seção será encerrada.'
+Sim (1)
+f'Matrícula 11111 foi descadastrado.
+print(self.lista_acesso)
+'O sistema está sendo finalizado.'
+[(-1, 1), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [11111]]
+
+f'Não existe usuário Matrícula 11113.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11111, 1204), (11112, 1205)], [11113]]
+********************************************
+Fail
+'\nUsuário cadastrado com sucesso.\n'
+print(self.lista_acesso[-1])
+[(-1, ), (-2, )]
+lista_acesso_0001 = [[(11111, 1204), (11112, 1205)], []]
+
+Fail(false)
+'\nO usuário já foi cadastrado.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11111, 1204), ], [(11111, 1204)]]
+********************************************
+Fail
+f'Usuário Matrícula 11111 cadastrado e autenticado com sucesso.'
+print(self.lista_acesso[-1])
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [(11111, 1204), [()]]
+--------------------------------------------
+--------------------------------------------

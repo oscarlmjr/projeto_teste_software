@@ -1,0 +1,179 @@
+--------------------------------------------
+--------------------------------------------
+
+n = len(tipo_variavel) * len(valor_dado) == 4
+p = len(tipo_variavel) * len(valor_dado) == 2 
+
+lista_conta.json: No such file  
+lista_pessoa.json: No such file
+test_modulo_contas_direto.json:  {[[(), (), ()], [(), (), ()], [(), ()]]}
+test_modulo_contas_hibrido.json: {[[[()], [()]], [[()], [()]]]}
+ 
+n_conta_corrente_rg = 11111                             # Nº Conta - OK / RG - fail
+n_conta_poupanca_rg = 11112                             # Nº Conta - OK / CNPJ - fail
+n_conta_corrente_cnpj = 21111                           # Nº Conta Poupanca - OK / CNPJ - OK
+n_nome = ''                                             # Nº Conta Corrente - OK / RG de outra Conta           
+n_rg = 1234         
+n_cnpj = 12345
+
+[[(), (), ()], [(), (), ()], [(), ()]] /
+[[(None, -1), (None, -2), (None, -1)], [(None, None), (None, None), (5, -5)], [(), ()]] /
+[[(None, -1), (None, -2), (0,)], [(0,), (0,), (0,)], [(), ()]]
+
+[[[()], [()]], [[()], [()]]] /
+[[[(None, None)], [(None)]], [[(True, True)], [(True)]]] /
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+Contas: teste += '_1'               |  OK:                               |  Fail:                                |  is not True and is not False: 
+Listar: teste = _1_2_1_2_1          |  Listar:                           |  Listar:                              |  Listar:        
+Conta Corrente - 1 >>> 1            |  (1): Nº Conta - OK / RG - OK      |  (-1): Nº Conta - fail / RG - fail    |  (3): Nº Conta - fail / RG - OK        
+1 - Possui cadastro: (1) (-1)       |  (2): Nº Conta - OK / CNPJ - OK    |  (-2): Nº Conta - fail / CNPJ - fail  |  (4): Nº Conta - fail / CNPJ - OK  
+2 - Não possui cadastro: (2) (-2)
+test_modulo_contas_direto.json:
+teste híbrido: (3) e (4)              
+test_modulo_contas_hibrido.json:
+[[(1, -1), (2, -2), (0,)], [(0,), (0,), (0,)], [(), ()]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+if intermittent result or 0 or True:
+    next execution
+
+Conta Poupança - 1 >>> 2                                # n_conta_corrente_rg = 11111
+1 - Possui cadastro: (1)                                # n_conta_poupanca_rg = 11112  
+2 - Não possui cadastro: (-1)                           # n_conta_corrente_cnpj = 21111
+test_modulo_contas_direto.json:
+teste híbrido: (3)
+test_modulo_contas_hibrido.json:
+[[(1, -1), (2, -2), (0,)], [(0,), (0,), (0,)], [(), ()]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+if intermittent result or 0 or True:
+    next execution
+
+if lista_conta.json == [[n], [p]] and test_modulo_conta.json[0] == 0:   # [(0,), (0,), (0,)]   # [(0, 0, 0,)]
+    Descadastrar()
+Cadastrar()
+
+-----------------------
+[[(None, -1), (None, -2), (None, -1)], [(), (), ()], [(), ()]] /
+[[(None, -1), (None, -2), (1, -1)], [(None, None), (None, None), (0,)], [(), ()]] /
+[[(1, -1), (2, -2), (0,)], [(0,), (0,), (0,)], [(), ()]]
+
+[[[(None, None)], [(None)]], [[()], [()]]] /
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] /
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+if lista_conta.json == [[], []] or lista_pessoa.json == [[], []]:
+    test_modulo_conta_hibrido()
+
+n_conta_corrente_rg = 11111                             # Nº Conta - OK / RG - fail
+n_conta_poupanca_rg = 11112                             # Nº Conta - OK / CNPJ - fail
+n_conta_corrente_cnpj = 21111                           # Nº Conta Poupanca - OK / CNPJ - OK
+n_nome = ''                                             # Nº Conta Corrente - OK / RG de outra Conta
+n_rg = 1234
+n_cnpj = 12345
+
+Contas: teste += '_2'               |  OK:                               |  Fail:                                |  is not True and is not False: 
+Cadastrar: teste = _1_2_1_2_1_2     |  Cadastrar:                        |  Cadastrar:                           |  Cadastrar:     
+Conta Corrente - 2 >>> 1            |  (5): Nº Conta - fail / RG - OK    |  (-5): Nº Conta - OK / RG - OK        |  (7): Nº Conta - fail / RG - fail
+1 - Não possui cadastro: (5) e (-5) |  (6): Nº Conta - fail / CNPJ - OK  |  (-6): Nº Conta - OK / CNPJ - OK      |  (8): Nº Conta - fail / CNPJ - fail
+2 - Possui cadastro: (6) e (-6)                                                                                                                      
+test_modulo_contas_direto.json:
+teste híbrido: (7) e (8)
+
+if lista_pessoa.json[0] == n:
+    teste híbrido(8)
+
+test_modulo_contas_hibrido.json:
+[[(0,), (0,), (0,)], [(5, -5), (6, -6), (0,)], [(), ()]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+if intermittent result or 0:                           # n_conta_corrente_rg = 11111
+    next execution                                     # n_conta_poupanca_rg = 11112
+elif intermittent error Log():                         # n_conta_corrente_cnpj = 21111
+    stop iteration()
+elif execution interrupted:
+    from modulo_listas import Lista
+    print(f'{self.classe()} !=:\n')
+    Lista.__init__(self)
+    print(f'{self.classe()}')
+    stop iteration()
+
+if lista_conta.json == [[n], [p]]:
+    Descadastrar()
+                              
+Conta Poupança - 2 >>> 2
+1 - Não possui cadastro: (5)    
+2 - Possui cadastro: (-5)
+test_modulo_contas_direto.json:
+teste híbrido: (7)
+
+lista_conta_corrente = [n]
+lista_conta_poupanca = [n]
+if len(lista_conta_poupanca) < n: (?)
+    next execution
+
+test_modulo_contas_hibrido.json:
+[[(None, -1), (None, -2), (0,)], [(0,), (0,), (0,)], [(), ()]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+if intermittent result or continuous execution:
+    stop iteration()
+
+if intermittent error Log():
+    stop iteration()
+
+if lista_conta.json != [[n], [p]] or test_modulo_conta.json[0] == None:    
+    Listar()
+Descadastrar()
+
+-----------------------
+[[(0,), (0,), (0,)], [(5, -5), (6, -6), (0,)], [(), ()]] /
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(9, -9), (9, -9)]] /
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(9, -9), (9, -9)]]
+
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] /
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] /
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]]
+
+n_conta_corrente_rg = 11111
+n_conta_poupanca_rg = 11112
+n_conta_corrente_cnpj = 21111
+
+Contas: teste += '_3'                       |  OK:                               |  Fail:                                |  is not True and is not False: 
+Descadastrar: teste = _1_2_1_2_1_2_3_3_3_3  |  Descadastrar:                     |  Descadastrar:                        |  Descadastrar:
+Conta Corrente -  3 >>> 1                   |  (9): Nº Conta - OK                |  (-9): Nº Conta - fail                |  None
+1 _ Possui cadastro: (9)
+2 _ Não possui cadastro: (-9)
+test_modulo_contas_direto.json:
+teste híbrido: None
+test_modulo_contas_hibrido.json:
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(9, -9), (0,)]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] 
+
+lista_conta_corrente = [n]
+lista_conta_poupanca = [n]
+if len(lista_conta_corrente) > 0:
+    next execution
+
+Conta Poupança -  3 >>> 2
+1 _ Possui cadastro: (9)
+2 _ Não possui cadastro: (-9)
+test_modulo_contas_direto.json:
+teste híbrido: None
+test_modulo_contas_hibrido.json:
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(9, -9), (9, -9)]]
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] 
+
+if lista_conta.json == [[], []]:
+    del lista_conta.json
+    del test_modulo_contas_hibrido.json
+    continue
+else:
+    Descadastrar()
+
+--------------------------------------------
+testes diretos (__main__.modulo_a): 16
+tipo: testes híbridos (__main__.modulo_a / modulo_b): 6
+--------------------------------------------
+--------------------------------------------

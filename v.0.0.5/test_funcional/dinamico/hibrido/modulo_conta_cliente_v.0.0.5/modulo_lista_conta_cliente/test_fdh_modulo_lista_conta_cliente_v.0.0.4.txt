@@ -1,0 +1,32 @@
+--------------------------------------------
+.../ modulo_conta_cliente.Menu.menu_opcao >>> modulo_lista_conta_cliente.Lista.lista_conta_cliente()
+.../ \\
+--------------------------------------------
+
+lista_conta_cliente: teste += '_6.3.1'
+
+|  teste_de_acesso_de_execucao_direta_sem_interrupcao:
+|  Bool:  
+|  (1): modulo_lista_conta_cliente.Lista.extrato_opcao()
+|  (2): modulo_contas.modulo_contas.Contas().menu_opcao
+
+test_fdh_modulo_contas_004.json:
+[(True)] /
+
+.../ modulo_lista_conta_cliente.Lista.lista_conta_cliente >>> modulo_menu_conta_cliente.Menu.menu_opcao
+.../ \
+.../ modulo_lista_conta_cliente.Lista.lista_conta_cliente >>> modulo_contas.modulo_contas.Contas().menu_opcao
+--------------------------------------------
+--------------------------------------------
+
+Lista.extrato_opcao: teste += '_6.3.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_menu_conta_cliente.Menu.menu_opcao()
+
+test_fdh_modulo_contas_004.json:
+[(True)] /
+
+--------------------------------------------
+--------------------------------------------

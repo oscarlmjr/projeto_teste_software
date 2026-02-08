@@ -1,0 +1,400 @@
+modulo_contas:
+--------------------------------------------
+Contas.menu_self: _3.1.2
+
+variable_return:
+self
+modulo_pessoa.modulo_pessoa.Pessoa.menu_self()
+--------------------------------------------
+variable_return:
+self
+modulo_pessoa.modulo_pessoa.Pessoa.menu_self()
+--------------------------------------------
+--------------------------------------------
+Contas.menu_opcao: _3.1.3
+
+variable_return:
+self
+[(True)]
+modulo_menu_contas.Menu.menu_opcao()
+--------------------------------------------
+--------------------------------------------
+
+
+
+
+Menu.menu_opcao: _2.2.1
+
+variable_return:
+f'Listar (1) / Cadastrar (2) / 
+Retornar ocorrências (3) / Transferir (4) / Descadastrar (5)
+Pessoa (6) / Agência (7) / Matriz (8) / Sair (9):'
+
+Matriz (8)
+[(-3, 3), (True)]
+********************************************
+Agência (7)
+[(True), (True)]
+********************************************
+Cadastrar (2)
+Conta Corrente
+[(True), (True)]
+********************************************
+Descadastrar (5)
+Conta Poupança <<< Conta Corrente
+[(True), (-5, 5), (True)]
+********************************************
+Transferir (4)
+CNPJ <<< RG
+[(-4, 4), (True)]
+********************************************
+Retornar ocorrências (3)
+CNPJ <<< RG
+[(-3, 3), (True)]
+********************************************
+Cadastrar (2)
+Conta Poupança <<< Conta Corrente
+[(True), (True)]
+********************************************
+Listar (1)
+Conta Poupança <<< Conta Corrente
+[(True), (True)]
+--------------------------------------------
+--------------------------------------------
+Menu.menu_acao: _2.2.2
+
+variable_return:
+
+Descadastrar (5)
+[21111]
+
+[11111]
+********************************************
+Cadastrar (2)
+Conta Corrente
+CNPJ <<< Ok
+[(True), (-2, 2), (True)]
+********************************************
+Descadastrar (5)
+Conta <<< Ok
+[11112]
+
+Conta <<< Fail
+[11122]
+
+Conta <<< Fail
+[21111]
+
+Conta <<< Fail
+[11111]
+********************************************
+Transferir (4)
+
+CNPJ <<< Ok
+[12345]
+
+CNPJ <<< Fail
+[23456]
+
+RG <<< Fail
+[1234]
+
+RG <<< Fail
+[3456]
+
+********************************************
+Retornar ocorrências (3)
+
+CNPJ <<< Ok
+[12345]
+
+CNPJ <<< Fail
+[23456]
+
+RG <<< Fail
+[1234]
+
+RG <<< Fail
+[3456]
+********************************************
+Listar (1)
+Conta Corrente
+RG <<< Ok
+ \ , [11112, 1234]
+
+CNPJ <<< Ok
+ \ , [21111, 12345]
+
+RG <<< RG <<< Ok
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)/
+, (11122, 2345)], [(21111, 12345), (21112, 12345)], [11111, 1234]]
+********************************************
+Cadastrar (2)
+Conta Poupança
+RG <<< Ok
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)]/
+, [(21111, 12345), (21112, 12345)], [11122, 1234]]
+
+Conta Poupança
+RG <<< Fail
+lista_conta_0001.json = [[(11111, 1234), (1234, 11121)], [(12345, 21111)/
+, (12345, 21112)], [2345]]
+--------------------------------------------
+Conta Corrente
+CNPJ <<< Ok
+[(-1, ), (-2, ), (True)]
+lista_conta_0001.json = [[(11111, 1234), (1234, 11121)], [(12345, 21111)]/
+, [(12345, 21112)]]
+
+CNPJ <<< Fail
+[(-1, ), (-2, ), (True)]
+lista_conta_0001.json = [[(11111, 1234), (1234, 11121)], [(12345, 21111)]]
+
+RG <<< Ok
+[(-1, 1), (-2, 2), (True)]
+lista_conta_0001.json = [[(11111, 1234)], [()], [(1234, 11121)]]
+
+RG <<< Fail
+[(-1, ), (-2, ), (True)]
+lista_conta_0001.json = [[()], [()], [(1234, 11111)]]
+********************************************
+Listar (1)
+Conta Poupança
+RG <<< Fail
+lista_conta_0001.json = [[], [], [(1234, 11112)]]
+Conta Corrente
+CNPJ <<< Fail
+[(-1, ), (-2, ), (True)]
+lista_conta_0001.json = [[], [], [(12345, 21111)]]
+RG <<< Fail
+[(-1, ), (-2, ), (True)]
+lista_conta_0001.json = [[], [], [(1234, 11111)]]
+********************************************
+--------------------------------------------
+--------------------------------------------
+Lista.listar_acao: _2.3.1
+
+variable_return:
+Descadastrar (5)
+f'Descadastrando: 21111'
+
+f'Descadastrando: 11111'
+********************************************
+Cadastrar (2)
+
+f'cadastrar_2 Conta 21111 não possui cadastro.'
+f'cadastrar RG 12345 possui cadastro.'
+f'\ncadastrar {self.dado_variavel} {self.valor_dado_variavel} possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+lista_conta_0001.json = [[(11111, 1234)], [()], [12345, 21111]]
+
+f'\ncadastrar_2 Conta 11111 não possui cadastro.'
+f'cadastrar RG 1234 possui cadastro.'
+f'\ncadastrar {self.dado_variavel} {self.valor_dado_variavel} possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+lista_conta_0001.json = [[()], [()], [(1234, 11111)]]
+********************************************
+Descadastrar (5)
+f'Descadastrando: 11112'
+lista_conta_0001.json = [[(11112, 2345)], [11112]]
+
+f'descadastrar 11122 não possui cadastro.'
+lista_conta_0001.json = [[(11112, 2345)], [11122]]
+
+f'descadastrar 21111 não possui cadastro.'
+lista_conta_0001.json = [[(11112, 2345)], [21111]]
+
+f'descadastrar 11111 não possui cadastro.'
+lista_conta_0001.json = [[(11112, 2345)], [11111]]
+********************************************
+Transferir (4)
+f'\nv = {dados}'
+f'\nv = {dados}'
+'Todas as ocorrências encontradas para 12345.'
+'Transferindo'
+
+f'23456 não possui nenhuma ocorrência.'
+
+f'\nv = {dados}'
+f'\nv = {dados}'
+f'\nv_ = {dados}'
+'Todas as ocorrências encontradas para 1234.'
+'Transferindo'
+
+f'3456 não possui nenhuma ocorrência.'
+********************************************
+Retornar ocorrências (3)
+f'\nv = {dados}'
+f'\nv = {dados}'
+'Todas as ocorrências encontradas para 12345.'
+
+f'23456 não possui nenhuma ocorrência.'
+
+f'\nv = {dados}'
+f'\nv = {dados}'
+f'\nv_ = {dados}'
+'Todas as ocorrências encontradas para 1234.'
+
+f'3456 não possui nenhuma ocorrência.'
+********************************************
+Listar (1)
+Conta Corrente
+
+f'listar_ 11112 possue cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)/
+, (11122, 2345)], [(21111, 12345), (21112, 12345)], [11112, 2345]]
+'Consultar o extrato do cliente: Sim (1) Não (2)\n'
+Sim (1)
+
+f'listar_ 21111 possue cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)/
+, (11122, 2345)], [(21111, 12345), (21112, 12345)], [21111, 12345]]
+'Consultar o extrato do cliente: Sim (1) Não (2)\n'
+Sim (1)
+
+\ <<<
+
+f'listar_ 11111 possue cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)/
+, (11122, 2345)], [(21111, 12345), (21112, 12345)], [11111, 1234]]
+'Consultar o extrato do cliente: Sim (1) Não (2)\n'
+Sim (1)
+********************************************
+Cadastrar (2)
+Conta Corrente
+f'\ncadastrar_2 Conta 11122 não possui cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)], [(21111, 12345), (21112, 12345)]/
+, [11122, 1234]]
+
+f'\ncadastrar_2 Conta 11112 não possui cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [(21111, 12345), (21112, 12345)]/
+, [11112, 2345]]
+
+f'\ncadastrar_2 Conta 21112 não possui cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [(21111, 12345)]/
+, [(12345, 21112)]]
+
+f'\ncadastrar_2 Conta 21111 não possui cadastro.'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [(12345, 21111)]]
+
+f'\ncadastrar_2 Conta 11121 não possui cadastro.'
+lista_conta_0001.json = [[(11111, 1234)], [()], [(1234, 11121)]]
+
+f'\ncadastrar_2 Conta 11111 não possui cadastro.'
+lista_conta_0001.json = [[()], [()], [(1234, 11111)]]
+********************************************
+Listar (1)
+Conta Poupança
+f'\listar_2 11112 não possui cadastro'
+Conta <<< Fail
+RG <<< Fail
+lista_conta_0001.json = [[], [], [(1234, 11112)]]
+--------------------------------------------
+Conta Corrente
+f'\listar_2 21111 não possui cadastro'
+Conta <<< Fail
+RG <<< CNPJ <<< RG <<< Fail
+lista_conta_0001.json = [[], [], [(12345, 21111)]]
+
+f'\listar_2 11111 não possui cadastro'
+Conta <<< Fail
+RG <<< Fail
+lista_conta_0001.json = [[], [], [(1234, 11111)]]
+********************************************
+--------------------------------------------
+--------------------------------------------
+Lista.cadastrar_conta: _2.3.2
+
+variable_return:
+Conta Corrente
+f'Conta Corrente 21111_ cadastrado com sucesso_.'
+lista_conta_0001.json = [[(11111, 1234)], [(12345, 21111)], [12345, 21111]]
+
+f'Conta Corrente 11111_ cadastrado com sucesso_.'
+print(f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n')
+lista_conta_0001.json = [[(11111, 1234)], [()], [(1234, 11111)]]
+--------------------------------------------
+Conta Poupança
+RG <<< Fail
+f'Conta Poupança 11122_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)]/
+, [(21111, 12345), (21112, 12345)], []]
+
+RG <<< Fail
+'Conta Poupança 11112_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234), (11112, 2345)]/
+, [(21111, 12345), (21112, 12345)], []]
+--------------------------------------------
+Conta Corrente
+CNPJ <<< Ok
+'Conta Corrente 21112_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [(21111, 12345)/
+, (21112, 12345)], []]
+
+CNPJ <<< Fail
+'Conta Corrente 21111_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [(21111, 12345)], []]
+
+RG <<< Ok
+'Conta Corrente 11121_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234), (11121, 1234)], [()], []]
+
+RG <<< Fail
+'Conta Corrente 11111_ cadastrado com sucesso_.'
+f'{self.lista_contas[self.opcao_conta][-1][self.valor_conta_variavel]}\n'
+lista_conta_0001.json = [[(11111, 1234)], [()], []]
+--------------------------------------------
+--------------------------------------------
+Lista.transferir_variavel: teste += '_2.3.3'
+
+variable_return:
+
+CNPJ
+lista_transferencia.json = [(11111, 1234), (11121, 1234), (11122, 1234)/
+(21111, 12345), (21112, 12345) [1234, 12345]]
+lista_conta_0001.json = [[(11112, 2345)], []]
+
+RG
+lista_transferencia.json = [(11111, 1234), (11121, 1234), (11122, 1234)/
+, [1234]]
+lista_conta_0001.json = [[(11112, 2345)], [(21111, 12345), (21112, 12345)]]
+--------------------------------------------
+--------------------------------------------
+Lista.descadastrar_conta: _2.3.4
+
+variable_return:
+Conta Corrente
+
+f'Confirma exclusão de 21111?\n'
+f'{self.lista_contas[self.opcao_conta][self.indice_conta][self.valor_conta_variavel]}\n'
+f'\nSim (1) Não(2)\n'
+Sim (1)
+f'21111 foi descadastrado'
+lista_conta_0001.json = [[()], [()], [21111]]
+
+f'Confirma exclusão de 11111?\n'
+f'{self.lista_contas[self.opcao_conta][self.indice_conta][self.valor_conta_variavel]}\n'
+f'\nSim (1) Não(2)\n'
+Sim (1)
+f'11111 foi descadastrado'
+lista_conta_0001.json = [[()], [(21111, 12345)], [11111]]
+
+f'Confirma exclusão de 11112?\n'
+f'{self.lista_contas[self.opcao_conta][self.indice_conta][self.valor_conta_variavel]}\n'
+f'\nSim (1) Não(2)\n'
+Sim (1)
+f'11112 foi descadastrado'
+lista_conta_0001.json = [[()], [()], [11112]]
+--------------------------------------------
+--------------------------------------------
+Menu.saida: _2.3.5
+
+variable_return:
+sys.exit()
+'\nO sistema está sendo finalizado.\n'
+--------------------------------------------

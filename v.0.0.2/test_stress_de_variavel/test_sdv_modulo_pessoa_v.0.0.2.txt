@@ -1,0 +1,80 @@
+--------------------------------------------
+--------------------------------------------
+
+n = len(tipo_variavel) * len(valor_dado) == 2
+p = len(tipo_variavel) * len(valor_dado) == 2 
+ 
+lista_pessoa.json: No such file / [[n], [n]]
+test_modulo_pessoa_direto.json:  {[[(), ()], [(), ()], [(), ()]]}
+                                                              
+n_nome = ''                                                   # lista_pessoa.json:  / [[0], []]                              
+n_rg = 1234                                                   # lista_pessoa.json: null / [[0], []]
+n_cnpj = 12345                                                # RG: letras, acentos, caracters especiais, enter              
+                                                              # CNPJ: letras, acentos, caracters especiais, enter          
+[[(), ()], [(), ()], [(), ()]] /
+
+Pessoa: teste += '_1'               |  OK:                             |  Fail:                        |  is not True and is not False:                  
+Listar: teste = _1                  |  Listar:                         |  Listar:                      |  Listar:               
+Pessoa Física - 1 >>> 1             |  (1): RG - OK                    |  (-1): RG - fail              |  0                
+1 - Possui cadastro: (1)            |  (2): CNPJ - OK                  |  (-2): CNPJ - fail            |       
+2 - Não possui cadastro: (-1) 
+test_modulo_pessoa.json = [[(), ()], [(), ()], [(), ()]] == None
+
+Pessoa Jurídica - 1 >>> 2           
+1 - Possui cadastro: (2)            
+2 - Não possui cadastro: (-2) 
+test_modulo_pessoa.json = [[(1, -1), (2, -2)], [(0,), (0,)], [(), ()]] == None
+
+if lista_pessoa.json == [[n], [p]] and test_modulo_pessoa.json[0] == 0 and test_modulo_pessoa.json[n] == 0:
+    return Descadastrar()
+Cadastrar()                                                 # RG: letras, acentos, caracters especiais, enter
+                                                            # CNPJ: letras, acentos, caracters especiais, enter
+-----------------------                                     # Nome: len(letras), números, acentos, caracters especiais, enter
+[[(None, -1), (None, -2)], [(), ()], [(), ()]] /            # Pessoa Física: Nome - '' / CNPJ - OK
+[[(1, -1), (2, -2)], [(3, -3), (4, -4)], [(), ()]]          # Pessoa Jurídica: Nome - '' / RG - OK
+
+Pessoa: teste = 1 / 2               |  OK:                             |  Fail:                        |  is not True and is not False:
+Cadastrar:                          |  Cadastrar:                      |  Cadastrar:                   |  Cadastrar:     
+Pessoa Física - 2 >>> 1             |  (3): Nome - '' / RG - fail      |  (-3): Nome - '' / RG - OK    |  0     
+1 - Não possui cadastro: (3)        |  (4): Nome - '' / CNPJ - fail    |  (-4): Nome - '' / CNPJ - OK  |
+2 - Possui cadastro: (-3)
+test_modulo_pessoa.json = [[(0,), (0,)], [(3, -3), (0,)], [(), ()]] == None
+
+Pessoa Jurídica - 2 >>> 2                   
+1 - Não possui cadastro: (4)
+2 - Possui cadastro: (-4)
+test_modulo_pessoa.json = [[(0,), (0,)], [(3, -3), (4, -4)], [(), ()]] == None
+
+if lista_pessoa.json != [[n], [p]] or test_modulo_pessoa.json[0] == None:
+    teste += 1
+    Listar()
+Descadastrar()
+
+----------------------- 
+[[(1, -1), (2, -2)], [(0,), (0,)], [(), ()]]
+
+Pessoa: teste = 3 / 4               |  OK:                             |  Fail:                        |  is not True and is not False:
+Descadastrar:                       |  Descadastrar:                   |  Descadastrar:                |  Descadastrar:
+Pessoa Física -  3 >>> 1            |  (5): RG - OK                    |  (-5): RG - fail              |  0
+1 - Possui cadastro: (5)            |  (6): CNPJ - OK                  |  (-6): CNPJ - fail            |
+2 - Não possui cadastro: (-5)
+test_modulo_pessoa.json = [[(0,), (0,)], [(0,), (0,)], [(5, -5), ()]] == None
+
+Pessoa Jurídica -  3 >>> 2               
+1 - Possui cadastro: (6)       
+2 - Não possui cadastro: (-6)
+test_modulo_pessoa.json = [[(0,), (0,)], [(0,), (0,)], [(5, -5), (6, -6)]] == None
+
+if lista_pessoa.json == [[], []]:
+    del lista_pessoa.json
+    continue
+else:
+    teste += 1
+    Descadastrar()
+
+--------------------------------------------
+testes diretos (um para um): 12
+tipo: a + b == 0
+tipo: testes híbridos (peso): 0
+--------------------------------------------
+--------------------------------------------

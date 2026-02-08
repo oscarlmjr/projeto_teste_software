@@ -1,0 +1,31 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+2.0_modulo_agencia_0001_v.0.0.6
+--------------------------------------------
+.../ 1.0_1.1_1.2_1.3_ >>> 2.0_2.1_2.2_2.3_
+--------------------------------------------
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  (1): modulo_contas.modulo_contas.Contas.menu_self()
+|  -----------------------------------------
+|  2.0_2.1_2.2_2.3_ >>> 3.1.0_3.1.1_3.1.2_3.1.3_
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+
+
+
+
+./ modulo_agencia_matriz.Matriz.menu_agencia >>> Agencia.menu_opcao
+--------------------------------------------
+Agencia.menu_opcao: teste += '_2.3' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+
+test_fdh_modulo_agencia_matriz_005.json:
+[(True)]
+
+.../ Agencia.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_opcao
+--------------------------------------------

@@ -1,0 +1,29 @@
+--------------------------------------------
+.../ modulo_lista_contas.Lista.listar_acao >>> modulo_conta_cliente.modulo_conta_cliente.ContaCliente.cliente_autenticacao
+.../ \\\
+--------------------------------------------
+
+ContaCliente.cliente_autenticacao: teste += '_6.1.1'
+
+|  teste_de_continuidade_de_execucao_dinamica_com_interrupcao_externa:
+|  Bool:  
+|  (1) '1': modulo_contas.modulo_menu_contas.Menu.menu_opcao()
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Autenticação
+|  (-2) Fail: Senha
+|  (2) Ok: Senha
+
+|  teste_de_continuidade_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (3): modulo_conta_cliente.modulo_menu_conta_cliente.Menu.menu_opcao()
+
+test_fdh_modulo_contas_004.json:
+[(True)] /
+[(True), (-2, 2), (True)] /
+
+.../ modulo_conta_cliente.ContaCliente.cliente_autenticacao >>> modulo_contas.modulo_menu_contas.Menu.menu_opcao
+.../ modulo_conta_cliente.ContaCliente.cliente_autenticacao >>> modulo_conta_cliente.modulo_menu_conta_cliente.Menu.menu_opcao()
+.../ \\
+--------------------------------------------
+--------------------------------------------

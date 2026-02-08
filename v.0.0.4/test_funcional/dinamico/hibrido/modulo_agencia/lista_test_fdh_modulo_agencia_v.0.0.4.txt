@@ -1,0 +1,188 @@
+modulo_agencia:
+--------------------------------------------
+menu_autenticacao: _4.1.1
+
+print(f'\nBoa Vista Bank')
+print(f'{self.classe_nome} {self.valor_agencia}')
+print('Autenticação')
+print('Sair (1)\n')
+
+f'Digite a Matrícula:\n'
+f'Digite a Senha:\n'
+
+variable_return:
+[(-1, 1), (-2, 2), (True)]
+lista_acesso_0001 = [[()], [(11112, 1205)]]
+
+[(-1, 1), (-2, ), (True)]
+lista_acesso_0001 = [[()], [(11112, 1204)]]
+
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+[(-1, 1), (-2, 2), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11112, 1205)]]
+
+[(-1, 1), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11112, 1204)]]
+
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11111, 1204)]]
+
+********************************************
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+--------------------------------------------
+--------------------------------------------
+lista_autenticacao: _4.2.1
+
+variable_return:
+
+f'Usuário_ Matrícula 11112 autenticado com sucesso.'
+lista_acesso_0001 = [[(11112, 1205)], []]
+
+f'Senha 1204_ está errada'
+lista_acesso_0001 = [[()], [(11112, 1204)]]
+
+f'Matrícula 11111__ está errada'
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+
+f'Usuário Matrícula 11112 autenticado com sucesso.'
+[(-1, 1), (-2, 2), (True)]
+lista_acesso_0001 = [(11112, 1205), []]
+
+'\nSenha errada.'
+[(-1, 1), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11112, 1204)]]
+
+'\nMatrícula errada.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [(11111, 1204)]]
+********************************************
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+lista_acesso_0001 tested: not return...
+--------------------------------------------
+--------------------------------------------
+lista_usuario: _4.2.2
+
+variable_return:
+Descadastrar Usuário (2)
+f'Matrícula 11111 foi descadastrado.'
+[(-1, 1), (True)]
+lista_acesso_0001 = [[(11112, 1205), ()], [11111]]
+
+'Se descadastrar sua matrícula a seção será encerrada.'
+Não (2)
+[(-1, 1), (True)]
+lista_acesso_0001 = [(11112, 1205), (11111, 1204)]
+
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+
+f'Usuário Matrícula 11111 cadastrado com sucesso.'
+print(self.lista_acesso[-1])
+lista_acesso_0001 = [(11112, 1205), (11111, 1204)]
+********************************************
+'Se descadastrar sua matrícula a seção será encerrada.'
+Sim (1)
+f'Matrícula 11111 foi descadastrado.
+print(self.lista_acesso)
+'O sistema está sendo finalizado.'
+[(-1, 1), (True)]
+lista_acesso_0001 = [[(11112, 1205)], [11111]]
+
+f'Não existe usuário Matrícula 11113.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11111, 1204), (11112, 1205)], [11113]]
+********************************************
+Fail
+'\nUsuário cadastrado com sucesso.\n'
+print(self.lista_acesso[-1])
+[(-1, ), (-2, )]
+lista_acesso_0001 = [[(11111, 1204), (11112, 1205)], []]
+
+Fail(false)
+'\nO usuário já foi cadastrado.'
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [[(11111, 1204), ], [(11111, 1204)]]
+********************************************
+Fail
+f'Usuário Matrícula 11111 cadastrado e autenticado com sucesso.'
+print(self.lista_acesso[-1])
+[(-1, ), (-2, ), (True)]
+lista_acesso_0001 = [(11111, 1204), [()]]
+--------------------------------------------
+--------------------------------------------
+Menu.menu_opcao: _4.1.2
+f'\nBoa Vista Bank\nAgência 0001\n'
+'Cadastrar Usuário (1) Descadastrar Usuário (2) Contas (3) Matriz (4) Sair (5):\n'
+Descadastrar Usuário (2)
+
+variable_return:
+'2'
+'2'
+Descadastrar Usuário (2)
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+Cadastrar Usuário (1)
+'1'
+********************************************
+Descadastrar Usuário (2)
+'2'
+'2'
+********************************************
+Cadastrar Usuário (1)
+'1'
+'1'
+--------------------------------------------
+--------------------------------------------
+Menu.cadastrar_usuario: _4.1.3
+********************************************
+shutdown force
+lista_acesso_0001 = [(11111, 1204), (11112, 1205)]
+********************************************
+
+variable_return:
+Cadastrar Usuário (1)
+valor_matricula Fail
+valor_senha Fail
+lista_acesso_0001 = [(11112, 1205), [(11111, 1204)]]
+********************************************
+valor_matricula Fail
+valor_senha Fail
+lista_acesso_0001 = [(11111, 1204), [(11112, 1205)]]
+valor_matricula Ok == Fail(false)
+valor_senha Ok == Fail(false)
+lista_acesso_0001 = [[()], [(11111, 1204)]]
+--------------------------------------------
+--------------------------------------------
+Menu.descadastrar_usuario: _4.1.4
+
+variable_return:
+valor_matricula Ok
+lista_acesso_0001 = [(11112, 1205), (11111, 1204), [11111]]
+********************************************
+valor_matricula Ok
+lista_acesso_0001 = [(11111, 1204), (11112, 1205), [11111]]
+valor_matricula Fail
+lista_acesso_0001 = [(11111, 1204), (11112, 1205), [11113]]
+[(-1, ), (True)]
+--------------------------------------------
+--------------------------------------------
+Menu.saida: _4.1.5
+
+variable_return:
+sys.exit()
+'\nO sistema está sendo finalizado.\n'
+--------------------------------------------

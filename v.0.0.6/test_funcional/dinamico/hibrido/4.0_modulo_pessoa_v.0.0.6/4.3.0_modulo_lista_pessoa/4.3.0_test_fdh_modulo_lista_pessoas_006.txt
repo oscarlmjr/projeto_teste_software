@@ -1,0 +1,110 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+4.0_modulo_pessoa_v.0.0.6 >>> 4.3.0_modulo_lista_pessoa
+--------------------------------------------
+.../ modulo_contas.modulo_lista_contas.Lista.listar_acao >>> modulo_lista_pessoa.Lista.listar_variavel
+.../ \\\
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ modulo_contas.modulo_lista_contas.Lista.listar_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ \
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ modulo_contas.modulo_lista_contas.Lista.listar_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ \
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ modulo_contas.modulo_lista_contas.Lista.listar_acao >>> modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel
+.../ modulo_menu_pessoa.Menu.menu_acao >>> modulo_lista_pessoa.Lista.listar_variavel
+.../ \\\\\\\\\\
+.../ \\
+--------------------------------------------
+
+Lista.listar_variavel: teste += '_3.2.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Listar (1)
+|  Cadastrar (2)  
+|  Bool:  
+|  (1): modulo_contas.modulo_contas.Contas().menu_opcao()
+|  (2): modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao()
+|  (3): modulo_pessoa.modulo_lista_pessoa.Lista.cadastrar_pessoa()
+|  (4): modulo_contas.modulo_lista_contas.Lista.cadastrar_conta()
+|  (5): modulo_pessoa.modulo_lista_pessoa.Lista.descadastrar_pessoa()
+
+test_fdh_modulo_pessoa_004.json:
+[(True)] /
+
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ \\
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_menu_pessoa.Menu.menu_acao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.cadastrar_conta
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_menu_pessoa.Menu.menu_acao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.cadastrar_conta
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_pessoa.Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.cadastrar_conta
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_pessoa.Pessoa().menu_opcao
+.../ \
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.descadastrar_conta
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_pessoa.Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.descadastrar_conta
+
+--------------------------------------------
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_lista_pessoa.Lista.cadastrar_pessoa
+.../ \\\\
+--------------------------------------------
+
+Lista.cadastrar_pessoa: teste += '_3.2.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_lista_pessoa.Lista.Lista.direcionamento()
+
+|  teste_de_acesso_de_execucao_dinamica_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_contas.modulo_lista_contas.Lista.cadastrar_conta()
+|  (2): modulo_pessoa.modulo_lista_pessoa.Lista.direcionamento()
+
+test_fdh_modulo_lista_pessoa_004.json:
+[(True)] /
+
+.../ modulo_lista_pessoa.Lista.cadastrar_pessoa >>> modulo_contas.modulo_lista_contas.Lista.cadastrar_conta
+.../ \\
+.../ modulo_lista_pessoa.Lista.cadastrar_pessoa >>> modulo_lista_pessoa.Lista.direcionamento
+.../ \\
+--------------------------------------------
+--------------------------------------------
+
+Lista.direcionamento: teste += '_3.2.3'
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool:
+|  (1): Contas (1)
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_pessoa.modulo_pessoa.Pessoa().menu_opcao()
+|  (2): modulo_contas.modulo_contas.Contas().menu_opcao()
+
+test_fdh_modulo_lista_pessoa_004.json:
+[(True), (True)]
+
+.../ modulo_lista_pessoa.Lista.direcionamento >>> modulo_contas.Contas().menu_opcao
+.../ modulo_lista_pessoa.Lista.direcionamento >>> modulo_pessoa.Pessoa().menu_opcao
+.../ \
+--------------------------------------------
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> modulo_contas.modulo_lista_contas.Lista.descadastrar_conta
+.../ \
+--------------------------------------------
+
+Lista.descadastrar: teste += '_3.2.4'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_lista_pessoa.Lista.Lista.direcionamento()
+
+test_fdh_modulo_lista_pessoa_004.json:
+[(True)]
+
+.../ modulo_contas.modulo_lista_contas.Lista.descadastrar_conta >>> modulo_lista_pessoa.Lista.Lista.direcionamento
+.../ \
+--------------------------------------------
+--------------------------------------------
+

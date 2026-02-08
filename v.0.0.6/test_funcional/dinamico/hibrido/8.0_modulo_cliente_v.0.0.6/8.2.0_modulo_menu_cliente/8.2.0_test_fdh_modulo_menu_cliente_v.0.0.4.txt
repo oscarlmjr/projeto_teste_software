@@ -1,0 +1,77 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+8.0_modulo_cliente_v.0.0.6 >>> 8.2.0_modulo_menu_cliente
+--------------------------------------------
+.../ modulo_cliente.modulo_cliente.cliente_autenticacao >>> modulo_menu_cliente.Menu.menu_autenticacao
+.../ modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao >>> modulo_menu_cliente.Menu.menu_autenticacao
+.../ \\\\
+--------------------------------------------
+
+Menu.menu_autenticacao: teste += '_7.2.1'
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Fail:  
+|  (-1, 1): dado_agencia
+|  (-2, 2): dado_conta
+|  (-3, 3): senha
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_interna:
+|  Bool:  
+|  (1): modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao()
+
+test_fdh_modulo_menu_cliente_004.json:
+[(-1, ), (-2, ), (-3, ), (True)]
+[(-1, 1), (-2, ), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, 3), (True)]
+
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_autenticacao >>> modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao
+.../ \\\\
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.extrato_opcao >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao
+.../ modulo_cliente.modulo_lista_cliente.Lista.movimentacao_conta >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao 
+.../ \
+--------------------------------------------
+
+Menu.menu_opcao: teste += '_7.2.2'                     
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool:
+|  (1): Saldo (1)
+|  (2): Extrato (2)
+|  (3): Saque (3)
+|  (4): Depósito (4)
+|  (5): Sair (5)
+
+|  teste_de_acesso_de_execucao_direta_sem_interrupcao:
+|  Bool:  
+|  (2): mes_extrato
+|  (3): valor_saque
+|  (4): valor_deposito
+
+|  teste_de_acesso_de_execucao_direta_sem_interrupcao:
+|  Bool:  
+|  (1, 2, 3, 4): modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada()
+|  (5): modulo_cliente.modulo_menu_cliente.Menu.saida()
+
+test_dhe_modulo_menu_agencia_004.json:
+[(True), (True)]
+[(True), (True), (True)]
+\\
+[(True), (True)]
+
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada
+.../ \\\
+--------------------------------------------
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_autenticacao >>> modulo_cliente.modulo_menu_cliente.Menu.saida
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_opcao >>> modulo_cliente.modulo_menu_cliente.Menu.saida
+--------------------------------------------
+Menu.saida: teste += '_7.2.3'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exit()
+
+.../ modulo_cliente.modulo_menu_cliente.Menu.saida >>> system exit

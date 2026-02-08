@@ -1,0 +1,25 @@
+modulo_agencia_0001:
+--------------------------------------------
+menu_self: _2.2
+
+variable_return:
+self
+modulo_contas.modulo_contas.Contas.menu_self()
+--------------------------------------------
+variable_return:
+self
+modulo_contas.modulo_contas.Contas.menu_self()
+--------------------------------------------
+--------------------------------------------
+menu_opcao: _2.3
+
+variable_return:
+self
+modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+--------------------------------------------
+
+
+********************************************
+Finish execution: modulo_agencia_0001
+********************************************
+--------------------------------------------

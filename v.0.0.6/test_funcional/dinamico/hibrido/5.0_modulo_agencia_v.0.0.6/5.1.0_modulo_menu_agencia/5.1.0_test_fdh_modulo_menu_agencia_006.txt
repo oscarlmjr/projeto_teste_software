@@ -1,0 +1,112 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+5.0_modulo_agencia_v.0.0.6 >>> 5.1.0_modulo_menu_agencia
+--------------------------------------------
+.../ 4.0_4.1.0_4.1.1_4.1.2_4.1.3_ >>> 5.0_5.1.0_5.1.1_5.1.2_
+--------------------------------------------
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  (-1, 1): valor_matricula
+|  (-2, 2): valor senha
+|  input(-1, -2): (11111, 1204)
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_interna:
+|  (1): modulo_lista_agencia.Lista.lista_autenticacao()
+|  -----------------------------------------
+|  5.0_5.1.0_5.1.1_5.1.2_ >>> 5.0_5.2.0_5.2.1_5.2.2_
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+|  .../ 6.0_6.1.0_6.1.1_6.1.2_ >>> 5.0_5.1.0_5.1.1_5.1.2_5.1.3_
+|  .../ \
+|  -----------------------------------------
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  (1): Cadastrar Usuário (1)
+|  input(1): (1)
+|  input(2): (1)
+
+|  teste_de_acesso_de_execucao_direta_sem_interrupcao:
+|  (1): Menu.cadastrar_usuario()
+|  -----------------------------------------
+|  5.0_5.1.0_5.1.1_5.1.2_5.1.3_ >>> 5.1.4_
+|  \
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+|  5.0_5.1.0_5.1.1_5.1.2_5.1.3_ >>> 5.1.4_
+|  \
+|  -----------------------------------------
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  (-1, 1): valor_matricula
+|  (-2, 2): valor senha
+|  input(-1, -2): (11112, 1205)
+|  input(1, 2): (11111, 1204)
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  (1): modulo_lista_agencia.Lista.lista_usuario()
+|  -----------------------------------------
+|  5.0_5.1.0_5.1.1_5.1.2_5.1.3_5.1.4_ >>> 5.0_5.2.0_5.2.1_5.2.3_
+|  \
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+
+
+
+
+############################################
+
+|  (2): Descadastrar Usuário (2)
+|  (3): Contas (3)
+|  (4): Matriz (4)
+|  (5): Sair (5)
+
+|  (2): Menu.descadastrar_usuario()
+|  (3): modulo_contas.modulo_contas.Contas.menu_opcao()
+|  (4): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (5): Menu.saida()
+############################################
+--------------------------------------------
+--------------------------------------------
+
+Menu.descadastrar_usuario: teste += '_5.1.4'                        
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Fail:  
+|  (-1, 1): valor_matricula
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_lista_agencia.Lista.lista_usuario()
+
+test_fdh_modulo_menu_agencia_005.json:
+[(-1), (True)]
+
+############################################
+
+[(-1, 1), (True)]
+
+.../ Menu.descadastrar_usuario >>> modulo_lista_agencia.Lista.lista_usuario
+
+############################################
+
+
+.../ \\
+--------------------------------------------
+.../ Menu.menu_opcao >>> Menu.saida
+.../ Menu.menu_autenticacao >>> Menu.saida
+--------------------------------------------
+Menu.saida: teste += '_4.1.5'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exit()
+
+.../ Menu.saida >>> system exit
+.../ \
+--------------------------------------------
+--------------------------------------------

@@ -1,0 +1,87 @@
+Report:
+
+--------------------------------------------
+test_funcional_com_interrupcao:
+tipo_hibrido_de_execucao: 37
+tipo_hibrido_de_execucao_com_interrupcao: 6
+--------------------------------------------
+Log (13):
+
+lista_conta.json:  No such file / [[n], [p]]
+lista_pessoa.json:  No such file / [[2], [p]]
+lista_transferencia.json:  No such file / [6]
+test_he_modulo_agencia_003.json:
+0
+teste: _1_2_3.1_2_3_3.1_3.1_2_2.1_2.1_3_4_4_4_4_5_5_6_6_6_6_7_7.1_7.2_7.3_7.3_7.3_7.3_7.4
+
+--------------------------------------------
+Conta
+Listar:     Cadastrar:      Retornar ocorrência:      Transferir:      Descadastrar:
+0           0               0                         0                0    
+Pessoa
+Listar:     Cadastrar:      Descadastrar: 
+0           0               0            
+--------------------------------------------
+--------------------------------------------
+test_funcional_com_interrupcao:
+tipo_hibrido_de_execucao: 37 == None
+tipo_hibrido_de_execucao_com_interrupcao: 6 == None
+--------------------------------------------
+Log (12):
+
+lista_conta.json:  No such file / [[], []]
+lista_pessoa.json:  No such file / [[2], [p]]
+lista_transferencia.json:  No such file / [2]
+test_he_modulo_agencia_003.json:
+[[(None, -1), (None, -2), (None, -1)], [(5, -5), (6, -6), (5, -5)], 
+[(9, -9), (10, -10)], [(11, -11), (12, -12)], [(13, -13), (None, -13)], [(1, -1), (2, None)],
+[(3, -3), (4, -4)], [(5, -5), (6, -6)]],
+[[(True)], [(None, None)], [(True(True,True), True(True, True))], [(True)], [(True)]]
+teste = _1_2_3_3.1_3.1_4
+_5_6_7_7.1_7.2_7.3_7.4_2
+_3_3.1_3.1_4_5_6_7
+--------------------------------------------
+
+Conta
+Listar:     Cadastrar:      Retornar ocorrência:      Transferir:      Descadastrar:
+None        None            None                      None             None
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar: 
+None        None            None           
+
+--------------------------------------------
+--------------------------------------------
+testes diretos: 16 == OK
+testes híbridos: 6 == OK
+--------------------------------------------
+Log (10):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
+lista_pessoa.json: No such file / [[], []] / [[n], [p]] / No such file
+test_modulo_contas_direto.json: 
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+test_modulo_contas_hibrido.json: 
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+teste = _1_2_1_2_1_2_3_3_3_3
+--------------------------------------------
+
+Listar:     Cadastrar:      Descadastrar:
+OK           OK               OK
+
+--------------------------------------------
+--------------------------------------------
+Log (6):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
+lista_pessoa.json: [[n], [p]] / No such file 
+test_modulo_contas_hibrido.json: [[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+test_modulo_contas_direto.json: [[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+teste = _1_2_1_2_3_3
+--------------------------------------------
+
+Listar:     Cadastrar:      Descadastrar:
+OK           OK               OK
+
+--------------------------------------------
+--------------------------------------------

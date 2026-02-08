@@ -1,0 +1,286 @@
+--------------------------------------------
+--------------------------------------------
+
+n = len(tipo_variavel) * len(valor_dado) == 4
+p = len(tipo_variavel) * len(valor_dado) == 2 
+
+lista_conta.json: [[n], [p]] 
+lista_pessoa.json: [[n], [p]]
+lista_transferencia.json: []
+test_sdv_modulo_agencia.json: {[]}
+
+aplicado em:
+test_dhe_modulo_agencia_0003
+
+|  Bool:
+|  (1): lista_pessoa.json:  /        
+|  (2): lista_conta.json:  /
+|  (3): lista_transferencia.json:  /        
+|  (4): lista_pessoa.json: null / 
+|  (5): lista_conta.json: null / 
+|  (6): lista_transferencia.json: null /  
+
+listas: teste += '_1'
+test_sdv_modulo_agencia.json:
+[[(True, True, True, True, True, True)]]
+
+-----------------------   
+lista_conta.json = [[{1234: 11111}, {2345: 11121}], 
+[{2345: 11112}, {1234: 11122}]], [[{12345: 21111}, {23456: 21112}]]
+[[(True, True, True, True, True, True)]] /
+
+|  Bool: 
+|  Listar:        
+|  (1): RG - fail / Conta Corrente/RG - OK      
+|  (2): RG de outra Conta - OK / Conta Corrente/RG - OK
+|  (3): CNPJ - fail / Conta Corrente/RG - OK
+|  (4): CNPJ - OK / Conta Corrente/RG - OK
+|  (5): RG - fail / Conta Corrente/CNPJ - OK 
+|  (6): RG - OK / Conta Corrente/CNPJ - OK
+|  (7): CNPJ - fail / Conta Corrente/CNPJ - OK
+|  (8): CNPJ de outra Conta - OK / Conta Corrente/CNPJ - OK
+|  (9): RG - fail / Conta Poupanca - OK
+|  (10): RG de outra Conta - OK / Conta Poupanca - OK
+|  (11): CNPJ - OK / Conta Poupanca - OK
+
+Conta Corrente: 1 >>> 1
+Contas: teste += '_2'
+Listar: teste = _1_2
+teste híbrido de execução:
+(1) / (2) / (3) / (4) / (5) / (6) / (7) / (8)
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True, True, True, True, True, True, True, True)]]
+
+Conta Poupança: 1 >>> 2 
+teste híbrido de execução:
+(9) / (10) / (11)
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True, True, True)]]
+
+Cadastrar()
+
+-----------------------
+lista_conta.json = [[{1234: 11111}, {2345: 11121}], [{2345: 11112}, {1234: 11122}]], 
+[[{12345: 21111}, {23456: 21112}]]
+[[(True, )], [(True,), (True,)]] /
+
+|  Bool: 
+|  Cadastrar:        
+|  (1): RG - fail / Conta Corrente/RG - OK        
+|  (2): RG de outra Conta - OK / Conta Corrente/RG - OK  
+|  (3): CNPJ - fail / Conta Corrente/RG - OK
+|  (4): CNPJ - OK / Conta Corrente/RG - OK
+|      (4.1): Não (2) - OK
+|      (4.2): Contas (1) - OK
+|  (5): RG - OK / Conta Corrente/CNPJ - OK
+|  (6): CNPJ de outra Conta - OK / Conta Corrente/CNPJ - OK 
+|  (7): CNPJ - fail / Conta Corrente/CNPJ - OK
+|  (8): RG - fail / Conta Poupanca - OK
+|  (9): RG de outra Conta - OK / Conta Poupanca - OK
+
+Conta Corrente: 2 >>> 1
+Contas: teste += '_3'
+Cadastrar: teste = _1_2_3
+teste híbrido de execução:
+(1) / (2) / (3) / (5) / (6) / (7)
+teste híbrido de execução com interrupção:
+Contas: teste += '_3.1'
+Cadastrar: teste = _1_2_3_3.1
+(4) / (4.1) / (4.2)
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True, True, True, True, True, True)], 
+[(True(True, True))]]
+
+Conta Poupança: 2 >>> 2
+teste híbrido de execução:
+(8) / (9)
+test_sdv_modulo_agencia.json: 
+[[(True, )], [(True,), (True,)], [(True, True, True, True, True, True), (True, True)], 
+[(True(True, True))]]
+
+Retornar ocorrencias()
+
+-----------------------
+lista_conta.json = [[{1234: 11111}, {2345: 11121}], [{2345: 11112}, {1234: 11122}]], 
+[[{12345: 21111}, {23456: 21112}]]
+[[(True, )], [(True,), (True,)], [(True, True, True, True, True, True), (True, True)], 
+[(True(True, True))]] /
+
+|  Bool: 
+|  Retornar ocorrencias:        
+|  (1): RG - OK       
+|  (2): RG - fail  
+|  (3): CNPJ - OK
+|  (4): CNPJ - fail
+                   
+Conta Corrente - 3
+Contas: teste += '_4'
+Retornar ocorrencias: teste = _1_2_3_3.1_4
+teste híbrido de execução:
+(1) / (2) / (3) / (4)
+
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True, True, True, True)], 
+[(True(True, True))]]
+
+Transferencias()
+
+-----------------------
+lista_conta.json = [[{1234: 11111}, {2345: 11121}], [{2345: 11112}, {1234: 11122}]], 
+[[{12345: 21111}, {23456: 21112}]]
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True, True, True, True)], 
+[(True(True, True))]] /
+
+|  Bool: 
+|  Transferencias:        
+|  (1): RG - OK       
+|  (2): RG - fail  
+|  (3): CNPJ - OK
+|  (4): CNPJ - fail 
+                   
+Conta Corrente: 3
+Contas: teste += '_5'
+Transferencias: teste = _1_2_3_3.1_4_5
+teste híbrido de execução:
+(1) / (2) / (3) / (4)
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True, True, True, True)], 
+[(True(True, True))]]
+
+Descadastrar()
+
+-----------------------
+lista_conta.json = [[{2345: 11121}], [{2345: 11112}]], [[{23456: 21112}]]
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True, True, True, True)], 
+[(True(True, True))]] /
+
+|  Bool: 
+|  Descadastrar:        
+|  (1): Conta Corrente (1) / Conta Poupanca - OK        
+|  (2): Conta Corrente (1) / Conta Poupanca - fail    
+|  (3): Conta Poupanca (2) / Conta Corrente - OK
+|  (4): Conta Poupanca (2) / Conta Corrente - fail
+
+Conta Corrente: 5 >>> 1
+Contas: teste += '_6'
+Descadastrar: teste = _1_2_3_3.1_4_5_6
+teste híbrido de execução:                                  
+(1) / (2)                  
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], [(True, True)]], 
+[(True(True, True))]
+
+Conta Poupança: 5 >>> 2
+teste híbrido de execução:
+(3) / (4)
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa()
+
+-----------------------
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+|  Bool: 
+|  Pessoa:        
+|  (1): Pessoa - letras, acentos, caracters especiais, enter        
+               
+Contas: teste += '_7'
+Pessoa: teste = _1_2_3_3.1_4_5_6_7
+Pessoa() - 5
+teste híbrido de execução:                                  
+(1) / (...)  
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa.Listar()
+
+--------------------------------------------
+--------------------------------------------
+
+n = len(tipo_variavel) * len(valor_dado) == 2
+p = len(tipo_variavel) * len(valor_dado) == 2 
+
+--------------------------------------------
+[[(), ()], [(), ()], [(), ()]] /
+
+|  Bool:
+|  Listar:
+|  (1): lista_pessoa.json:  / [[0], []]
+|  (2): lista_pessoa.json: null / [[0], []]
+|  (3): RG: letras, acentos, caracters especiais, enter
+
+Pessoa Física: 1 >>> 1
+Pessoa: teste += '_7.1'
+Listar: teste = _1_2_3_3.1_4_5_6_7_7.1
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa Jurídica: 1 >>> 2 
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa.Cadastrar()                                                 
+                                                            
+-----------------------                                     
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]       
+
+|  Bool:
+|  Cadastrar:  
+|  (4): RG: letras, acentos, caracters especiais, enter
+|  (5): CNPJ: letras, acentos, caracters especiais, enter
+|  (6): Nome: len(letras), números, acentos, caracters especiais, enter
+
+Pessoa Física: 2 >>> 1
+Pessoa: teste += '_7.2'
+Cadastrar: teste = _1_2_3_3.1_4_5_6_7_7.1_7.2
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa Jurídica: 2 >>> 2                   
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa.Descadastrar()
+
+----------------------- 
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+|  Bool:
+|  Descadastrar:  
+|  (7): RG: letras, acentos, caracters especiais, enter
+|  (8): CNPJ: letras, acentos, caracters especiais, enter
+|  (9): Nome: len(letras), números, acentos, caracters especiais, enter
+
+Pessoa Física:  3 >>> 1
+Pessoa: teste += '_7.3'
+Descadastrar: teste = _1_2_3_3.1_4_5_6_7_7.1_7.2_7.3
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+Pessoa Jurídica: 3 >>> 2 
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+
+if lista_pessoa > 0:
+    Pessoa.Contas()
+log_test_sdv_modulo_agencia_v.0.0.3
+
+--------------------------------------------
+
+test_de_execucao_direta: 48
+test_de_execucao_com_interrupcao: 2
+
+--------------------------------------------
+--------------------------------------------

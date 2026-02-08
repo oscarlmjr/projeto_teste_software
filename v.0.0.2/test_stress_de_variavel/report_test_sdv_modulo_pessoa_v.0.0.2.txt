@@ -1,0 +1,37 @@
+--------------------------------------------
+testes diretos: 3 == OK
+teste stress de variáveis == 1
+--------------------------------------------
+
+Log (2):
+test_modulo_pessoa
+lista_pessoa.json:  / [[0], []]
+test_modulo_pessoa_direto.json:
+[[(None, -1), (None, -2)], [(3,), (0,)], [(0,), (0,)]] == None
+teste = _1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------
+testes diretos: 3 == OK
+teste stress de variáveis == 1
+--------------------------------------------
+
+Log (1):
+test_modulo_pessoa
+lista_pessoa.json: null / [[0], []]
+test_modulo_pessoa_direto.json:
+[[(None, -1), (None, -2)], [(3,), (0,)], [(0,), (0,)]] == None
+teste = _1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------

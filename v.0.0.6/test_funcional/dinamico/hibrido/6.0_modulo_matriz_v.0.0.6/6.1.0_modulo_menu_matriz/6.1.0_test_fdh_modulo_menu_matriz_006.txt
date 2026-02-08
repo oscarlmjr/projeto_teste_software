@@ -1,0 +1,78 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+6.0_modulo_matriz_v.0.0.6 >>> 6.1.0_modulo_menu_matriz
+--------------------------------------------
+.../ 5.2.0_5.2.1_5.2.2_5.2.3_ >>> 6.0_6.1.0_6.1.1_6.1.2_
+.../ \
+--------------------------------------------
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  (1): Agência (1)
+|  input(1): (1)
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  (1): modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+|  -----------------------------------------
+|  6.0_6.1.0_6.1.1_6.1.2_ >>> 5.0_5.1.0_5.1.1_5.1.2_5.1.3_
+|  \
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+
+
+
+
+
+
+
+############################################
+
+
+|
+|  (2): Contas (2)
+|  (3): Filial (3)
+|  (4): Cadastrar agência (4)
+|  (5): Sair (5)
+|
+
+|  (2): modulo_contas.modulo_contas.Conta.menu_opca()
+|  (3): modulo_matriz.modulo_lista_matriz.Lista.acesso_filia()
+|  (4): modulo_matriz.modulo_lista_matriz.Lista.cadastrar_agencia()
+|  (5): Menu.saida()
+|
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: inpu
+|  Bool:
+|  Filial (3)
+|  (3): Menu (1)
+|  Cadastrar agência (4)
+|  (-4): confirmacao (1)
+|  (4): confirmacao (2)
+
+|  teste_de_continuidade_de_execucao_dinamica_com_interrupcao_externa: inpu
+|  Filial (3)
+|  Bool:
+|  (-3): valor_agencia
+|  (3): valor_agencia
+
+6.1.0_test_fdh_modulo_menu_matriz_006.json:
+[(True), (True)]
+\
+
+[(True), (True)]
+[(True), (True), (-3, 3)]
+[(True), (True), (-4, 4)]
+[(True), (True)]
+
+.../ Menu.menu_opcao >>> modulo_agencia_matriz.Matriz.menu_agencia
+.../ Menu.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_opcao
+
+--------------------------------------------
+Menu.saida: teste += '_5.1.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exi
+
+.../ Menu.menu_opcao >>> system exit
+--------------------------------------------
+--------------------------------------------

@@ -1,0 +1,129 @@
+--------------------------------------------
+.../ modulo_pessoa.modulo_pessoa.Pessoa().menu_self >>> Menu.menu_autenticacao
+.../ \
+    .../ Lista.lista_autenticacao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao
+    .../ Lista.lista_autenticacao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao
+.../ modulo_pessoa.modulo_pessoa.Pessoa().menu_self >>> Menu.menu_autenticacao
+--------------------------------------------
+
+Menu.menu_autenticacao: teste += '_4.1.1'
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Fail:  
+|  (-1, 1): valor_matricula
+|  (-2, 2): valor_senha
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_interna:
+|  Bool:  
+|  (1): modulo_lista_agencia.Lista.lista_autenticacao()
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  Sair (1):  
+|  (1):modulo_agencia.modulo_menu_agencia.Menu.saida()
+
+test_fdh_modulo_agencia_0001_004.json:
+[(True)]
+[(True)]
+
+
+test_fdh_modulo_menu_agencia_004.json:
+[(-1, 1), (-2, 2), (True)]
+
+.../ Menu.menu_autenticacao >>> modulo_lista_agencia.Lista.lista_autenticacao
+.../ \
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao >>> modulo_agencia.modulo_menu_agencia.Menu.saida
+--------------------------------------------
+.../ modulo_matriz.modulo_menu_matriz.Menu.menu_opcao >>> Menu.menu_opcao
+.../ modulo_lista_agencia.Lista.lista_usuario >>> Menu.menu_opcao
+.../ \\
+.../ modulo_matriz.modulo_menu_matriz.Menu.menu_opcao >>> Menu.menu_opcao
+.../ modulo_lista_agencia.Lista.lista_usuario >>> Menu.menu_opcao
+.../ \
+.../ modulo_contas.modulo_menu_contas.Menu.menu_opcao >>> Menu.menu_opcao
+--------------------------------------------
+
+Menu.menu_opcao: teste += '_4.1.2'                     
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool:
+|  (1): Cadastrar Usuário (1)
+|  (2): Descadastrar Usuário (2)
+|  (3): Contas (3)
+|  (4): Matriz (4)
+|  (5): Sair (5)
+
+|  teste_de_acesso_de_execucao_direta_sem_interrupcao:
+|  Bool:  
+|  (1): Menu.cadastrar_usuario()
+|  (2): Menu.descadastrar_usuario()
+|  (3): modulo_contas.modulo_contas.Contas().menu_opcao()
+|  (4): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (5): modulo_agencia.modulo_menu_agencia.Menu.saida()
+
+test_dhe_modulo_menu_agencia_004.json:
+[(True), (True)]
+\\\
+
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Menu.cadastrar_usuario
+.../ \
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Menu.descadastrar_usuario
+.../ \
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Menu.cadastrar_usuario
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Menu.descadastrar_usuario
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.saida
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ \
+-------------------------------------------- 
+-------------------------------------------- 
+
+Menu.cadastrar_usuario: teste += '_4.1.3'                        
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Fail:  
+|  (-1, 1): valor_matricula
+|  (-2, 2): valor_senha
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_lista_agencia.Lista.lista_usuario()
+
+test_fdh_modulo_menu_agencia_004.json:
+[(-1, ), (-2, ), (True)] /
+[(-1, 1), (-2, 2), (True)] /
+
+.../  Menu.cadastrar_usuario >>> modulo_lista_agencia.Lista.lista_usuario
+.../ \\
+--------------------------------------------
+
+Menu.descadastrar_usuario: teste += '_4.1.4'                        
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Fail:  
+|  (-1, 1): valor_matricula
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_lista_agencia.Lista.lista_usuario()
+
+test_fdh_modulo_menu_agencia_004.json:
+[(-1, 1), (True)] /
+
+.../ Menu.descadastrar_usuario >>> modulo_lista_agencia.Lista.lista_usuario
+.../ \\
+--------------------------------------------
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.saida
+.../ modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao >>> modulo_agencia.modulo_menu_agencia.Menu.saida
+--------------------------------------------
+Menu.saida: teste += '_4.1.5'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exit()
+
+.../ modulo_agencia.modulo_menu_agencia.Menu.saida >>> system exit
+.../ \
+--------------------------------------------
+--------------------------------------------

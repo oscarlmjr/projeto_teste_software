@@ -1,0 +1,29 @@
+--------------------------------------------
+
+Log (2):
+test_modulo_pessoa.json
+lista_pessoa.json: null / [[0], []]
+test_modulo_pessoa_direto.json: [[(None, -1), (None, -2)], [(3,), (0,)], [(0,), (0,)]] == None
+teste = _1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------
+
+Log (1):
+test_modulo_pessoa.json
+lista_pessoa.json: No such file / [[], []] / [[n], [p]] / [[], []] / No such file
+test_modulo_pessoa_direto.json: [[(0,), (0,)], [(0,), (0,)], [(0,), (0,)]] == 0
+teste = _1
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+0           0               0
+
+--------------------------------------------
+--------------------------------------------

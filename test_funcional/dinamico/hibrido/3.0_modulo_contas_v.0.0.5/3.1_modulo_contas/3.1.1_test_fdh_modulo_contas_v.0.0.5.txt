@@ -1,21 +1,24 @@
 --------------------------------------------
-.../ modulo_agencia_0001.Agencia.menu_self >>> modulo_contas.Contas().menu_self/
+.../ modulo_agencia_0001.Agencia.menu_self >>> Contas.menu_self/
 .../  \
 --------------------------------------------
-
-Contas.menu_self: teste += '_2.1.1'
+Contas.menu_self: teste += '_3.1.2'
 
 |  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
 |  Bool:  
-|  (1): modulo_pessoa.modulo_pessoa.Pessoa().menu_self
+|  (1): modulo_pessoa.modulo_pessoa.Pessoa.menu_self()
 
 test_fdh_modulo_contas_004.json:
 [(True)] /
 
-.../ modulo_contas.Contas().menu_self >>> modulo_pessoa.modulo_pessoa.Pessoa().menu_self
-.../  \
+.../ Contas.menu_self >>> modulo_pessoa.modulo_pessoa.Pessoa.menu_self()
+.../ \
 --------------------------------------------
-.../  modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Contas().menu_opcao
+.../  modulo_agencia.modulo_menu_agencia.Menu.menu_opcao >>> Contas.menu_opcao
+
+######################################
+
+
 .../ modulo_lista_pessoa.Lista.listar_variavel >>> Contas().menu_opcao
 .../ \\
 .../ modulo_lista_contas.Lista.cadastrar_conta >>>  Contas().menu_opcao
@@ -43,16 +46,21 @@ test_fdh_modulo_contas_004.json:
 .../ modulo_matriz.modulo_menu_matriz.Menu.menu_opcao >>> Contas().menu_opcao
 --------------------------------------------
 
-Contas.menu_opcao: teste += '_2.1.2'
+Contas.menu_opcao: teste += _3.1.3
 
 |  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
 |  Bool:  
 |  (1): modulo_menu_contas.Menu.menu_opcao()
 
-test_fdh_modulo_contas_004.json:
-[(True)] /
+test_fdh_modulo_contas_005.json:
+[(True)]
 
-.../ modulo_contas.modulo_contas.Contas().menu_opcao >>> modulo_menu_contas.Menu.menu_opcao
+.../ Contas.menu_opcao >>> modulo_menu_contas.Menu.menu_opcao
+
+######################################
+
+
+
 .../ \\\\\\\\\\
 .../ \\\\\\\\\\
 .../ \\\\\\\\\\

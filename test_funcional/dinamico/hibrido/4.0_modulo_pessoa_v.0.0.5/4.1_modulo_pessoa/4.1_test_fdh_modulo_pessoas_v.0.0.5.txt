@@ -1,0 +1,46 @@
+--------------------------------------------
+.../ modulo_contas.modulo_contas.Contas.menu_self >>> Pessoa.menu_self
+.../ \
+--------------------------------------------
+Pessoa.menu_self: teste += '_4.1.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao()
+
+test_fdh_modulo_pessoa_005.json:
+[(True)]
+[(True)]
+
+.../ Pessoa.menu_self >>> modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao
+.../ \
+--------------------------------------------
+.../ modulo_contas.modulo_menu_contas.Menu.menu_opcao >>> Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> Pessoa().menu_opcao
+.../ \\\
+.../ modulo_contas.modulo_menu_contas.Menu.menu_opcao >>> Pessoa().menu_opcao
+
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.direcionamento >>> Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> Pessoa().menu_opcao
+
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.direcionamento >>> Pessoa().menu_opcao
+.../ modulo_lista_pessoa.Lista.listar_variavel >>> Pessoa().menu_opcao
+
+.../ modulo_contas.modulo_menu_contas.Menu.menu_opcao >>> Pessoa().menu_opcao
+.../ \
+--------------------------------------------
+
+Pessoa.menu_opcao: teste += '_3.1.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): Menu.menu_opcao()
+
+test_fdh_modulo_pessoa_005.json:
+[(True)] /
+
+.../ Pessoa().menu_opcao >>> Menu.menu_opcao
+.../ \\\\\\\\\\
+.../ \\\\

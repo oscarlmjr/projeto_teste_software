@@ -1,0 +1,291 @@
+--------------------------------------------
+
+Log (11):
+test_modulo_conta.json
+lista_conta.json: null / [[0], []]
+test_modulo_conta_direto.json:
+[[(None, -1), (None, -2), (None, -1)], [(3,), (0,), (0,)], [(0,), (0,)]] == None
+test_modulo_contas_hibrido.json: 
+[[[(None, None)], [(None,)]], [[()], [()]]] == None
+teste = _1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------
+Log (10):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
+lista_pessoa.json: No such file / [[], []] / [[n], [p]] / No such file
+test_modulo_contas_direto.json: 
+[[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+test_modulo_contas_hibrido.json: 
+[[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+teste = _1_2_1_2_1_2_3_3_3_3
+--------------------------------------------
+
+Listar:     Cadastrar:      Descadastrar:
+OK           OK               OK
+
+--------------------------------------------
+--------------------------------------------
+Log (9):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] >>> [[n], [p]] ... No such fileNone
+lista_pessoa.json: No such file / [[0], [0]] >>> [[n], [p]] ... No such fileNone
+test_modulo_contas_direto.json: 
+[[(None, -1), (None, -2), (None, -1)], [(None, None), (None, None), ()], [(), ()]]
+test_modulo_contas_hibrido.json: 
+[[[(None, None)], [(None)]], [[(True, False)], [()]]]
+teste = _1_2
+--------------------------------------------
+
+teste = _1_2
+2 >>> 1 - error (1)
+(8): Nº Conta - fail / CNPJ - fail
+"cadastrar 12345 não possue cadastro.  
+
+12345 cadastrado com sucesso.
+
+
+Pessoa
+
+c_ Contas (1) / Pessoa (2):
+1
+
+PESSOA
+
+Listar (1) / Cadastrar (2) / Descadastrar (3):"
+--------------------------------------------
+
+Execution Interrupted:
+self.classe() != Lista.__init__(self)self.classe()
+
+--------------------------------------------
+--------------------------------------------
+
+Log (8):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] >>> [[n], [p]] ... No such file
+lista_pessoa.json: No such file / [[0], []] >>> [[n], [p]] ... No such file
+test_modulo_contas_hibrido.json: [[[(None, None)], [(None)]], [[(True, False)], [()]]]
+test_modulo_contas_direto.json: [[(None, -1), (None, -2), (None, -1)], [(None, None), (None, None), ()], [(), ()]]
+teste = _1_2
+--------------------------------------------
+
+teste = _1_2
+2 >>> 1 - error (1)
+Log (7):
+"
+    "teste = _1_2
+    2 >>> 1 - error (1)
+    (8): Nº Conta - fail / CNPJ - fail
+    "cadastrar_2 21111 e 12345 não possuem cadastro.
+
+    Contas
+
+    Deseja cadastrar Pessoa:     
+    Sim (1) / Não (2):
+    1
+
+    CONTAS
+
+    Listar (1) / Cadastrar (2) / 
+    Descadastrar (3):"
+    "
+
+--------------------------------------------
+
+Execution Interrupted()
+Intermittent error
+
+--------------------------------------------
+--------------------------------------------
+
+Log (7):
+test_modulo_conta:
+lista_conta.json: No such file / [[1], []] >>> [[n], [p]] ... No such file
+lista_pessoa.json: No such file / [[0], []] >>> [[n], [p]] ... No such file
+test_modulo_contas_hibrido.json: [[[(True, None)], [(True)]], [[(False, False)], [(False)]]]
+test_modulo_contas_direto.json: [[(0,), (None, -2), (0,)], [(0,), (None, None), (0,)], [(), ()]]
+teste = _1_2_1_2_1_2_1_2
+--------------------------------------------
+
+teste = _1_2
+2 >>> 1 - error (1)
+(8): Nº Conta - fail / CNPJ - fail
+"cadastrar_2 21111 e 12345 não possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+
+--------------------------------------------
+teste = _1_2
+2 >>> 1 - error (2)
+(7): Nº Conta - fail / RG - fail
+"cadastrar_2 11122 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+
+--------------------------------------------
+teste = _1_2_1_2
+2 >>> 1 - error (3)
+(7): Nº Conta - fail / RG - fail
+"cadastrar_2 11121 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2
+2 >>> 1 - error (4)
+(8): Nº Conta - fail / CNPJ - fail
+"cadastrar_2 21111 e 12345 não possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2
+2 >>> 2 - error (5)
+(5): Nº Conta - fail / RG - OK
+"cadastrar_2 11122 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2
+2 >>> 2 - error (6)
+(7): Nº Conta - fail / RG - fail
+"cadastrar_2 11122 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2_1_2
+2 >>> 1 - error (7)
+(7): Nº Conta - fail / RG - fail
+"cadastrar_2 11121 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2_1_2
+2 >>> 1 - error (8)
+(8): Nº Conta - fail / CNPJ - fail
+"cadastrar_2 21111 e 12345 não possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+--------------------------------------------
+teste = _1_2_1_2_1_2
+2 >>> 1 - error (9)
+(7): Nº Conta - fail / RG - fail
+"cadastrar_2 11122 e 2345 não 
+possuem cadastro.
+
+Contas
+
+Deseja cadastrar Pessoa:     
+Sim (1) / Não (2):
+1
+
+CONTAS
+
+Listar (1) / Cadastrar (2) / 
+Descadastrar (3):"
+
+--------------------------------------------
+
+Execution Interrupted()
+Continuous execution with repeating results.
+
+--------------------------------------------
+--------------------------------------------
+
+Log (6):
+test_modulo_conta:
+lista_conta.json: No such file / [[], []] / [[n], [p]] / No such file
+lista_pessoa.json: [[n], [p]] 
+test_modulo_contas_hibrido.json: [[[(True, True)], [(True)]], [[(True, True)], [(True)]]] == True
+test_modulo_contas_direto.json: [[(0,), (0,), (0,)], [(0,), (0,), (0,)], [(0,), (0,)]] == 0
+teste = _1_2_1_2_3_3
+--------------------------------------------
+
+Listar:     Cadastrar:      Descadastrar:
+OK           OK               OK
+
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------

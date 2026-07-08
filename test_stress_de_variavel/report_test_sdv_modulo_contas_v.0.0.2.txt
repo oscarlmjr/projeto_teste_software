@@ -1,0 +1,45 @@
+--------------------------------------------
+testes diretos: 7 == OK
+testes híbridos: 6 == OK
+teste stress de variáveis: 1 == OK
+--------------------------------------------
+
+Log (2):
+test_modulo_conta
+lista_conta.json:  / [[0], []]
+lista_pessoa.json:  / [[0], []]
+test_modulo_conta_direto.json:
+[[(None, -1), (None, -2), (None, -1)], [(5,), (0,), (0,)], [(0,), (0,)]] == None
+test_modulo_contas_hibrido.json: 
+[[[(None, None)], [(None,)]], [[(True, True)], [(True)]]] == True
+teste = _1_2_1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------
+testes diretos: 7 == OK
+testes híbridos: 6 == OK
+teste stress de variáveis: 1 == OK
+--------------------------------------------
+
+Log (1):
+test_modulo_conta
+lista_conta.json: null / [[0], []]
+lista_pessoa.json: null / [[0], []]
+test_modulo_conta_direto.json:
+[[(None, -1), (None, -2), (None, -1)], [(5,), (0,), (0,)], [(0,), (0,)]] == None
+test_modulo_contas_hibrido.json: 
+[[[(None, None)], [(None,)]], [[(True, True)], [(True)]]] == True
+teste = _1_2_1_2
+--------------------------------------------
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar:
+None           None               None
+
+--------------------------------------------
+--------------------------------------------

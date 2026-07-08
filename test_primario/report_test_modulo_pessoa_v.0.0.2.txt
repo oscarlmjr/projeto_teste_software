@@ -6,11 +6,11 @@ testes híbridos: 0 == None
 teste de stress de variáveis == None
 --------------------------------------------
 
-Log (3):
+Log (1):
 test_modulo_pessoa.json
 lista_pessoa.json: No such file / [[], []] / [[n], [p]] / [[], []] / No such file
-test_modulo_pessoa.json: [[(0,), (0,)], [(0,), (0,)], [(0,), (0,)]] == 0
-teste = 4
+test_modulo_pessoa_direto.json: [[(0,), (0,)], [(0,), (0,)], [(0,), (0,)]] == 0
+teste = _1
 --------------------------------------------
 
 Pessoa

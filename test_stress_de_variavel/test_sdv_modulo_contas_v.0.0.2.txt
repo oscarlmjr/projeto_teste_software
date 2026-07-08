@@ -1,0 +1,156 @@
+--------------------------------------------
+--------------------------------------------
+
+n = len(tipo_variavel) * len(valor_dado) == 4
+p = len(tipo_variavel) * len(valor_dado) == 2 
+
+lista_conta.json: [[n], [p]] 
+lista_pessoa.json: [[n], [p]]
+test_modulo_contas_hibrido.json: {[(), (), (), (), (), (), (), (), (), (), ()] /}
+
+Aplicado em:                            |  True / False / None:
+test_modulo_contas_v.0.0.2              |  (1): lista_conta.json: null / 
+                                        |  (2): lista_pessoa.json: null / 
+                                        |  (3): lista_conta.json:  /
+                                        |  (4): lista_pessoa.json:  /        
+
+-----------------------   
+[(), (), (), (), (), (), (), (), (), (), ()] /
+
+Contas: teste += '_1'                   |  True / False / None: 
+Listar: teste = _1                      |  Listar:        
+Conta Corrente - 1 >>> 1                |  (1): Conta Corrente/RG - OK / RG - fail        
+                                        |  (2): Conta Corrente/RG - OK / RG de outra Conta - OK  
+                                        |  (3): Conta Corrente/RG - OK / CNPJ - fail
+teste híbrido:                          |  (4): Conta Corrente/RG - OK / CNPJ - OK
+(1) / (2) / (3) / (4)                   |  (5): Conta Corrente/CNPJ - OK / RG - fail
+(5) / (6) / (7) / (8)                   |  (6): Conta Corrente/CNPJ - OK / RG - OK
+                                        |  (7): Conta Corrente/CNPJ - OK / CNPJ - fail
+                                        |  (8): Conta Corrente/CNPJ - OK / CNPJ de outra Conta - OK
+                                        |  (9): Conta Poupanca - OK / RG - fail
+                                        |  (10): Conta Poupanca - OK / RG de outra Conta - OK
+                                        |  (11): Conta Poupanca - OK / CNPJ - OK
+test_modulo_contas_hibrido.json:
+[(True,), (True,), (True,), (True,), (True,), (True,), (True,), (True,), (), (), ()] /
+
+Listar: teste = _1
+Conta Poupança - 1 >>> 2 
+
+teste híbrido:
+(9) / (10) / (11)
+
+test_modulo_contas_hibrido.json:
+[(True,), (True,), (True,), (True,), (True,), (True,), 
+(True,), (True,), (True,), (True), (True)] /
+
+Cadastrar()
+
+-----------------------
+[(True,), (True,), (True,), (True,), (True,), (True,), 
+(True,), (True,), (True,), (True), (True)] /
+
+Contas: teste += '_2'                   |  True / False / None: 
+Cadastrar: teste = _1_2                 |  Cadastrar:        
+Conta Corrente - 2 >>> 1                |  (1): Conta Corrente/RG - OK / RG - fail        
+teste unitário:                         |  (2): Conta Corrente/RG - OK / RG de outra Conta - OK  
+                                        |  (3): Conta Corrente/RG - OK / CNPJ - fail
+                                        |  (4): Conta Corrente/RG - OK / CNPJ - OK
+teste híbrido:                          |  (5): Conta Corrente/CNPJ - OK / RG - OK
+(1) / (2) / (3) / (4)                   |  (6): Conta Corrente/CNPJ - OK / CNPJ de outra Conta - OK 
+(5) / (6) / (7)                         |  (7): Conta Corrente/CNPJ - OK / CNPJ - fail
+                                        |  (8): Conta Poupanca - OK / RG - fail
+                                        |  (9): Conta Poupanca - OK / RG de outra Conta - OK
+test_modulo_contas_hibrido.json:
+[(True, True), (True, True), (True, True), (True, True), (True, True), (True, True), 
+(True, True), (True,), (True,), (True), (True)] /
+
+Cadastrar: teste = _1_2
+Conta Poupança - 2 >>> 2
+
+teste híbrido:
+(8) / (9)
+
+test_modulo_contas_hibrido.json: 
+[(True, True), (True, True), (True, True), (True, True), (True, True), (True, True), 
+(True, True), (True, True), (True, True), (True), (True)] /
+
+RetornarOcorrencias()
+
+-----------------------
+[(True, True), (True, True), (True, True), (True, True), (True, True), (True, True), 
+(True, True), (True, True), (True, True), (True), (True)] /
+
+Contas: teste += '_3'                   |  True / False / None: 
+RetornarOcorrencias: teste = _1_2_3     |  RetornarOcorrencias:        
+Conta Corrente - 3 >>> 1                |  (1): Conta Corrente/RG - OK       
+teste unitário:                         |  (2): Conta Corrente/RG - fail  
+                                        |  (3): Conta Corrente/CNPJ - OK
+                                        |  (4): Conta Corrente/CNPJ - fail 
+teste híbrido:                          |  (5): Conta Poupanca/RG - OK
+(1) / (2)                               |  (6): Conta Poupanca/RG - fail
+(3) / (4)                   
+
+test_modulo_contas_hibrido.json:
+[(True, True, True), (True, True, True), (True, True, True), (True, True, True), 
+(True, True), (True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+RetornarOcorrencias: teste = _1_2_3
+Conta Poupança - 3 >>> 2
+
+teste híbrido:
+(5) / (6)
+
+test_modulo_contas_hibrido.json:
+[(True, True, True), (True, True, True), (True, True, True), (True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+Descadastrar()
+
+-----------------------
+[(True, True, True), (True, True, True), (True, True, True), (True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+Contas: teste += '_4'                   |  True / False / None: 
+Descadastrar: teste = _1_2_3_4          |  Descadastrar:        
+Conta Corrente - 4 >>> 1                |  (1): Conta Corrente / Conta Poupanca - OK        
+                                        |  (2): Conta Corrente / Conta Poupanca - fail    
+                                        |  (3): Conta Poupanca / Conta Corrente - OK
+                                        |  (4): Conta Poupanca / Conta Corrente - fail
+teste híbrido:                                  
+(1) / (2)                                       
+
+test_modulo_contas_hibrido.json:
+[(True, True, True, True), (True, True, True, True), (True, True, True), (True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+Descadastrar: teste = _1_2_3_4
+Conta Poupança - 4 >>> 2
+
+teste híbrido:
+(3) / (4)
+
+test_modulo_contas_hibrido.json: 
+[(True, True, True, True), (True, True, True, True), (True, True, True, True), (True, True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+Pessoa()
+
+-----------------------
+[(True, True, True, True), (True, True, True, True), (True, True, True, True), (True, True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+Contas: teste += '_5'                   |  True / False / None: 
+Pessoa: teste = _1_2_3_4_5              |  Pessoa:        
+Pessoa() - 5                            |  (1): Pessoa - letras, acentos, caracters especiais, enter        
+               
+teste híbrido:                                  
+(1) / (...)                                        
+
+test_modulo_contas_hibrido.json:
+[(True, True, True, True), (True, True, True, True), (True, True, True, True), (True, True, True, True), 
+(True, True, True), (True, True, True), (True, True), (True, True), (True, True), (True), (True)] /
+
+--------------------------------------------
+tipo: teste híbrido (__main__.modulo_a / modulo_b): 30
+--------------------------------------------
+--------------------------------------------

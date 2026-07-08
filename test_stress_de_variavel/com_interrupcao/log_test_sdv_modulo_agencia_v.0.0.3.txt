@@ -1,4 +1,69 @@
 --------------------------------------------
+--------------------------------------------
+
+Log (5):
+26/07/2023_17:40:36
+test_sdv_modulo_agencia_v.0.0.3
+lista_conta.json: [[n], [p]]
+lista_pessoa.json: [[n], [p]]
+lista_transferencia: [6]
+test_sdv_modulo_agencia.json:
+[[(True, )], [(True,), (True,)], [(True,), (True,)], [(True,)], [(True,)], 
+[(True,), (True, True)], [(True(True, True))]]
+teste = _1_2_3_3.1_4_5_6_7_7.1_7.2_7.3
+test_de_execucao_direta: 48
+test_de_execucao_com_interrupcao: 2
+--------------------------------------------
+
+Conta
+Listar:     Cadastrar:      Retornar ocorrência:      Transferir:      Descadastrar:
+0           0               0                         0                0    
+
+Pessoa
+Listar:     Cadastrar:      Descadastrar: 
+0           0               0            
+
+--------------------------------------------
+2 >>> 1 - error (1)
+(5): RG - OK / Conta Corrente/CNPJ - OK
+"Digite o Número da Conta:     
+21111
+
+cadastrar_2 Número da Conta 21111 não possui cadastro.      
+
+cadastrar RG 1234 possui cadastro.
+{'RG': '1234', 'Nome': 'Oscar', 'Tipo Pessoa': 'Pessoa Física'}
+
+Conta Corrente 21111_ cadastrado com sucesso_.
+
+{'Número da Conta': '21111', 'Agência': '0001', 'Tipo Conta': 'Conta Corrente', 
+'Saldo': 0, 'Extrato': 0, 'Débito': 0, 'Crédito': 0, 'RG': '1234', 'Nome': 'Osc
+ar', 'Tipo Pessoa': 'Pessoa Física'}
+
+
+Contas
+
+c_ Contas (1) / Pessoa (2):" 
+
+--------------------------------------------
+
+Execution Interrupted:
+fail: not return
+
+--------------------------------------------
+2 >>> 2 - error (2)
+(8): RG - fail / Conta Poupanca - OK
+"Digite o Número da Conta:     
+11112 >>>
+File "c:\Users\oscar\Desenvolvimento\Python\curso_python\teste_257\modulo_menu_contas.py", line 148, in menu_acao     
+    elif self.valor_variavel == self.tipo_variavel_2:       
+
+  ^^^^^^^^^^^^^^^^^^^^        
+AttributeError: 'ContaPoupanca' object has no attribute 'tipo_variavel_2'. Did you mean: 'tipo_variavel_1'?
+PS C:\Users\oscar\Desenvolvimento\Python\curso_python\teste_257>"
+
+--------------------------------------------
+--------------------------------------------
 
 Log (4):
 test_modulo_conta

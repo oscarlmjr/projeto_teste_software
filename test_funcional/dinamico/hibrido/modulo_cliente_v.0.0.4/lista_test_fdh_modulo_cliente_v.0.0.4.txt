@@ -1,0 +1,132 @@
+modulo_cliente:
+--------------------------------------------
+Cliente.cliente_autenticacao: _7.1.1
+
+variable_return:
+self
+--------------------------------------------
+--------------------------------------------
+Menu.menu_autenticacao: _7.2.1
+
+f'\nBoa Vista Bank'
+f'Cliente'
+
+variable_return:
+f'Agência'
+f'Conta'
+f'Senha'
+
+[(-1, ), (-2, ), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, ), (True)]
+[(-1, 1), (-2, 2), (-3, 3), (True)]
+--------------------------------------------
+--------------------------------------------
+Lista.cliente_autenticacao: _7.3.1
+
+variable_return:
+
+********************************************
+f'\nBV Code, obrigado por abrir uma conta em nossa agência!   
+Seja bem-vindo!'
+lista_conta_0001 = [(21111, 9115), [(0001, 21111, 9115)]]
+
+f'\nSenha: 1204 está errada.'
+lista_conta_0001 = [(21111, 9115), [(0001, 21111, 1204)]]
+
+f'\nConta: 11122 não está em atividade.'
+lista_conta_0001 = [(11122, None), [(0001, 11122, 1204)]]
+
+f'\nConta: 11121 não está em atividade.'
+lista_conta_0001 = [(11121, None), [(0001, 11121, 1204)]]
+
+f'\nConta: 11111 não está em atividade.'
+lista_conta_0001 = [(11111, None), [(0001, 11111, 1204)]]
+--------------------------------------------
+--------------------------------------------
+Menu.menu_opcao: _7.2.2
+f'Saldo (1) / Extrato (2) / Saque (3) / Depósito (4) / Sair (5):\n'
+
+variable_return:
+
+Sair (5)
+'5'
+'\nObrigado, por utilizar nosso banco.'
+'Sua seção está sendo encerrada.'
+********************************************
+Depósito (4)
+'4'
+'Digite o valor:\n'
+'1'
+********************************************
+Saque (3)
+'3
+'Digite o valor:'
+'1'
+********************************************
+Extrato (2)
+'2'
+f'Digite o mês desejado:\n'
+
+'(01) Jan (...) \n'
+********************************************
+Saldo (1)
+'1'
+--------------------------------------------
+--------------------------------------------
+Lista.secao_iniciada: _7.3.2
+
+variable_return:
+f'\nSaldo: R$ 0,00'
+--------------------------------------------
+--------------------------------------------
+Lista.extrato_opcao: _7.3.3
+
+variable_return:
+f'Extrato:'
+
+f'{'Saldo': 0}
+Não há movimentação nesse mês. \n'
+Extrato": [{"mês": "1", "1": [{"Saldo": 0}]}]
+--------------------------------------------
+--------------------------------------------
+Lista.saque_opcao: _7.3.4
+
+variable_return:
+Lista.movimentacao_extrato(self, self.saque, self.valor_saque)
+--------------------------------------------
+--------------------------------------------
+Lista.movimentacao_extrato: _7.3.5
+
+variable_return:
+f'\nSaldo: R$ 0,00'
+Lista.movimentacao_conta(self)
+Extrato: [{"mês": "1", "1": [{"Saldo": 0}]}, {"mês": "9", "9": [{"Saque": 1}, {"Depósito": 1}, {"Saldo": 0}]}]
+********************************************
+f'\nSaldo: R$ -1,00'
+Lista.movimentacao_conta(self)
+Extrato: [{"mês": "1", "1": [{"Saldo": 0}]}, {"mês": "9", "9": [{"Saque": 1}, {"Saldo": -1}]}]
+--------------------------------------------
+--------------------------------------------
+Lista.movimentacao_conta: _7.3.6
+
+variable_return:
+lista_conta_0001 = ["Saldo": 0, "Débito": 0, "Crédito": 0]
+********************************************
+lista_conta_0001 = ["Saldo": -1, "Débito": -1, "Crédito": 0]
+--------------------------------------------
+--------------------------------------------
+Lista.deposito_opcao _7.3.7
+
+variable_return:
+
+--------------------------------------------
+--------------------------------------------
+Menu.saida: _7.2.3
+
+variable_return:
+sys.exit()
+'\nO sistema está sendo finalizado.\n'
+--------------------------------------------
+--------------------------------------------

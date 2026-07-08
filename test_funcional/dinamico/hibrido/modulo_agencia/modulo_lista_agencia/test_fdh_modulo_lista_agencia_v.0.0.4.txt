@@ -1,0 +1,54 @@
+--------------------------------------------
+.../ modulo_menu_agencia.Menu.menu_autenticacao >>> Lista.lista_autenticacao
+.../ \
+--------------------------------------------
+
+Lista.lista_autenticacao: teste += '_4.2.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1):  modulo_lista_agencia.Lista.lista_usuario()
+|  (2):  modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao()
+|  (3):  modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+
+test_fdh_modulo_lista_agencia_004.json:
+[(True), ]
+
+.../ modulo_agencia.modulo_lista_agencia.Lista.lista_autenticacao >>> modulo_menu_agencia.Menu.menu_autenticacao
+.../ \
+.../ modulo_agencia.modulo_lista_agencia.Lista.lista_autenticacao >>> modulo_menu_agencia.Menu.menu_autenticacao
+.../ modulo_agencia.modulo_lista_agencia.Lista.lista_autenticacao >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+
+--------------------------------------------
+.../ Lista.lista_autenticacao >>> Lista.lista_usuario
+.../  modulo_menu_agencia.Menu.cadastrar_usuario >>> Lista.lista_usuario
+.../  \
+.../ modulo_menu_agencia.Menu.descadastrar_usuario >>> Lista.lista_usuario
+.../  \
+.../  modulo_menu_agencia.Menu.cadastrar_usuario >>> Lista.lista_usuario
+.../ modulo_menu_agencia.Menu.descadastrar_usuario >>> Lista.lista_usuario
+    ...
+--------------------------------------------
+
+Lista.lista_usuario: teste += '_4.2.2' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (2): modulo_menu_agencia.Menu.menu_opcao()
+
+test_fdh_modulo_lista_agencia_004.json:
+[(True), ]
+
+.../ Lista.lista_usuario >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+.../ Lista.lista_usuario >>> modulo_menu_agencia.Menu.menu_opcao
+.../ \\
+.../ Lista.lista_usuario >>> shutdown force(./ modulo_agencia_matriz.menu_self)
+.../ Lista.lista_usuario >>> modulo_menu_agencia.Menu.menu_opcao
+.../  \
+
+test_fdh_modulo_lista_agencia_004.json:
+[(True), (True)]
+
+--------------------------------------------
+--------------------------------------------

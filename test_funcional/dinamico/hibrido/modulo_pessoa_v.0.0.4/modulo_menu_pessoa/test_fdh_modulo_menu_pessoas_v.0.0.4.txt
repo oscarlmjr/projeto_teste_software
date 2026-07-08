@@ -1,0 +1,110 @@
+--------------------------------------------
+.../ modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel >>> modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao
+.../ \\
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao
+.../ \\\\\\\\\\
+.../ \\
+--------------------------------------------
+
+Menu.menu_acao: teste += '_3.3.1'
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  Cadastrar (2)
+|  Pessoa Jurídica <<< Pessoa Física:
+|  (-2) Fail: Nome
+|  (2) Ok: Nome
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  Cadastrar (2)
+|  Pessoa Física:
+|  Bool:
+|  (2): Sexo
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  Listar (1)
+|  Pessoa Jurídica <<< Pessoa Física:
+|  (-1) Fail: CNPJ <<< RG
+|  (1) Ok: CNPJ <<< RG
+|  Cadastrar (2)
+|  Pessoa Jurídica <<< Pessoa Física:
+|  (-2) Fail: CNPJ <<< RG
+|  (2) Ok: CNPJ <<< RG
+|  Descadastrar (3)
+|  Pessoa Jurídica <<< Pessoa Física:
+|  (-3) Fail: CNPJ <<< RG
+|  (3) Ok: CNPJ <<< RG
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_pessoa.modulo_lista_pessoa.Lista.listar_variavel()
+
+test_fdh_modulo_menu_pessoa_004.json:
+[(-2, ), (True), (-2, ), (True)]
+[[()], [], [(1234, Oscar, m)]]
+[[(1234, Oscar, m)], [()], [(12345, BV Code)]]
+[(None), (None), (-1, 1), (True)]
+[[(1234, Oscar, m), (2345, Gabriel, m)], [(12345, BV Code)], [3456, 1234]]
+[(-2, 2), (True), (-2, 2), (True)]
+[[(1234, Oscar, m), (2345, Gabriel, m)], [(12345, BV Code)], [3456]]
+[[(1234, Oscar, m), (2345, Gabriel, m), (3456, Luiza, f)], [(12345, BV Code)], [1234, 23456]]
+[[(1234, Oscar, m), (2345, Gabriel, m), (3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [12345]]
+[(None), (None), (-3, 3), (True)]
+[[(1234, Oscar, m), (2345, Gabriel, m), (3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [4567, 1234]]
+[[(2345, Gabriel, m), (3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [4567, 1234, 34567, 12345]]
+
+.../ modulo_menu_pessoa.Menu.menu_acao >>> modulo_lista_pessoa.Lista.listar_variavel
+.../ \\\\\\\\\\
+.../ \\
+--------------------------------------------
+.../ modulo_pessoa.Pessoa().menu_opcao >>> modulo_menu_pessoa.Menu.menu_opcao
+.../ \\\\\\\\\\
+.../ \\\\
+--------------------------------------------
+
+Menu.menu_opcao: teste += '_3.3.2'
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  Listar (1)
+|  Cadastrar (2)
+|  Descadastrar (3)
+|  Contas (4)
+|  Agência (5)
+|  Matriz (6)
+|  Sair (7)
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao:
+|  Listar (1)
+|  Cadastrar (2)
+|  Descadastrar (3)
+|  (1): Pessoa Física
+|  (2): Pessoa Jurídica
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao()
+|  (2): modulo_contas.modulo_contas.Contas().menu_opcao()
+
+test_fdh_modulo_menu_pessoa_004.json:
+[(True), (True), (True)]
+[(True), (True), (True)]
+[(True), (True), (True)]
+[(True), (True)]
+
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_pessoa.modulo_menu_pessoa.Menu.menu_acao
+.../ \\\\\\\\\\
+.../ \\
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_opcao
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_agencia_matriz.Matriz.menu_opcao
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_pessoa.modulo_menu_pessoa.Menu.saida
+--------------------------------------------
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.menu_opcao >>> modulo_pessoa.modulo_menu_pessoa.Menu.saida
+--------------------------------------------
+Menu.saida:: teste += '_3.3.3'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): sys.exit()
+
+.../ modulo_pessoa.modulo_menu_pessoa.Menu.saida >>> system exit
+--------------------------------------------

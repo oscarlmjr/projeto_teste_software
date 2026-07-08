@@ -1,0 +1,108 @@
+--------------------------------------------
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_autenticacao >>> modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao
+.../ \\\
+--------------------------------------------
+
+Lista.cliente_autenticacao: teste += '_7.3.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):  return
+|  (2):  modulo_cliente.modulo_menu_cliente.Menu.menu_opcao()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao >>> modulo_cliente.modulo_menu_cliente.Menu.menu_autenticacao
+.../ \\\
+.../ modulo_cliente.modulo_lista_cliente.Lista.cliente_autenticacao >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao
+
+--------------------------------------------
+.../ modulo_cliente.modulo_menu_cliente.Menu.menu_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada
+.../ \
+--------------------------------------------
+
+Lista.secao_iniciada: teste += '_7.3.2' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_cliente.modulo_lista_cliente.Lista.Lista.extrato_opcao()
+|  (2): modulo_cliente.modulo_lista_cliente.Lista.Lista.saque_opcao()
+|  (3): modulo_cliente.modulo_lista_cliente.Lista.Lista.deposito_opcao()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True), ]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.extrato_opcao
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.saque_opcao
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.deposito_opcao
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.extrato_opcao
+--------------------------------------------
+Lista.extrato_opcao: teste += '_7.3.3'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):  modulo_cliente.modulo_menu_cliente.Menu.menu_opcao()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.extrato_opcao >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao
+
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.saque_opcao
+--------------------------------------------
+Lista.saque_opcao: teste += '_7.3.4'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):  modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.saque_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.saque_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.deposito_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato
+--------------------------------------------
+Lista.movimentacao_extrato: teste += '_7.3.5'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):  modulo_cliente.modulo_lista_cliente.Lista.movimentacao_conta()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_conta
+.../ \
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_conta
+.../ \
+--------------------------------------------
+Lista.movimentacao_conta: teste += '_7.3.6'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):  modulo_cliente.modulo_menu_cliente.Menu.menu_opcao()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.movimentacao_conta >>> modulo_cliente.modulo_menu_cliente.Menu.menu_opcao 
+.../ \
+--------------------------------------------
+.../ modulo_cliente.modulo_lista_cliente.Lista.secao_iniciada >>> modulo_cliente.modulo_lista_cliente.Lista.Lista.deposito_opcao
+--------------------------------------------
+Lista.deposito_opcao: teste += '_7.3.7'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato()
+
+test_fdh_modulo_lista_cliente_004.json:
+[(True)]
+
+.../ modulo_cliente.modulo_lista_cliente.Lista.Lista.deposito_opcao >>> modulo_cliente.modulo_lista_cliente.Lista.movimentacao_extrato

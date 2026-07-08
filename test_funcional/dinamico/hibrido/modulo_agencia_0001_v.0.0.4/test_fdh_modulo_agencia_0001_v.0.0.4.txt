@@ -1,0 +1,19 @@
+--------------------------------------------
+./ modulo_agencia_matriz.Matriz.menu_self >>> modulo_agencia_0001.Agencia.menu_self/
+./ \
+--------------------------------------------
+
+Agencia.menu_self: teste += '_1.1.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_contas.modulo_contas.Contas.menu_self()
+
+test_fdh_modulo_agencia_0001_004.json:
+[(True)] /
+
+.../  modulo_agencia_0001.Agencia.menu_self >>> modulo_contas.modulo_contas.Contas.menu_self
+.../   \
+
+--------------------------------------------
+--------------------------------------------

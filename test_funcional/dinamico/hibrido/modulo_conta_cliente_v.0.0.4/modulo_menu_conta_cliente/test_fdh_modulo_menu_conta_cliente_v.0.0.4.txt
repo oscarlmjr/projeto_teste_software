@@ -1,0 +1,30 @@
+--------------------------------------------
+.../ modulo_conta_cliente.ContaCliente.cliente_autenticacao >>> Menu.menu_opcao
+.../ modulo_lista_conta_cliente.Lista.lista_conta_cliente >>> Menu.menu_opcao
+.../ modulo_conta_cliente.ContaCliente.cliente_autenticacao >>> Menu.menu_opcao
+.../ modulo_lista_conta_cliente.Lista.lista_conta_cliente >>> Menu.menu_opcao
+.../ modulo_conta_cliente.ContaCliente.cliente_autenticacao >>> Menu.menu_opcao
+--------------------------------------------
+
+Menu.menu_opcao: teste += '_6.2.1'
+
+|  teste_de_continuidade_de_execucao_dinamica_com_interrupcao_externa: input()
+|  Bool: 
+|  (1): Extrato (1)
+|  (2): Contas (2)
+
+|  teste_de_continuidade_de_execucao_dinamica_sem_interrupcao: input()
+|  Bool: 
+|  (1): modulo_conta_cliente.modulo_lista_conta_cliente.Lista.lista_conta_cliente()
+|  (2): modulo_contas.modulo_menu_contas.Menu.menu_opcao()
+
+test_fdh_modulo_menu_conta_cliente_004.json:
+[(True), (True)] /
+
+.../ modulo_menu_conta_cliente.Menu.menu_opcao >>> modulo_lista_conta_cliente.Lista.lista_conta_cliente
+.../ modulo_menu_conta_cliente.Menu.menu_opcao >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ modulo_menu_conta_cliente.Menu.menu_opcao >>> modulo_lista_conta_cliente.Lista.lista_conta_cliente
+.../ modulo_menu_conta_cliente.Menu.menu_opcao >>> modulo_contas.modulo_contas.Contas().menu_opcao
+.../ modulo_menu_conta_cliente.Menu.menu_opcao >>> modulo_lista_conta_cliente.Lista.lista_conta_cliente
+--------------------------------------------
+--------------------------------------------

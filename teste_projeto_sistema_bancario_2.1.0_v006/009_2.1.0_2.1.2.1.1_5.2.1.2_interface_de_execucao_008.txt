@@ -5,8 +5,8 @@ teste_2.1.0_v.0.0.8_projeto_sistema_bancario_v.0.0.6
 ----------------------------------------------
 step:	|execution_track:					|input:							|output:							|
 |---------------------------------------------------------------------------------------------------------------|
-1		|5.2.0_5.2.1.0_5.2.1.2_																	|
-|modulo_cliente.modulo_menu_cliente.menu_opcao:													|
+1		|5.2.0_5.2.1.0_5.2.1.2_											|
+|modulo_cliente.modulo_menu_cliente.menu_opcao:								|
 |'Boa Vista Bank'																				|
 |'Contas'																										|
 |'Agência 0001'																				|

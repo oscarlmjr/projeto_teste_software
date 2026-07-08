@@ -1,0 +1,78 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+5.0_modulo_agencia_v.0.0.6 >>> 5.2.0_modulo_lista_agencia
+--------------------------------------------
+.../ 5.0_5.1.0_5.1.1_5.1.2_ >>> 5.0_5.2.0_5.2.1_5.2.2_ 
+--------------------------------------------
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  (1):  modulo_lista_agencia.Lista.lista_usuario()
+|  -----------------------------------------
+|  5.0_5.2.0_5.2.1_5.2.2_ >>> 5.2.3_
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+|  5.0_5.2.0_5.2.1_5.2.2_ >>> 5.2.3_
+|  .../ 5.0_5.1.0_5.1.1_5.1.2_5.1.3_5.1.4_ >>> 5.0_5.2.0_5.2.1_5.2.3_
+|  .../ \
+|  -----------------------------------------
+|  (1): output: f'\nUsuário__ Matrícula 11111 cadastrado e autenticado com sucesso.\n'
+|  (2): output: f'\nUsuário__ Matrícula 11112 cadastrado e autenticado com sucesso.\n'
+|  (3): output: f'\nO usuário Matrícula 11111 já foi cadastrado.'
+
+|  (1): lista_acesso_0001.json 
+|  (2): \
+|  (3): \
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  (1): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (2): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+|  (3): modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+|  -----------------------------------------
+|  5.2.0_5.2.1_5.2.2_5.2.3_ >>> 6.0_6.1.0_6.1.1_6.1.2_
+|  \
+|  5.2.0_5.2.1_5.2.2_5.2.3_ >>> 5.0_5.1.0_5.1.1_5.1.2_5.1.3_
+|  -----------------------------------------
+|  >>> ...
+
+|  -----------------------------------------
+|  -----------------------------------------
+
+
+
+
+--------------------------------------------
+Lista.lista_usuario: teste += '_5.2.2' 
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao:
+|  Bool:  
+|  (1): modulo_matriz.modulo_menu_matriz.Menu.menu_opcao()
+
+
+
+
+|  (2): modulo_menu_agencia.Menu.menu_opcao()
+|  (3): modulo_agencia_matriz.Matriz.menu_self()
+
+test_fdh_modulo_lista_agencia_005.json:
+[(True)]
+[(True)]
+
+############################################
+
+[(True), (True)]
+[(True), (True)]
+
+.../ Lista.lista_usuario >>> modulo_matriz.modulo_menu_matriz.Menu.menu_opcao
+.../ \
+
+############################################
+
+.../ Lista.lista_usuario >>> modulo_menu_agencia.Menu.menu_opcao
+.../ Lista.lista_usuario >>> modulo_agencia_matriz.Matriz.menu_self
+
+.../ \\
+.../ Lista.lista_usuario >>> modulo_menu_agencia.Menu.menu_opcao
+.../  \
+--------------------------------------------
+--------------------------------------------

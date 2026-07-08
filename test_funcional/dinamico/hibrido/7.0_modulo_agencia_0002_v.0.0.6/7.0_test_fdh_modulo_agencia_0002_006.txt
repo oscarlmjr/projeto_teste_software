@@ -1,0 +1,33 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+7.0_modulo_agencia_0002_v.0.0.6
+--------------------------------------------
+./ 
+--------------------------------------------
+
+Agencia.menu_self: teste += '_1.2.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_contas.modulo_contas.Contas.menu_self()
+
+test_fdh_modulo_agencia_0001_004.json:
+[(True)] /
+
+.../  modulo_agencia_0002.Agencia.menu_self >>> modulo_contas.modulo_contas.Contas.menu_self
+--------------------------------------------
+
+--------------------------------------------
+
+Agencia.menu_opcao: teste += '_1.2.2'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1):modulo_agencia.modulo_menu_agencia.Menu.menu_opcao()
+
+test_fdh_modulo_agencia_0001_004.json:
+[(True)] /
+
+.../  modulo_agencia_0002.Agencia.menu_opcao >>> modulo_agencia.modulo_menu_agencia.Menu.menu_opcao
+--------------------------------------------
+--------------------------------------------

@@ -1,0 +1,19 @@
+teste_v.0.0.6_projeto_sistema_bancario_v.0.0.5
+--------------------------------------------
+8.0_modulo_cliente_v.0.0.6 >>> 8.1.0_modulo_cliente
+--------------------------------------------
+./ 
+--------------------------------------------
+
+Cliente.cliente_autenticacao += '_7.1.1'
+
+|  teste_de_acesso_de_execucao_direta_com_interrupcao_externa:
+|  Bool:  
+|  (1): modulo_cliente.modulo_menu_cliente.Menu.menu_autenticacao()
+
+test_fdh_modulo_cliente_004.json:
+[(True)] /
+
+.../ modulo_cliente.modulo_cliente.cliente_autenticacao >>> modulo_menu_cliente.Menu.menu_autenticacao
+--------------------------------------------
+--------------------------------------------

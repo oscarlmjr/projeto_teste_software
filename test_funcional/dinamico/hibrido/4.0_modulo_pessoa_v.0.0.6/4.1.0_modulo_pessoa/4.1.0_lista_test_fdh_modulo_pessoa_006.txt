@@ -1,0 +1,221 @@
+
+
+
+
+
+--------------------------------------------
+variable_return:
+self
+modulo_agencia.modulo_menu_agencia.Menu.menu_autenticacao()
+--------------------------------------------
+--------------------------------------------
+Pessoa.listar_variavel: _3.2.1
+
+variable_return:
+Descadastrar (3)
+f'Descadastrando: CNPJ 12345'
+
+f'descadastrar CNPJ 34567 não possui cadastro.'
+
+f'Descadastrando: RG 1234'
+
+f'descadastrar RG 4567 não possui cadastro.'
+********************************************
+Cadastrar (2)
+f'cadastrar CNPJ 12345 possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+
+f'cadastrar_ CNPJ 23456 não possue cadastro.'
+
+f'cadastrar RG 1234 possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+
+f'cadastrar_ RG 3456 não possue cadastro.'
+********************************************
+Listar (1)
+f'listar CNPJ 12345 possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+
+f'listar_ CNPJ 23456 não possui cadastro.'
+
+f'listar RG 1234 possui cadastro.'
+print(self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel], '\n')
+
+f'listar_ RG 3456 não possui cadastro.'
+********************************************
+Cadastrar (2)
+Conta Corrente
+
+cadastrar RG 2345 possui cadastro.
+f'\ncadastrar {self.dado_variavel} {self.valor_dado_variavel} possui cadastro.'
+
+f'cadastrar_ RG 2345 não possue cadastro.'
+
+f'cadastrar_ RG 2345 não possue cadastro.'
+f'Pessoa\n\nDeseja cadastrar Pessoa:\nSim (1) Não (2):'
+Sim (1)
+
+cadastrar CNPJ 12345 possui cadastro.
+f'\ncadastrar {self.dado_variavel} {self.valor_dado_variavel} possui cadastro.'
+
+f'cadastrar_ CNPJ 12345 não possue cadastro.'
+
+f'cadastrar_ CNPJ 12345 não possue cadastro.'
+f'Pessoa\n\nDeseja cadastrar Pessoa:\nSim (1) Não (2):'
+Sim (1)
+
+'cadastrar RG 1234 possui cadastro.'
+f'\ncadastrar {self.dado_variavel} {self.valor_dado_variavel} possui cadastro.'
+
+f'cadastrar_ RG 1234 não possue cadastro.'
+
+f'cadastrar_ RG 1234 não possue cadastro.'
+f'Pessoa\n\nDeseja cadastrar Pessoa:\nSim (1) Não (2):'
+Sim (1)
+********************************************
+Listar (1)
+Conta Poupança
+f'\nlistar_ RG 1234 não possui cadastro.'
+
+Conta Corrente
+f'\nlistar_ CNPJ 12345 não possui cadastro.'
+lista_pessoa_0001.json = [[], [], [12345]]
+
+f'\nlistar_ RG 1234 não possui cadastro.'
+CNPJ <<< RG <<< Fail
+[(-1, ), (-2, ), (True)]
+lista_pessoa_0001.json = [[], [], [1234]]
+--------------------------------------------
+--------------------------------------------
+Menu.menu_acao: _3.3.1
+
+variable_return:
+Descadastrar (3)
+lista_pessoa_0001.json = [[(2345, Gabriel, m), (3456, Luiza, f)], 
+[(12345, BV Code), (23456, Gaba Game)], [12345]]
+
+lista_pessoa_0001.json = [[(2345, Gabriel, m), (3456, Luiza, f)], 
+[(12345, BV Code), (23456, Gaba Game)], [34567]]
+
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), 
+(3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [1234]]
+
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), 
+(3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [4567]]
+********************************************
+Cadastrar (2)
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), 
+(3456, Luiza, f)], [(12345, BV Code), (23456, Gaba Game)], [12345]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), 
+(3456, Luiza, f)], [(12345, BV Code)], [23456]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), 
+(3456, Luiza, f)], [(12345, BV Code)], [1234]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], 
+[(12345, BV Code)], [3456]]
+********************************************
+Listar (1)
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], 
+[(12345, BV Code)], [12345]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], 
+[(12345, BV Code)], [23456]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], 
+[(12345, BV Code)], [1234]]
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], 
+[(12345, BV Code)], [3456]]
+********************************************
+Cadastrar (2)
+lista_pessoa_0001.json = [[(1234, Oscar, m)], [(12345, BV Code)], 
+[(2345, Gabriel, m)]]
+lista_pessoa_0001.json = [[(1234, Oscar, m)], [()], [(12345, BV Code)]]
+lista_pessoa_0001.json = [[], [], [(Oscar, m, 1234)]]
+--------------------------------------------
+--------------------------------------------
+Lista.cadastrar_pessoa: _3.2.2
+
+variable_return:
+f'\nCNPJ 23456__ cadastrado com sucesso.\n'
+f'{self.lista_pessoa[self.opcao_pessoa][-1][int(self.valor_dado_variavel)]}\n'
+f'\nPessoa\n\nDeseja cadastrar Conta:\nSim (1) Não (2):\n'
+Não (2)
+
+f'RG 3456__ cadastrado com sucesso.'
+f'{self.lista_pessoa[self.opcao_pessoa][-1][int(self.valor_dado_variavel)]}\n'
+f'\nPessoa\n\nDeseja cadastrar Conta:\nSim (1) Não (2):\n'
+Não (2)
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m), (3456, Luiza, f)], [(12345, BV Code)]]
+
+f'\nRG 2345__ cadastrado com sucesso.\n'
+f'{self.lista_pessoa[self.opcao_pessoa][-1][int(self.valor_dado_variavel)]}\n'
+f'\nPessoa\n\nDeseja cadastrar Conta:\nSim (1) Não (2):\n'
+Sim (1)
+lista_pessoa_0001.json = [[(1234, Oscar, m), (2345, Gabriel, m)], [(12345, BV Code)]]
+
+f'\nCNPJ 12345__ cadastrado com sucesso.\n'
+f'{self.lista_pessoa[self.opcao_pessoa][-1][int(self.valor_dado_variavel)]}\n'
+f'\nPessoa\n\nDeseja cadastrar Conta:\nSim (1) Não (2):\n'
+Sim (1)
+lista_pessoa_0001.json = [[(1234, Oscar, m)], [(12345, BV Code)]]
+
+f'\nRG 1234__ cadastrado com sucesso.\n'
+f'{self.lista_pessoa[self.opcao_pessoa][-1][int(self.valor_dado_variavel)]}\n'
+f'\nPessoa\n\nDeseja cadastrar Conta:\nSim (1) Não (2):\n'
+Sim (1)
+lista_pessoa_0001.json = [[(1234, Oscar, m)]]
+--------------------------------------------
+--------------------------------------------
+Menu.menu_opcao: teste += '_3.3.2'
+
+variable_return:
+Contas (4)
+[(True)]
+********************************************
+Descadastrar (3)
+[(None), (None), (-3, 3), (True)]
+********************************************
+Pessoa Jurídica <<< Pessoa Física
+Cadastrar (2)
+[(-2, 2), (True), (-2, 2), (True)]
+********************************************
+Listar (1)
+Pessoa Jurídica <<< Pessoa Física
+Pessoa Jurídica <<< Pessoa Física
+[(None), (None), (-1, 1), (True)]
+--------------------------------------------
+--------------------------------------------
+Lista.direcionamento: _3.2.3
+
+variable_return:
+f'Pessoa'
+f'p_ Contas (1) / Pessoa (2):'
+Contas (1)
+Pessoa (2)
+--------------------------------------------
+--------------------------------------------
+Lista.descadastrar: _3.2.4
+
+variable_return:
+f'Confirma exclusão de 12345?\n'
+f'{self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel]}\n'
+f'\nSim (1) Não(2)\n'
+Sim (1)
+f'1234 foi descadastrado '
+
+f'Confirma exclusão de 1234?\n'
+f'{self.lista_pessoa[self.opcao_pessoa][self.indice_pessoa][self.valor_dado_variavel]}\n'
+f'\nSim (1) Não(2)\n'
+Sim (1)
+f'1234 foi descadastrado'
+--------------------------------------------
+--------------------------------------------
+Menu.saida: _3.3.3
+
+variable_return:
+sys.exit()
+'\nO sistema está sendo finalizado.\n'
+--------------------------------------------
+--------------------------------------------
+
+self.lista_historico = []
+        self.historico = 'Histórico'
+
+dados_temporarios[self.historico].append(self.valor_agencia)
